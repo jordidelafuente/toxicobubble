@@ -1,0 +1,33 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon (TM) R7 370 Series (ID=0x6811)
+    Vendor:   ATI
+    VRAM:     2028 MB
+    Driver:   25.20.15002.58
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.267 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.268156 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 10cc -> priority: 1 
+  Thread -> id: 560 -> priority: 1 
+  Thread -> id: 2ebc -> priority: 1 
+  Thread -> id: 2b9c -> priority: 1 
