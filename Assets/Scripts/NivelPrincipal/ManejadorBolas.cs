@@ -13,20 +13,38 @@ public class ManejadorBolas : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+        if (OutOfGameWindow()) 
+        {
+            Destroy(this.gameObject); 
+        }
 		
 	}
+
+    bool OutOfGameWindow()
+    {
+        int limiteArriba = 2000;   //TODO: ajustar al tamaño de cada pantalla
+        int limiteAbajo = -2000;
+        int limiteIzquierda = -2000;
+        int limiteDerecha = 2000;
+
+        if (this.transform.position.y > limiteArriba || this.transform.position.y < limiteAbajo)
+        {
+            return true;
+        }
+
+        if (this.transform.position.x > limiteDerecha || this.transform.position.x < limiteIzquierda)
+        {
+            return true;
+        }
+
+        return false;
+    }
 
     /*void OnCollisionEnter2D(Collision2D coll)
     {
         Vector2 reflejado = Vector2.Reflect(gameObject.GetComponent<Rigidbody2D>().velocity, coll.contacts[0].normal);
         gameObject.GetComponent<Rigidbody2D>().velocity = reflejado;
     }*/
-
-    // called when the cube hits the floor
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        Debug.Log("OnCollisionEnter2D");
-    }
 
     // when the ball collides with something
     void OnTriggerEnter2D(Collider2D col)
@@ -38,23 +56,36 @@ public class ManejadorBolas : MonoBehaviour
             //Calculate reflection velocity
             Vector2 normal = col.gameObject.transform.position - gameObject.transform.position;
             Vector2 reflejado = Vector2.Reflect(gameObject.GetComponent<Rigidbody2D>().velocity, normal);
-            gameObject.GetComponent<Rigidbody2D>().velocity = reflejado.normalized * 100;
+            gameObject.GetComponent<Rigidbody2D>().velocity = reflejado.normalized * 500; //TODO: recoger velocidad por parametro
 
             foreach (Transform b in col.gameObject.gameObject.transform)
             {
-                if(b.gameObject.gameObject.name == "Peso")
+                if (b.gameObject.gameObject.name == "Peso")
                 {
-                    int peso = int.Parse(b.gameObject.gameObject.GetComponent<TextMesh>().text) -1;
+                    int peso = int.Parse(b.gameObject.gameObject.GetComponent<TextMesh>().text) - 1;
                     if (peso > 0)
                     {
                         b.gameObject.gameObject.GetComponent<TextMesh>().text = peso.ToString();
-                    } else
+                    }
+                    else
                     {
                         Destroy(col.gameObject);
                     }
                 }
             }
         }
-        
+        else if (col.gameObject.tag == "Edificio")
+        {
+            Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time + " tag: " + col.gameObject.tag);
+            Vector2 normal = new Vector2(-1, 0);// col.gameObject.transform.position - gameObject.transform.position;
+            Vector2 reflejado = Vector2.Reflect(gameObject.GetComponent<Rigidbody2D>().velocity, normal);
+            gameObject.GetComponent<Rigidbody2D>().velocity = reflejado.normalized * 500; //TODO: recoger velocidad por parametro
+        }
+        else if (col.gameObject.tag == "Suelo")
+        {
+            Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time + " tag: " + col.gameObject.tag);
+            //TODO: si se usa powerup de suelo se le resta 1
+            Destroy(this.gameObject);
+        }
     }
 }

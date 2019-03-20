@@ -20,6 +20,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     LineRenderer lineRenderer;
     GameObject[] burbujas;
+    PointerEventData ultimaPosicionMosuse;
     bool nuevoTurno;
 
     // Use this for initialization
@@ -47,8 +48,9 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     {
         //Text texto = player.GetComponent<Text>();
         textNumeroDeBolas.gameObject.SetActive(true);
+        ultimaPosicionMosuse = eventData;
 
-        //...
+        //Plotting the line before shooting
         if (/*Camera.main.ScreenToWorldPoint(*/eventData.position/*)*/.y > 400) { //TODO: adaptar a diferentes plataformas y resoluciones
             lineRenderer.SetPosition(1, Camera.main.ScreenToWorldPoint(eventData.position));
             lineaDisparo.SetActive(true);
@@ -63,13 +65,23 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         lineaDisparo.SetActive(false);
 
         GeneradorBolas();
-        nuevoTurno = true;
+        nuevoTurno = !hayMasBolas();
 
         if (nuevoTurno)
         {
             moverBurbujas();
             textNumeroDeBolas.gameObject.SetActive(false);
         }
+    }
+
+    bool hayMasBolas()
+    {
+        burbujas = GameObject.FindGameObjectsWithTag("Burbuja");
+        if (burbujas != null && burbujas.Length > 1)
+        {
+            return true;
+        }
+        return false;
     }
 
     public void moverBurbujas()
@@ -94,9 +106,32 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     public void GeneradorBolas()
     {
+        //Getting the number of balls we will shoot 
+        int numBolas = 0;
+        Text[] textos = player.GetComponentsInChildren<Text>();
+        string strNumBolas = textos[0].text.ToString().Replace("x", ""); //TODO: que pasa si hay más de un componente texto?
+        numBolas = int.Parse(strNumBolas);
+
+        
         Transform bolaAux = Instantiate(bola, player.transform.position, Quaternion.identity);
-        bolaAux.GetComponent<Rigidbody2D>().velocity = new Vector2(200,200);
+        Vector3 vAux = lineRenderer.GetPosition(1) - player.transform.position;
+        bolaAux.GetComponent<Rigidbody2D>().velocity = vAux.normalized * 500; //TODO: recoger velocidad por parametro
+        Transform ultimaBola = bolaAux;                                                                     //StartCoroutine("Wait");
+
+        for (int i=1; i< numBolas; i++)
+        {            
+            Transform bolaAux2 = Instantiate(bola, player.transform.position, Quaternion.identity);
+            bolaAux2.GetComponent<Rigidbody2D>().velocity = vAux.normalized * 500; //TODO: recoger velocidad por parametro
+            //StartCoroutine("Wait");
+            bolaAux = bolaAux2;
+        }        
     }
+
+    /*IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1000);
+        Debug.Log("lalala");
+    }*/
 
     public void OnPointerClick(PointerEventData eventData)
     {
