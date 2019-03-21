@@ -22,10 +22,10 @@ public class ManejadorBolas : MonoBehaviour
 
     bool OutOfGameWindow()
     {
-        int limiteArriba = 2000;   //TODO: ajustar al tamaño de cada pantalla
-        int limiteAbajo = -2000;
-        int limiteIzquierda = -2000;
-        int limiteDerecha = 2000;
+        int limiteArriba = 600;   //TODO: ajustar al tamaño de cada pantalla
+        int limiteAbajo = -2000;   //
+        int limiteIzquierda = -2000; //
+        int limiteDerecha = 2000;  //
 
         if (this.transform.position.y > limiteArriba || this.transform.position.y < limiteAbajo)
         {
@@ -69,6 +69,7 @@ public class ManejadorBolas : MonoBehaviour
                     }
                     else
                     {
+                        col.gameObject.SetActive(false);
                         Destroy(col.gameObject);
                     }
                 }

@@ -21,13 +21,25 @@ Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoB
 Loading C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\System.dll (this message is harmless)
 Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.267 seconds
+- Completed reload, in  0.315 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.268156 ms
+UnloadTime: 2.592689 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.653042 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 454.
+Total: 0.322491 ms (FindLiveObjects: 0.056385 ms CreateObjectMapping: 0.035719 ms MarkObjects: 0.224519 ms  DeleteObjects: 0.004337 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.544204 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 357.
+Total: 0.375814 ms (FindLiveObjects: 0.044138 ms CreateObjectMapping: 0.032912 ms MarkObjects: 0.240593 ms  DeleteObjects: 0.056895 ms)
+
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 10cc -> priority: 1 
-  Thread -> id: 560 -> priority: 1 
-  Thread -> id: 2ebc -> priority: 1 
-  Thread -> id: 2b9c -> priority: 1 
+  Thread -> id: 368 -> priority: 1 
+  Thread -> id: 35d8 -> priority: 1 
+  Thread -> id: 1630 -> priority: 1 
+  Thread -> id: 410c -> priority: 1 

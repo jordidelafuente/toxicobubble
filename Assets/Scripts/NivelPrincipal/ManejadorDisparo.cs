@@ -122,21 +122,21 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         Vector3 vAux = lineRenderer.GetPosition(1) - player.transform.position;
         bolaAux.GetComponent<Rigidbody2D>().velocity = vAux.normalized * 500; //TODO: recoger velocidad por parametro
         Transform ultimaBola = bolaAux;                                                                     //StartCoroutine("Wait");
+        //float timeBolaAnt = Time.time;
 
         for (int i=1; i< numBolas; i++)
-        {            
+        {
+            /*if (Time.time - timeBolaAnt < 2)
+            {
+                i--;
+                continue;
+            }*/
+
             Transform bolaAux2 = Instantiate(bola, player.transform.position, Quaternion.identity);
             bolaAux2.GetComponent<Rigidbody2D>().velocity = vAux.normalized * 500; //TODO: recoger velocidad por parametro
-            //StartCoroutine("Wait");
             bolaAux = bolaAux2;
         }        
     }
-
-    /*IEnumerator Wait()
-    {
-        yield return new WaitForSeconds(1000);
-        Debug.Log("lalala");
-    }*/
 
     public void OnPointerClick(PointerEventData eventData)
     {
