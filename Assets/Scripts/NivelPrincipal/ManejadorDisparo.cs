@@ -21,7 +21,8 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     LineRenderer lineRenderer;
     GameObject[] burbujas;
     PointerEventData ultimaPosicionMosuse;
-    bool nuevoTurno;
+    bool nuevoTurno, heDisparado;
+    float inicioDisparo;
 
     // Use this for initialization
     void Start()
@@ -29,6 +30,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         lineaDisparo.SetActive(false);
         textNumeroDeBolas.gameObject.SetActive(false);
         nuevoTurno = false;
+        heDisparado = false;
 
         lineRenderer = lineaDisparo.GetComponent<LineRenderer>();
         lineRenderer.SetPosition(0, new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - 1));
@@ -37,6 +39,13 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     // Update is called once per frame
     void Update()
     {
+        nuevoTurno = heDisparado && (Time.time - inicioDisparo > 1) && !hayMasBolas();
+        if (nuevoTurno)
+        {
+            moverBurbujas();
+            nuevoTurno = false;
+            heDisparado = false;
+        }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -63,20 +72,16 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public void OnEndDrag(PointerEventData eventData)
     {
         lineaDisparo.SetActive(false);
+        inicioDisparo = Time.time;
 
+        heDisparado = true;
         GeneradorBolas();
-        nuevoTurno = !hayMasBolas();
-
-        if (nuevoTurno)
-        {
-            moverBurbujas();
-            textNumeroDeBolas.gameObject.SetActive(false);
-        }
+        textNumeroDeBolas.gameObject.SetActive(false);
     }
 
     bool hayMasBolas()
     {
-        burbujas = GameObject.FindGameObjectsWithTag("Burbuja");
+        burbujas = GameObject.FindGameObjectsWithTag("Bola");
         if (burbujas != null && burbujas.Length > 1)
         {
             return true;

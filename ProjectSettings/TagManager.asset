@@ -9,6 +9,7 @@ TagManager:
   - PesoBurbuja
   - NumeroDeBolas
   - Edificio
+  - Bola
   layers:
   - Default
   - TransparentFX
