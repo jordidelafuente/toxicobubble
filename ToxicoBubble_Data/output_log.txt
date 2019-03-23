@@ -21,25 +21,129 @@ Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoB
 Loading C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\System.dll (this message is harmless)
 Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.315 seconds
+- Completed reload, in  0.366 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.592689 ms
+UnloadTime: 1.498922 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.653042 ms
+UnloadTime: 6.704457 ms
 
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 454.
-Total: 0.322491 ms (FindLiveObjects: 0.056385 ms CreateObjectMapping: 0.035719 ms MarkObjects: 0.224519 ms  DeleteObjects: 0.004337 ms)
+Total: 0.306673 ms (FindLiveObjects: 0.044138 ms CreateObjectMapping: 0.015818 ms MarkObjects: 0.240082 ms  DeleteObjects: 0.005868 ms)
 
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.544204 ms
+Burbuja1-1 (3) : Bola1-1(Clone) : 2.46 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 357.
-Total: 0.375814 ms (FindLiveObjects: 0.044138 ms CreateObjectMapping: 0.032912 ms MarkObjects: 0.240593 ms  DeleteObjects: 0.056895 ms)
+Burbuja1-1 (3) : Bola1-1(Clone) : 2.58 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (1) : Bola1-1(Clone) : 2.74 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (1) : Bola1-1(Clone) : 2.86 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (3) : Bola1-1(Clone) : 3.02 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (3) : Bola1-1(Clone) : 3.14 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (1) : Bola1-1(Clone) : 3.32 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (1) : Bola1-1(Clone) : 3.44 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 4.24 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 4.36 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 4.38 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 4.5 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (3) : Bola1-1(Clone) : 8.74 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 9.059999 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (2) : Bola1-1(Clone) : 9.26 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 10.48 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (2) : Bola1-1(Clone) : 12.26 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (2) : Bola1-1(Clone) : 12.38 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (1) : Bola1-1(Clone) : 13 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 13.8 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 13.88 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 : Bola1-1(Clone) : 15.2 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (2) : Bola1-1(Clone) : 19.76 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (2) : Bola1-1(Clone) : 19.88 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 20.08 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 20.2 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.713359 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 454.
+Total: 0.334738 ms (FindLiveObjects: 0.055109 ms CreateObjectMapping: 0.035719 ms MarkObjects: 0.238807 ms  DeleteObjects: 0.004082 ms)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 368 -> priority: 1 
-  Thread -> id: 35d8 -> priority: 1 
-  Thread -> id: 1630 -> priority: 1 
-  Thread -> id: 410c -> priority: 1 
+  Thread -> id: 1830 -> priority: 1 
+  Thread -> id: 3954 -> priority: 1 
+  Thread -> id: 3794 -> priority: 1 
+  Thread -> id: 3684 -> priority: 1 

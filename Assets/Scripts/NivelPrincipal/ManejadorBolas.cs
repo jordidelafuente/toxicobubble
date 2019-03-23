@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class ManejadorBolas : MonoBehaviour
 {
+    int velocidadBolas;
 
     // Use this for initialization
     void Start () {
-		
+        velocidadBolas = ManejadorDisparo.getVelocidadBolas();
 	}
 	
 	// Update is called once per frame
@@ -56,7 +57,7 @@ public class ManejadorBolas : MonoBehaviour
             //Calculate reflection velocity
             Vector2 normal = col.gameObject.transform.position - gameObject.transform.position;
             Vector2 reflejado = Vector2.Reflect(gameObject.GetComponent<Rigidbody2D>().velocity, normal);
-            gameObject.GetComponent<Rigidbody2D>().velocity = reflejado.normalized * 500; //TODO: recoger velocidad por parametro
+            gameObject.GetComponent<Rigidbody2D>().velocity = reflejado.normalized * velocidadBolas; //TODO: recoger velocidad por parametro
 
             foreach (Transform b in col.gameObject.gameObject.transform)
             {
@@ -78,9 +79,9 @@ public class ManejadorBolas : MonoBehaviour
         else if (col.gameObject.tag == "Edificio")
         {
             Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time + " tag: " + col.gameObject.tag);
-            Vector2 normal = new Vector2(-1, 0);// col.gameObject.transform.position - gameObject.transform.position;
+            Vector2 normal = new Vector2(-1, 0); //..
             Vector2 reflejado = Vector2.Reflect(gameObject.GetComponent<Rigidbody2D>().velocity, normal);
-            gameObject.GetComponent<Rigidbody2D>().velocity = reflejado.normalized * 500; //TODO: recoger velocidad por parametro
+            gameObject.GetComponent<Rigidbody2D>().velocity = reflejado.normalized * velocidadBolas; //TODO: recoger velocidad por parametro
         }
         else if (col.gameObject.tag == "Suelo")
         {
