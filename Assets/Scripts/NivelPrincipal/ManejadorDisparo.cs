@@ -11,6 +11,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public GameObject lineaDisparo;
     public GameObject player;
     public Transform bola;
+    public Transform burbuja;
     public Text textNumeroDeBolas;
     public int velocidadBolas;
     enum EstadoPlayer { READY, SHOOTING };
@@ -58,6 +59,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             {
                 if (!hayMasBolas())
                 {
+                    generarBurbujas();
                     moverBurbujas();
                     estadoPlayer = EstadoPlayer.READY;
                     numBolasDisparadas = 0;
@@ -94,11 +96,11 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        lineaDisparo.SetActive(false);
         timeInicioDisparo = Time.time;
 
         if (!hayMasBolas())
         {
+            lineaDisparo.SetActive(false);
             estadoPlayer = EstadoPlayer.SHOOTING;
             dispararBola();
             textNumeroDeBolas.gameObject.SetActive(false);
@@ -115,22 +117,32 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         return false;
     }
 
+    public void generarBurbujas() //TODO: arreglar dificultad
+    {
+        int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
+        Vector2 posicion = new Vector2(xRandom, 500);
+        Transform burbujaNueva = Instantiate(burbuja, posicion, Quaternion.identity);
+    }
+
     public void moverBurbujas()
     {
         burbujas = GameObject.FindGameObjectsWithTag("Burbuja");
         foreach (GameObject burbuja in burbujas)
         {
-            //Moving bubbles one "step" to the floor
-            burbuja.transform.position = new Vector3(burbuja.transform.position.x, 
-                                                     burbuja.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
-                                                     burbuja.transform.position.z);
-
-            bool tocaSuelo = burbuja.transform.position.y <= -228; //Todo: relacionar colliders de burbujas y suelo
-            if (tocaSuelo)
+            if (burbuja.transform.position.x < 1500) //TODO: burbuja fuera del canvas no se cae (con función bien hecha)
             {
-                //Debug.Log("Tocando Suelo!!!");
-                panelGameOver.SetActive(true);
-                Time.timeScale = 0;
+                //Moving bubbles one "step" to the floor
+                burbuja.transform.position = new Vector3(burbuja.transform.position.x,
+                                                         burbuja.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
+                                                         burbuja.transform.position.z);
+
+                bool tocaSuelo = burbuja.transform.position.y <= -228; //Todo: relacionar colliders de burbujas y suelo
+                if (tocaSuelo)
+                {
+                    //Debug.Log("Tocando Suelo!!!");
+                    panelGameOver.SetActive(true);
+                    Time.timeScale = 0;
+                }
             }
         }
     }
