@@ -21,162 +21,214 @@ Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoB
 Loading C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\System.dll (this message is harmless)
 Platform assembly: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble\ToxicoBubble_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.318 seconds
+- Completed reload, in  0.255 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.228988 ms
+UnloadTime: 1.116474 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.644755 ms
+UnloadTime: 2.987639 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 466.
-Total: 0.283966 ms (FindLiveObjects: 0.036484 ms CreateObjectMapping: 0.015563 ms MarkObjects: 0.225540 ms  DeleteObjects: 0.005357 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 477.
+Total: 0.267892 ms (FindLiveObjects: 0.057915 ms CreateObjectMapping: 0.013267 ms MarkObjects: 0.191096 ms  DeleteObjects: 0.004337 ms)
 
-Burbuja1-1 (3) : Bola1-1(Clone) : 5.96 tag: Burbuja
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.598803 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 358.
+Total: 0.291365 ms (FindLiveObjects: 0.019390 ms CreateObjectMapping: 0.012501 ms MarkObjects: 0.194158 ms  DeleteObjects: 0.064549 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.491901 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 477.
+Total: 0.316623 ms (FindLiveObjects: 0.040311 ms CreateObjectMapping: 0.015308 ms MarkObjects: 0.254625 ms  DeleteObjects: 0.005868 ms)
+
+Burbuja1-1 (3) : Bola1-1(Clone) : 10.58 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (3) : Bola1-1(Clone) : 6.06 tag: Burbuja
+Burbuja1-1 (3) : Bola1-1(Clone) : 10.7 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (1) : Bola1-1(Clone) : 6.26 tag: Burbuja
+Burbuja1-1 (1) : Bola1-1(Clone) : 10.88 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (1) : Bola1-1(Clone) : 6.36 tag: Burbuja
+Burbuja1-1 (1) : Bola1-1(Clone) : 11 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (2) : Bola1-1(Clone) : 9.059999 tag: Burbuja
+Edificio2 : Bola1-1(Clone) : 11.76 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (2) : Bola1-1(Clone) : 9.179999 tag: Burbuja
+Edificio2 : Bola1-1(Clone) : 11.88 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 9.22 tag: Burbuja
+Burbuja1-1 : Bola1-1(Clone) : 13.04 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 9.34 tag: Burbuja
+Burbuja1-1 : Bola1-1(Clone) : 13.16 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 9.9 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 13.64 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 10.02 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 13.76 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 : Bola1-1(Clone) : 11.8 tag: Burbuja
+Burbuja1-1 (2) : Bola1-1(Clone) : 16.12 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 : Bola1-1(Clone) : 11.92 tag: Burbuja
+Burbuja1-1 (2) : Bola1-1(Clone) : 16.22 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 13.06 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 16.48 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 13.18 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 16.58 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 13.46 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 18.56 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 13.58 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 19.58 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 15.18 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 20.84 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 15.28 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 21.94 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 16.2 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 22.06 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 16.3 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 22.6 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 17.82 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 22.72 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 17.92 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 23.7 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 18.52 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 23.92 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 18.62 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 24.22 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 24.18 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 24.44 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 24.28 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 25.86 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 28.44 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 25.98 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 28.54 tag: Burbuja
+Edificio1 : Bola1-1(Clone) : 26.8 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 28.6 tag: Burbuja
+Edificio1 : Bola1-1(Clone) : 26.92 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 28.7 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 27.28 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 31.98 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 27.4 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 32.1 tag: Burbuja
+Edificio1 : Bola1-1(Clone) : 29.36 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 32.44 tag: Burbuja
+Edificio1 : Bola1-1(Clone) : 29.46 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 32.56 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 31.52 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 33.26 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 31.64 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 33.38 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 31.72 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 35 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 31.82 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 31.94 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 32.02 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 34.54 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 34.66 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 34.76 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 34.86 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 34.94 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 34.98 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 35.02 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 35.06 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -184,616 +236,1986 @@ Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 35.12 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 36 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 35.64 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 36.12 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 35.64 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 37.66 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 37.92 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 37.78 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 38.04 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 38.88 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 38.14 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 39 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 38.98 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 39 tag: Edificio
+Edificio1 : Bola1-1(Clone) : 39.1 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 39.12 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 39.2 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 40.88 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 41.14 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 40.98 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 41.26 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 41.78 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 41.36 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 41.88 tag: Edificio
+Edificio1 : Bola1-1(Clone) : 42.22 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 42.1 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 42.34 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 42.2 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 42.44 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 44.06 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 43.3 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 44.16 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 43.42 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 45.36 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 43.52 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 45.46 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 44.08 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 46.98 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 44.2 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 47.08 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 44.3 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 47.8 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 45.92 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 47.9 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 46.06 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 51.02 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 46.1 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 51.12 tag: Burbuja
+Edificio1 : Bola1-1(Clone) : 47.02 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 52.24 tag: Suelo
+Edificio2 : Bola1-1(Clone) : 48.66 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 52.34 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 50.3 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 54.46 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 50.94 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 54.56 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 52.54 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 55.36 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 52.64 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 55.46 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 52.74 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 55.7 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 53.08 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 55.8 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 53.18 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 57.86 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 53.28 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 57.98 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 56.34 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 59.12 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 56.46 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 59.24 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 56.54 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 60.74 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 56.64 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 60.86 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 56.8 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 62.24 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 57.02 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 62.36 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 57.1 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 65.24 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 57.2 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 65.36 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 57.84 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 66.54 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 57.92 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 66.66 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 58.02 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 68.16 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 59.88 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 68.28 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 60 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 69.78 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 60.08 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 69.9 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 60.18 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 71.4 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 60.46 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 71.52 tag: Edificio
+Edificio1 : Bola1-1(Clone) : 60.94 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 72.46 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 61.02 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 72.58 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 61.12 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 78.4 tag: Burbuja
+Edificio2 : Bola1-1(Clone) : 62.58 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 78.52 tag: Burbuja
+Edificio2 : Bola1-1(Clone) : 62.66 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 79.22 tag: Edificio
+Edificio2 : Bola1-1(Clone) : 62.76 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 79.34 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 63.54 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 79.56 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 63.62 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 79.68 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 63.72 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 81.24 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 68 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 81.36 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 68.12 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 82.25999 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 68.22 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 82.38 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 68.32 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 83.04 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 68.76 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 83.16 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 68.88 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 85.82 tag: Burbuja
+Edificio1 : Bola1-1(Clone) : 68.98 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 85.92 tag: Burbuja
+Edificio1 : Bola1-1(Clone) : 69.08 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 87.28 tag: Edificio
+Edificio2 : Bola1-1(Clone) : 70.4 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 87.38 tag: Edificio
+Edificio2 : Bola1-1(Clone) : 70.52 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 88.24 tag: Suelo
+Edificio2 : Bola1-1(Clone) : 70.62 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 88.34 tag: Suelo
+Edificio2 : Bola1-1(Clone) : 70.72 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 90.3 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 71.34 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 90.42 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 71.46 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 91.28 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 71.56 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 91.4 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 71.66 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 91.72 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 73.16 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 91.84 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 73.93999 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 93.42 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 75.42 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 93.52 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 78.75999 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 94.5 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 78.88 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 94.6 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 78.98 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 97.28 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 79.06 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 97.4 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 79.88 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 98.56 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 80 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 98.68 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 80.1 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 100.66 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 80.18 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 100.76 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 81.9 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 101.98 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 82.58 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 102.08 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 82.66 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 103.58 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 82.68 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 103.68 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 82.75999 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 105.18 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 82.78 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 105.28 tag: Edificio
+Edificio1 : Bola1-1(Clone) : 82.84 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 106.78 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 82.86 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 106.88 tag: Edificio
+Edificio2 : Bola1-1(Clone) : 84.46 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 108.38 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 84.48 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 108.48 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 86.75999 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 109.98 tag: Edificio
+Edificio2 : Bola1-1(Clone) : 88.06 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 110.08 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 88.2 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 111.58 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 88.25999 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 111.68 tag: Edificio
+Edificio2 : Bola1-1(Clone) : 88.43999 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 113.18 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 88.54 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 113.28 tag: Edificio
+Edificio2 : Bola1-1(Clone) : 88.62 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 114.4 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 91.36 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 114.5 tag: Suelo
+Edificio2 : Bola1-1(Clone) : 91.75999 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 116.74 tag: Burbuja
+Edificio2 : Bola1-1(Clone) : 91.86 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 116.86 tag: Burbuja
+Edificio2 : Bola1-1(Clone) : 91.96 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 117.54 tag: Suelo
+Edificio2 : Bola1-1(Clone) : 92.06 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 117.66 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 92.72 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 118.8 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 93.1 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 118.92 tag: Burbuja
+Edificio1 : Bola1-1(Clone) : 93.5 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 119.64 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 94.9 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 119.76 tag: Suelo
+Edificio2 : Bola1-1(Clone) : 98.25999 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 121.16 tag: Burbuja
+Edificio2 : Bola1-1(Clone) : 98.38 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 121.28 tag: Burbuja
+Edificio2 : Bola1-1(Clone) : 98.48 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 121.9 tag: Suelo
+Edificio2 : Bola1-1(Clone) : 98.57999 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 122.02 tag: Suelo
+Edificio2 : Bola1-1(Clone) : 98.66 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 123.62 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 102.48 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 123.74 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 102.6 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 124.62 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 102.7 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 124.74 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 102.8 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 126.54 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 102.9 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 126.66 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 102.92 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 127.88 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 103.04 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 128 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 103.14 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 129.52 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 103.24 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 129.54 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 103.34 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio2 : Bola1-1(Clone) : 129.64 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 105.02 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 129.66 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 105.14 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 134.52 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 105.24 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 134.62 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 105.34 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 135.54 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 105.44 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 135.64 tag: Edificio
+Edificio1 : Bola1-1(Clone) : 105.84 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 135.94 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 105.96 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 136.04 tag: Suelo
+Edificio1 : Bola1-1(Clone) : 106.06 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 141.28 tag: Burbuja
+Edificio1 : Bola1-1(Clone) : 106.16 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 141.4 tag: Burbuja
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 106.22 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 142.38 tag: Edificio
+Edificio1 : Bola1-1(Clone) : 106.26 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 142.5 tag: Edificio
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 106.34 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 142.66 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 106.44 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 142.78 tag: Suelo
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 106.54 tag: Burbuja
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 144.78 tag: Burbuja
+Edificio1 : Bola1-1(Clone) : 106.62 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 144.9 tag: Burbuja
+Edificio1 : Bola1-1(Clone) : 106.74 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 146.02 tag: Edificio
+Edificio1 : Bola1-1(Clone) : 106.84 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 146.14 tag: Edificio
+Edificio1 : Bola1-1(Clone) : 106.94 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 146.8 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 107.2 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 146.92 tag: Suelo
+Suelo-Proto : Bola1-1(Clone) : 107.32 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 148.56 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 107.42 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 148.66 tag: Burbuja
+Suelo-Proto : Bola1-1(Clone) : 107.52 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 149.74 tag: Edificio
+Edificio2 : Bola1-1(Clone) : 107.9 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Edificio1 : Bola1-1(Clone) : 149.84 tag: Edificio
+Suelo-Proto : Bola1-1(Clone) : 108.7 tag: Suelo
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 149.9 tag: Suelo
+Edificio2 : Bola1-1(Clone) : 112.06 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Suelo-Proto : Bola1-1(Clone) : 150 tag: Suelo
+Edificio2 : Bola1-1(Clone) : 112.18 tag: Edificio
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 112.28 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 112.36 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 112.46 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 112.74 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 113.26 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 113.36 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 113.4 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 113.44 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 113.54 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 113.88 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 113.98 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 114.06 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 114.16 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 114.38 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 115.4 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 116.38 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 119.92 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 120.04 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 120.14 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 120.22 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 120.32 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 141.06 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 141.16 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 141.26 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 141.36 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 141.46 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 142 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 142.1 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 142.2 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 142.3 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 142.4 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 143.62 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 143.72 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 143.82 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 143.92 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 144.02 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 144.62 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 145.02 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 145.06 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 145.16 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 145.26 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 145.36 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 145.74 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 148.62 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 148.72 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 148.82 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 148.92 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 149.02 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 149.18 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 149.28 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 149.38 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 149.48 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 149.58 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 151.4 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 151.66 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 151.98 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 151.98 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 152.02 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 152.08 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 152.16 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 152.58 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 152.68 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 152.76 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 152.78 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 154.44 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 154.66 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 156 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 156.12 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 156.22 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 156.32 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 156.4 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 156.9 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 156.92 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 157.02 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 157.04 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 157.12 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 157.14 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 157.22 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 157.24 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 157.3 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 157.32 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 159.26 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 159.36 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 159.46 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 159.56 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 159.66 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 162.24 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 162.98 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 163.02 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 163.04 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 163.08 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 163.12 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 163.14 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 163.18 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 163.22 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 163.24 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 163.28 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 163.34 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 163.98 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 164.08 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 164.64 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 165.6 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 166.64 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 169.38 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 169.48 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 170.08 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 170.18 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 170.28 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 170.4 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 170.62 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 170.72 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 172.84 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 172.94 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 173.04 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 173.14 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 173.2 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 173.24 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 173.3 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 173.34 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 173.4 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 173.5 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 173.6 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 173.7 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 175.08 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 175.2 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 175.2 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 175.32 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 175.76 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 175.84 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 175.94 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 176.04 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 176.28 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 176.36 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 176.46 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 176.56 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 179.14 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 179.24 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 179.34 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 179.44 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 179.54 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 179.56 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 179.64 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 179.66 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 179.74 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 179.98 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 180.08 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 180.18 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.3 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.32 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 180.34 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.34 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.38 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.42 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 180.44 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.44 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.46 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.5 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.52 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.52 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 180.54 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.54 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.56 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.6 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.64 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.68 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 180.74 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 181.34 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 182.98 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 183.08 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 183.2 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 183.3 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 183.38 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 183.48 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 183.6 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 183.62 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 183.7 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 184.22 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 186.94 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 187.04 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 187.14 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 187.24 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 187.34 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 187.44 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 187.54 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.08 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.2 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.28 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.36 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.38 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.48 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.48 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.5 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.56 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.58 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.6 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.66 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.66 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.68 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.68 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.78 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.78 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.78 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.78 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.86 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.86 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.9 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.96 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.96 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 193.98 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 194.06 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 194.08 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 194.08 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 194.16 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 194.18 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 194.26 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Suelo-Proto : Bola1-1(Clone) : 194.86 tag: Suelo
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 197.28 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 197.4 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 197.5 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 197.6 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 197.7 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 197.8 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 197.88 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 198 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 198.72 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 198.84 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 198.94 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 199.04 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 199.14 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 199.24 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 199.32 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 199.44 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Burbuja1-1 (4)(Clone) : Bola1-1(Clone) : 200.16 tag: Burbuja
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 200.46 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 200.56 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 200.66 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 200.76 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 200.86 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 200.94 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 201.06 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 201.6 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 202.08 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 202.18 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 202.28 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 202.38 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 202.48 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 202.56 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 202.68 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 203.22 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 203.7 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 203.8 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 203.9 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 204 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 204.1 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 204.18 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 204.3 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 204.84 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 205.32 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 205.42 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 205.52 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 205.62 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 205.72 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 205.8 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 205.92 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 206.46 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 206.94 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 207.04 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 207.14 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 207.24 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 207.34 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 207.42 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 207.54 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 208.56 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 208.66 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 208.76 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 208.86 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 208.96 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 209.04 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 209.16 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 210.18 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 210.28 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 210.38 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 210.48 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 210.58 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 210.66 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 210.78 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 211.8 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 211.9 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 212 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 212.1 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 212.2 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 212.28 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 212.4 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 213.42 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 213.52 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 213.62 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 213.72 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 213.82 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 213.9 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 214.02 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 215.04 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 215.14 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 215.24 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 215.34 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 215.44 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 215.52 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 215.64 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 216.66 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 216.76 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 216.86 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 216.96 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 217.06 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 217.14 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 217.26 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 218.28 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 218.38 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 218.48 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 218.58 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 218.68 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 218.76 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 218.88 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 219.9 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 220 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 220.1 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 220.2 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 220.3 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 220.38 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 220.5 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 221.52 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 221.62 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 221.72 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 221.82 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 221.92 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 222 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio1 : Bola1-1(Clone) : 222.12 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 223.14 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 223.24 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 223.34 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 223.44 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 223.54 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Edificio2 : Bola1-1(Clone) : 223.62 tag: Edificio
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.559257 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 358.
+Total: 0.321215 ms (FindLiveObjects: 0.024748 ms CreateObjectMapping: 0.013777 ms MarkObjects: 0.231408 ms  DeleteObjects: 0.050261 ms)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 3628 -> priority: 1 
-  Thread -> id: 19fc -> priority: 1 
-  Thread -> id: 6fc -> priority: 1 
-  Thread -> id: 271c -> priority: 1 
+  Thread -> id: 1a78 -> priority: 1 
+  Thread -> id: 22c0 -> priority: 1 
+  Thread -> id: 1d40 -> priority: 1 
+  Thread -> id: ae4 -> priority: 1 
