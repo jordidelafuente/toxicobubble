@@ -11,8 +11,10 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public GameObject lineaDisparo;
     public GameObject player;
     public Transform bola;
+    public Transform bolaExtra;
     public Transform burbuja;
     public Text textNumeroDeBolas;
+    public Text textScore;
     public int velocidadBolas;
     enum EstadoPlayer { READY, SHOOTING };
 
@@ -25,7 +27,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public GameObject panelGameOver;
 
     LineRenderer lineRenderer;
-    GameObject[] burbujas, bolas;
+    GameObject[] burbujas, bolas, bolasExtra;
     PointerEventData ultimaPosicionMosuse;
     
     float timeInicioDisparo;
@@ -52,7 +54,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     {
         if (estadoPlayer == EstadoPlayer.SHOOTING)
         {
-            if (numBolasDisparadas < numBolasADisparar && (Time.time - timeInicioDisparo > 0.1))
+            if (numBolasDisparadas < numBolasADisparar && (Time.time - timeInicioDisparo > 0.1*numBolasDisparadas))
             {
                 dispararBola();
             } else
@@ -60,8 +62,16 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 if (!hayMasBolas())
                 {
                     generarBurbujas();
+                    if ((GetScore()+1) % 5 == 0) //Every 10 turns we create a new extra ball
+                    { 
+                        generarBolaExtra();
+                    }
                     moverBurbujas();
+                    moverBolasExtra();
+                    updateScore();
                     estadoPlayer = EstadoPlayer.READY;
+                    numBolasADisparar = GetNumBolasFromPlayer();
+                    textNumeroDeBolas.gameObject.SetActive(false);
                     numBolasDisparadas = 0;
                 }
             }
@@ -103,7 +113,6 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             lineaDisparo.SetActive(false);
             estadoPlayer = EstadoPlayer.SHOOTING;
             dispararBola();
-            textNumeroDeBolas.gameObject.SetActive(false);
         }
     }
 
@@ -117,11 +126,30 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         return false;
     }
 
-    public void generarBurbujas() //TODO: arreglar dificultad
+    public void generarBolaExtra()
     {
+        //Instantiate a bubble at a random "x" position
+        int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
+        Vector2 posicion = new Vector2(xRandom, 500);
+        Transform bolaExtraNew = Instantiate(bolaExtra, posicion, Quaternion.identity);
+    }
+
+    public void generarBurbujas() //TODO: balancear dificultad (recurrente)
+    {
+        //Instantiate a bubble at a random "x" position
         int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
         Vector2 posicion = new Vector2(xRandom, 500);
         Transform burbujaNueva = Instantiate(burbuja, posicion, Quaternion.identity);
+
+        int pesoDeseado = numBolasADisparar + 1; //TODO: función que también tenga en cuenta la puntuación 
+        
+        foreach (Transform b in burbujaNueva.gameObject.gameObject.transform)
+        {
+            if (b.gameObject.gameObject.name == "Peso")
+            {
+                b.gameObject.gameObject.GetComponent<TextMesh>().text = pesoDeseado.ToString();
+            }
+        }
     }
 
     public void moverBurbujas()
@@ -147,6 +175,28 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         }
     }
 
+    public void moverBolasExtra()
+    {
+        bolasExtra = GameObject.FindGameObjectsWithTag("BolaExtra");
+        foreach (GameObject bolaAux in bolasExtra)
+        {
+            if (bolaAux.transform.position.x < 1500) //TODO: burbuja fuera del canvas no se cae (con función bien hecha)
+            {
+                //Moving bubbles one "step" to the floor
+                bolaAux.transform.position = new Vector3(bolaAux.transform.position.x,
+                                                         bolaAux.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
+                                                         bolaAux.transform.position.z);
+
+                bool tocaSuelo = bolaAux.transform.position.y <= -228; //Todo: relacionar colliders de burbujas y suelo
+                if (tocaSuelo)
+                {
+                    bolaAux.gameObject.SetActive(false);
+                    Destroy(bolaAux.gameObject);
+                }
+            }
+        }
+    }
+
     //Getting the number of balls we will shoot 
     private int GetNumBolasFromPlayer()
     {
@@ -158,19 +208,22 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         return numBolas;
     }
 
+    int GetScore()
+    {
+        return int.Parse(textScore.text.ToString().Replace("Score: ", ""));
+    }
+
+    void updateScore()
+    {
+        int newScore = int.Parse(textScore.text.ToString().Replace("Score: ","")) + 1;
+        textScore.text = "Score: " + newScore.ToString();
+    }
+
     public void dispararBola()
     {        
         Transform bolaAux = Instantiate(bola, player.transform.position, Quaternion.identity);
         Vector3 vAux = lineRenderer.GetPosition(1) - player.transform.position;
         bolaAux.GetComponent<Rigidbody2D>().velocity = vAux.normalized * velocidadBolas; //TODO: recoger velocidad por parametro
-                                                                                         /*Transform ultimaBola = bolaAux;                                                                     //StartCoroutine("Wait");
-                                                                                         //float timeBolaAnt = Time.time;
-
-                                                                                             Transform bolaAux2 = Instantiate(bola, player.transform.position, Quaternion.identity);
-                                                                                             bolaAux2.GetComponent<Rigidbody2D>().velocity = vAux.normalized * velocidadBolas; //TODO: recoger velocidad por parametro
-                                                                                             bolaAux = bolaAux2;
-                                                                                         }    */
-
         numBolasDisparadas++;
     }
 

@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MainMenu\ManejadorPanels.cs" />
+    <Compile Include="Assets\Scripts\NivelPrincipal\BolaExtra.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\ManejadorBolas.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\ManejadorDisparo.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\ManejadorPanel.cs" />
