@@ -39,4 +39,17 @@ public class ManejadorPanel : MonoBehaviour {
         SceneManager.LoadScene("NivelPrincipal");
         Time.timeScale = 1;
     }
+
+    public void NextTurn()
+    {
+        GameObject[] bolas = GameObject.FindGameObjectsWithTag("Bola");
+        foreach (GameObject bolaAux in bolas)
+        {
+            if (bolaAux.transform.position.x < 1500) //TODO: bola fuera del canvas no se cae (con función bien hecha)
+            {
+                bolaAux.gameObject.SetActive(false);
+                Destroy(bolaAux.gameObject);
+            }
+        }
+    }
 }

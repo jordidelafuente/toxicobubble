@@ -16,7 +16,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public Text textNumeroDeBolas;
     public Text textScore;
     public int velocidadBolas;
-    enum EstadoPlayer { READY, SHOOTING };
+    enum EstadoPlayer { READY, SHOOTING, MOVING };
 
     static int velocidadBolasGlobal;
 
@@ -28,7 +28,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     LineRenderer lineRenderer;
     GameObject[] burbujas, bolas, bolasExtra;
-    PointerEventData ultimaPosicionMosuse;
+    //PointerEventData ultimaPosicionMosuse;
     
     float timeInicioDisparo;
     int numBolasADisparar, numBolasDisparadas;
@@ -41,8 +41,8 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         numBolasADisparar = GetNumBolasFromPlayer();
         lineaDisparo.SetActive(false);
         textNumeroDeBolas.gameObject.SetActive(false);
+        ManejadorBolas.SetXPrimeraBola(-9999);
         
-        //heDisparado = false; //TODO:borrar
         estadoPlayer = EstadoPlayer.READY;
 
         lineRenderer = lineaDisparo.GetComponent<LineRenderer>();
@@ -73,6 +73,11 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                     numBolasADisparar = GetNumBolasFromPlayer();
                     textNumeroDeBolas.gameObject.SetActive(false);
                     numBolasDisparadas = 0;
+                    if (ManejadorBolas.GetXPrimeraBola() != -9999f) {
+                        player.transform.position = new Vector2(ManejadorBolas.GetXPrimeraBola(), player.transform.position.y);
+                        lineRenderer.SetPosition(0, new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - 1));                      
+                        ManejadorBolas.SetXPrimeraBola(-9999f);
+                    }
                 }
             }
         }       
@@ -89,7 +94,8 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         {
             //...
             textNumeroDeBolas.gameObject.SetActive(true);
-            ultimaPosicionMosuse = eventData;
+            textNumeroDeBolas.gameObject.transform.position = new Vector2(player.transform.position.x-100f/*TODO:ajustar a pantallas*/, textNumeroDeBolas.gameObject.transform.position.y);
+            //ultimaPosicionMosuse = eventData;
 
             //Plotting the line before shooting
             if (/*Camera.main.ScreenToWorldPoint(*/eventData.position/*)*/.y > 400)

@@ -7,6 +7,8 @@ public class ManejadorBolas : MonoBehaviour
 {
     int velocidadBolas;
 
+    static float xPrimeraBola = -9999f;
+
     // Use this for initialization
     void Start () {
         velocidadBolas = ManejadorDisparo.getVelocidadBolas();
@@ -86,8 +88,23 @@ public class ManejadorBolas : MonoBehaviour
         else if (col.gameObject.tag == "Suelo")
         {
             Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time + " tag: " + col.gameObject.tag);
+            if (xPrimeraBola == -9999f)
+            {
+                xPrimeraBola = this.transform.position.x;
+            }
+            
             //TODO: si se usa powerup de suelo se le resta 1
             Destroy(this.gameObject);
         }
+    }
+
+    public static float GetXPrimeraBola()
+    {
+        return xPrimeraBola;
+    }
+
+    public static void SetXPrimeraBola(float x)
+    {
+        xPrimeraBola = x;
     }
 }
