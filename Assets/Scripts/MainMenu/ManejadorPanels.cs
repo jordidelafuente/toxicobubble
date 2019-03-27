@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ManejadorPanels : MonoBehaviour {
 
@@ -53,4 +54,5 @@ public class ManejadorPanels : MonoBehaviour {
         SceneManager.LoadScene("NivelPrincipal");
         Time.timeScale = 1;
     }
+
 }

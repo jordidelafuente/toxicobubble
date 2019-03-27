@@ -61,8 +61,9 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             {
                 if (!hayMasBolas())
                 {
-                    generarBurbujas();
-                    if ((GetScore()+1) % 5 == 0) //Every 10 turns we create a new extra ball
+                    generarBurbujas(GetScore());
+
+                    if ((GetScore()+1) % 5 == 0 ) //Every 10 turns we create a new extra ball
                     { 
                         generarBolaExtra();
                     }
@@ -140,7 +141,22 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         Transform bolaExtraNew = Instantiate(bolaExtra, posicion, Quaternion.identity);
     }
 
-    public void generarBurbujas() //TODO: balancear dificultad (recurrente)
+    void generarBurbujas(int score)
+    {
+        int numBurbujas = 2;
+
+        if (score % 5 == 0)
+        {
+            numBurbujas++;
+        }
+
+        for(int i=0; i< numBurbujas; i++)
+        {
+            generarBurbuja();
+        }
+    }
+
+    public void generarBurbuja() //TODO: balancear dificultad (recurrente)
     {
         //Instantiate a bubble at a random "x" position
         int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
