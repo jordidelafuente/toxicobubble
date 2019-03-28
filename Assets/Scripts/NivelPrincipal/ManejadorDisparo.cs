@@ -12,6 +12,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public GameObject player;
     public Transform bola;
     public Transform bolaExtra;
+    public Transform illumiCoinExtra;
     public Transform burbuja;
     public Text textNumeroDeBolas;
     public Text textScore;
@@ -27,7 +28,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public GameObject panelGameOver;
 
     LineRenderer lineRenderer;
-    GameObject[] burbujas, bolas, bolasExtra;
+    GameObject[] burbujas, bolas, bolasExtra, illumiCoinsExtra;
     //PointerEventData ultimaPosicionMosuse;
     
     float timeInicioDisparo;
@@ -62,6 +63,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 if (!hayMasBolas())
                 {
                     generarBurbujas(GetScore());
+                    generarIllumiCoin();
 
                     if ((GetScore()+1) % 5 == 0 ) //Every 10 turns we create a new extra ball
                     { 
@@ -69,6 +71,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                     }
                     moverBurbujas();
                     moverBolasExtra();
+                    moverIllumiCoins();
                     updateScore();
                     estadoPlayer = EstadoPlayer.READY;
                     numBolasADisparar = GetNumBolasFromPlayer();
@@ -133,6 +136,18 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         return false;
     }
 
+    public void generarIllumiCoin()
+    {
+        if (GetScore() % 11 == 0)
+        {
+            //Instantiate a bubble at a random "x,y" position
+            int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
+            int yRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
+            Vector2 posicion = new Vector2(xRandom, yRandom);
+            Transform coinExtraNew = Instantiate(illumiCoinExtra, posicion, Quaternion.identity);
+        }        
+    }
+
     public void generarBolaExtra()
     {
         //Instantiate a bubble at a random "x" position
@@ -143,7 +158,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     void generarBurbujas(int score)
     {
-        int numBurbujas = 2;
+        int numBurbujas = 1;
 
         if (score % 5 == 0)
         {
@@ -160,7 +175,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     {
         //Instantiate a bubble at a random "x" position
         int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
-        Vector2 posicion = new Vector2(xRandom, 500);
+        Vector3 posicion = new Vector3(xRandom, 500, 1);
         Transform burbujaNueva = Instantiate(burbuja, posicion, Quaternion.identity);
 
         int pesoDeseado = numBolasADisparar + 1; //TODO: función que también tenga en cuenta la puntuación 
@@ -214,6 +229,27 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 {
                     bolaAux.gameObject.SetActive(false);
                     Destroy(bolaAux.gameObject);
+                }
+            }
+        }
+    }
+    public void moverIllumiCoins()
+    {
+        illumiCoinsExtra = GameObject.FindGameObjectsWithTag("IllumiCoinExtra");
+        foreach (GameObject coin in illumiCoinsExtra)
+        {
+            if (coin.transform.position.x < 1500) //TODO: burbuja fuera del canvas no se cae (con función bien hecha)
+            {
+                //Moving bubbles one "step" to the floor
+                coin.transform.position = new Vector3(coin.transform.position.x,
+                                                         coin.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
+                                                         coin.transform.position.z);
+
+                bool tocaSuelo = coin.transform.position.y <= -228; //Todo: relacionar colliders de burbujas y suelo
+                if (tocaSuelo)
+                {
+                    coin.gameObject.SetActive(false);
+                    Destroy(coin.gameObject);
                 }
             }
         }
