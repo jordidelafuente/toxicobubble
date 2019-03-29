@@ -25,8 +25,6 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     int tipoBola; //TODO: different types of balls by booster
 
-    public GameObject panelGameOver;
-
     LineRenderer lineRenderer;
     GameObject[] burbujas, bolas, bolasExtra, illumiCoinsExtra;
     //PointerEventData ultimaPosicionMosuse;
@@ -63,12 +61,16 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 if (!hayMasBolas())
                 {
                     generarBurbujas(GetScore());
-                    generarIllumiCoin();
+                    if ((GetScore()) % 7 == 0)
+                    {
+                        generarIllumiCoin();
+                    }
 
-                    if ((GetScore()+1) % 5 == 0 ) //Every 10 turns we create a new extra ball
+                    if ((GetScore()) % 5 == 0 ) //Every x turns we create a new extra ball
                     { 
                         generarBolaExtra();
                     }
+
                     moverBurbujas();
                     moverBolasExtra();
                     moverIllumiCoins();
@@ -78,7 +80,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                     textNumeroDeBolas.gameObject.SetActive(false);
                     numBolasDisparadas = 0;
                     if (ManejadorBolas.GetXPrimeraBola() != -9999f) {
-                        player.transform.position = new Vector2(ManejadorBolas.GetXPrimeraBola(), player.transform.position.y);
+                        player.transform.position = new Vector3(ManejadorBolas.GetXPrimeraBola(), player.transform.position.y, player.transform.position.z);
                         lineRenderer.SetPosition(0, new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - 1));                      
                         ManejadorBolas.SetXPrimeraBola(-9999f);
                     }
@@ -89,7 +91,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        lineRenderer.SetPosition(1, eventData.position);
+        lineRenderer.SetPosition(1, Camera.main.ScreenToWorldPoint(eventData.position));
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -99,10 +101,12 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             //...
             textNumeroDeBolas.gameObject.SetActive(true);
             textNumeroDeBolas.gameObject.transform.position = new Vector2(player.transform.position.x-100f/*TODO:ajustar a pantallas*/, textNumeroDeBolas.gameObject.transform.position.y);
-            //ultimaPosicionMosuse = eventData;
+
+            //float angle = Vector3.Angle(lineRenderer.GetPosition(1), lineRenderer.GetPosition(0));
+            //Debug.Log("Angulo: " + angle);
 
             //Plotting the line before shooting
-            if (/*Camera.main.ScreenToWorldPoint(*/eventData.position/*)*/.y > 400)
+            if (Camera.main.ScreenToWorldPoint(eventData.position).y > -50) 
             { //TODO: adaptar a diferentes plataformas y resoluciones
                 lineRenderer.SetPosition(1, Camera.main.ScreenToWorldPoint(eventData.position));
                 lineaDisparo.SetActive(true);
@@ -138,21 +142,18 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     public void generarIllumiCoin()
     {
-        if (GetScore() % 11 == 0)
-        {
-            //Instantiate a bubble at a random "x,y" position
-            int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
-            int yRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
-            Vector2 posicion = new Vector2(xRandom, yRandom);
-            Transform coinExtraNew = Instantiate(illumiCoinExtra, posicion, Quaternion.identity);
-        }        
+        //Instantiate a bubble at a random "x,y" position
+        int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
+        int yRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
+        Vector3 posicion = new Vector3(xRandom, yRandom, 90);
+        Transform coinExtraNew = Instantiate(illumiCoinExtra, posicion, Quaternion.identity); 
     }
 
     public void generarBolaExtra()
     {
         //Instantiate a bubble at a random "x" position
         int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
-        Vector2 posicion = new Vector2(xRandom, 500);
+        Vector3 posicion = new Vector3(xRandom, 500, 90);
         Transform bolaExtraNew = Instantiate(bolaExtra, posicion, Quaternion.identity);
     }
 
@@ -175,7 +176,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     {
         //Instantiate a bubble at a random "x" position
         int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
-        Vector3 posicion = new Vector3(xRandom, 500, 1);
+        Vector3 posicion = new Vector3(xRandom, 500, 90);
         Transform burbujaNueva = Instantiate(burbuja, posicion, Quaternion.identity);
 
         int pesoDeseado = numBolasADisparar + 1; //TODO: función que también tenga en cuenta la puntuación 
@@ -185,6 +186,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             if (b.gameObject.gameObject.name == "Peso")
             {
                 b.gameObject.gameObject.GetComponent<TextMesh>().text = pesoDeseado.ToString();
+                b.gameObject.gameObject.transform.position = b.gameObject.transform.position;//?
             }
         }
     }
@@ -197,17 +199,10 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             if (burbuja.transform.position.x < 1500) //TODO: burbuja fuera del canvas no se cae (con función bien hecha)
             {
                 //Moving bubbles one "step" to the floor
-                burbuja.transform.position = new Vector3(burbuja.transform.position.x,
+                burbuja.GetComponent<Rigidbody2D>().MovePosition(
+                                             new Vector3(burbuja.transform.position.x,
                                                          burbuja.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
-                                                         burbuja.transform.position.z);
-
-                bool tocaSuelo = burbuja.transform.position.y <= -228; //Todo: relacionar colliders de burbujas y suelo
-                if (tocaSuelo)
-                {
-                    //Debug.Log("Tocando Suelo!!!");
-                    panelGameOver.SetActive(true);
-                    Time.timeScale = 0;
-                }
+                                                         burbuja.transform.position.z));
             }
         }
     }
@@ -220,16 +215,12 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             if (bolaAux.transform.position.x < 1500) //TODO: burbuja fuera del canvas no se cae (con función bien hecha)
             {
                 //Moving bubbles one "step" to the floor
-                bolaAux.transform.position = new Vector3(bolaAux.transform.position.x,
+                bolaAux.GetComponent<Rigidbody2D>().MovePosition(
+                                             new Vector3(bolaAux.transform.position.x,
                                                          bolaAux.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
-                                                         bolaAux.transform.position.z);
+                                                         bolaAux.transform.position.z));
 
-                bool tocaSuelo = bolaAux.transform.position.y <= -228; //Todo: relacionar colliders de burbujas y suelo
-                if (tocaSuelo)
-                {
-                    bolaAux.gameObject.SetActive(false);
-                    Destroy(bolaAux.gameObject);
-                }
+          
             }
         }
     }
@@ -241,16 +232,9 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             if (coin.transform.position.x < 1500) //TODO: burbuja fuera del canvas no se cae (con función bien hecha)
             {
                 //Moving bubbles one "step" to the floor
-                coin.transform.position = new Vector3(coin.transform.position.x,
+                coin.GetComponent<Rigidbody2D>().MovePosition(new Vector3(coin.transform.position.x,
                                                          coin.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
-                                                         coin.transform.position.z);
-
-                bool tocaSuelo = coin.transform.position.y <= -228; //Todo: relacionar colliders de burbujas y suelo
-                if (tocaSuelo)
-                {
-                    coin.gameObject.SetActive(false);
-                    Destroy(coin.gameObject);
-                }
+                                                         coin.transform.position.z));
             }
         }
     }

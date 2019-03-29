@@ -25,22 +25,24 @@ public class ManejadorBolas : MonoBehaviour
 
     bool OutOfGameWindow()
     {
-        int limiteArriba = 600;   //TODO: ajustar al tamaño de cada pantalla
-        int limiteAbajo = -2000;   //
-        int limiteIzquierda = -2000; //
-        int limiteDerecha = 2000;  //
+        int limiteArriba = 82;   //TODO: ajustar al tamaño de cada pantalla
+     
+       
+        int limiteDerecha = 1500;  //
 
-        if (this.transform.position.y > limiteArriba || this.transform.position.y < limiteAbajo)
+        /*if (Camera.main.ScreenToWorldPoint(this.transform.position).y > limiteArriba)
         {
+            //Debug.Log("Bola se va en eje y: " + Camera.main.ScreenToWorldPoint(this.transform.position));
             return true;
+        }*/
+
+        if (this.transform.position.x > limiteDerecha)
+        {
+            //Debug.Log("Bola se va en eje x: " + Camera.main.ScreenToWorldPoint(this.transform.position));
+             return false;
         }
 
-        if (this.transform.position.x > limiteDerecha || this.transform.position.x < limiteIzquierda)
-        {
-            return true;
-        }
-
-        return false;
+        return !GetComponent<Renderer>().isVisible;
     }
 
     /*void OnCollisionEnter2D(Collision2D coll)
