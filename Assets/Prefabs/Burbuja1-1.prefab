@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 50552771914671970}
   m_Layer: 0
   m_Name: Burbuja1-1
-  m_TagString: Burbuja
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

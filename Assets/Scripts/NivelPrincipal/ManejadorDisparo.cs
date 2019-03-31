@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
                          IPointerExitHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
@@ -27,8 +28,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     LineRenderer lineRenderer;
     GameObject[] burbujas, bolas, bolasExtra, illumiCoinsExtra;
-    //PointerEventData ultimaPosicionMosuse;
-    
+        
     float timeInicioDisparo;
     int numBolasADisparar, numBolasDisparadas;
     EstadoPlayer estadoPlayer;
@@ -133,7 +133,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     bool hayMasBolas()
     {
         bolas = GameObject.FindGameObjectsWithTag("Bola");
-        if (bolas != null && bolas.Length > 1)
+        if (bolas != null && bolas.Length > 0)
         {
             return true;
         }
@@ -143,18 +143,27 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public void generarIllumiCoin()
     {
         //Instantiate a bubble at a random "x,y" position
-        int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
-        int yRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
-        Vector3 posicion = new Vector3(xRandom, yRandom, 90);
-        Transform coinExtraNew = Instantiate(illumiCoinExtra, posicion, Quaternion.identity); 
+        //int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
+        int xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
+        //int yRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
+        Vector3 posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
+        posicion = Camera.main.ScreenToWorldPoint(posicion);
+
+        Transform coinExtraNew = Instantiate(illumiCoinExtra, posicion, Quaternion.identity);
+        coinExtraNew.gameObject.tag = "IllumiCoinExtra";
     }
 
     public void generarBolaExtra()
     {
         //Instantiate a bubble at a random "x" position
-        int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
-        Vector3 posicion = new Vector3(xRandom, 500, 90);
+        int xRandom = (int)Random.Range(0+ Camera.main.pixelWidth / 10, Camera.main.pixelWidth-(Camera.main.pixelWidth/10)); 
+
+        Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight-1, 90);
+
+        Vector3 posicion = Camera.main.ScreenToWorldPoint(randomPos);
+
         Transform bolaExtraNew = Instantiate(bolaExtra, posicion, Quaternion.identity);
+        bolaExtraNew.gameObject.tag = "BolaExtra";
     }
 
     void generarBurbujas(int score)
@@ -175,9 +184,12 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public void generarBurbuja() //TODO: balancear dificultad (recurrente)
     {
         //Instantiate a bubble at a random "x" position
-        int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
-        Vector3 posicion = new Vector3(xRandom, 500, 90);
+        int xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
+        Vector3 posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
+                posicion = Camera.main.ScreenToWorldPoint(posicion);
+
         Transform burbujaNueva = Instantiate(burbuja, posicion, Quaternion.identity);
+        burbujaNueva.gameObject.tag = "Burbuja";
 
         int pesoDeseado = numBolasADisparar + 1; //TODO: función que también tenga en cuenta la puntuación 
         
@@ -196,14 +208,11 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         burbujas = GameObject.FindGameObjectsWithTag("Burbuja");
         foreach (GameObject burbuja in burbujas)
         {
-            if (burbuja.transform.position.x < 1500) //TODO: burbuja fuera del canvas no se cae (con función bien hecha)
-            {
-                //Moving bubbles one "step" to the floor
-                burbuja.GetComponent<Rigidbody2D>().MovePosition(
-                                             new Vector3(burbuja.transform.position.x,
-                                                         burbuja.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
-                                                         burbuja.transform.position.z));
-            }
+            //Moving bubbles one "step" to the floor
+            burbuja.GetComponent<Rigidbody2D>().MovePosition(
+                                            new Vector3(burbuja.transform.position.x,
+                                                        burbuja.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
+                                                        burbuja.transform.position.z));
         }
     }
 
@@ -212,16 +221,12 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         bolasExtra = GameObject.FindGameObjectsWithTag("BolaExtra");
         foreach (GameObject bolaAux in bolasExtra)
         {
-            if (bolaAux.transform.position.x < 1500) //TODO: burbuja fuera del canvas no se cae (con función bien hecha)
-            {
-                //Moving bubbles one "step" to the floor
-                bolaAux.GetComponent<Rigidbody2D>().MovePosition(
-                                             new Vector3(bolaAux.transform.position.x,
-                                                         bolaAux.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
-                                                         bolaAux.transform.position.z));
+            //Moving bubbles one "step" to the floor
+            bolaAux.GetComponent<Rigidbody2D>().MovePosition(
+                                            new Vector3(bolaAux.transform.position.x,
+                                                        bolaAux.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
+                                                        bolaAux.transform.position.z));
 
-          
-            }
         }
     }
     public void moverIllumiCoins()
@@ -229,13 +234,10 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         illumiCoinsExtra = GameObject.FindGameObjectsWithTag("IllumiCoinExtra");
         foreach (GameObject coin in illumiCoinsExtra)
         {
-            if (coin.transform.position.x < 1500) //TODO: burbuja fuera del canvas no se cae (con función bien hecha)
-            {
-                //Moving bubbles one "step" to the floor
-                coin.GetComponent<Rigidbody2D>().MovePosition(new Vector3(coin.transform.position.x,
-                                                         coin.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
-                                                         coin.transform.position.z));
-            }
+            //Moving bubbles one "step" to the floor
+            coin.GetComponent<Rigidbody2D>().MovePosition(new Vector3(coin.transform.position.x,
+                                                        coin.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
+                                                        coin.transform.position.z));
         }
     }
 
@@ -257,15 +259,16 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     void updateScore()
     {
-        int newScore = int.Parse(textScore.text.ToString().Replace("Score: ","")) + 1;
-        textScore.text = "Score: " + newScore.ToString();
+        
+        textScore.text = "Score: " + (GetScore()+1).ToString();
     }
 
     public void dispararBola()
     {        
         Transform bolaAux = Instantiate(bola, player.transform.position, Quaternion.identity);
         Vector3 vAux = lineRenderer.GetPosition(1) - player.transform.position;
-        bolaAux.GetComponent<Rigidbody2D>().velocity = vAux.normalized * velocidadBolas; //TODO: recoger velocidad por parametro
+        bolaAux.GetComponent<Rigidbody2D>().velocity = vAux.normalized * velocidadBolas; 
+        bolaAux.gameObject.tag = "Bola";
         numBolasDisparadas++;
     }
 

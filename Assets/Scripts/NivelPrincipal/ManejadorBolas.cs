@@ -16,8 +16,9 @@ public class ManejadorBolas : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-        if (OutOfGameWindow()) 
+        if (gameObject.tag == "Bola" && OutOfGameWindow()) 
         {
+            this.gameObject.SetActive(false);
             Destroy(this.gameObject); 
         }
 		
@@ -25,31 +26,9 @@ public class ManejadorBolas : MonoBehaviour
 
     bool OutOfGameWindow()
     {
-        int limiteArriba = 82;   //TODO: ajustar al tamaño de cada pantalla
-     
-       
-        int limiteDerecha = 1500;  //
-
-        /*if (Camera.main.ScreenToWorldPoint(this.transform.position).y > limiteArriba)
-        {
-            //Debug.Log("Bola se va en eje y: " + Camera.main.ScreenToWorldPoint(this.transform.position));
-            return true;
-        }*/
-
-        if (this.transform.position.x > limiteDerecha)
-        {
-            //Debug.Log("Bola se va en eje x: " + Camera.main.ScreenToWorldPoint(this.transform.position));
-             return false;
-        }
-
         return !GetComponent<Renderer>().isVisible;
     }
 
-    /*void OnCollisionEnter2D(Collision2D coll)
-    {
-        Vector2 reflejado = Vector2.Reflect(gameObject.GetComponent<Rigidbody2D>().velocity, coll.contacts[0].normal);
-        gameObject.GetComponent<Rigidbody2D>().velocity = reflejado;
-    }*/
 
     // when the ball collides with something
     void OnTriggerEnter2D(Collider2D col)
