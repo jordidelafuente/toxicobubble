@@ -12,6 +12,7 @@ TagManager:
   - Bola
   - BolaExtra
   - IllumiCoinExtra
+  - IconBoost
   layers:
   - Default
   - TransparentFX

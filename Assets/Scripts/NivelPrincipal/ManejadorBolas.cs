@@ -6,13 +6,23 @@ using UnityEngine.UI;
 public class ManejadorBolas : MonoBehaviour
 {
     int velocidadBolas;
+    int pesoDanoBola;
+    int numRebotesPermitidos;
 
     static float xPrimeraBola = -9999f;
 
     // Use this for initialization
     void Start () {
         velocidadBolas = ManejadorDisparo.getVelocidadBolas();
-	}
+
+        if (ManejadorDisparo.getBoostersActivados()[2] == true)
+        {
+            numRebotesPermitidos = 1;
+        } else
+        {
+            numRebotesPermitidos = 0;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -35,7 +45,15 @@ public class ManejadorBolas : MonoBehaviour
     {
         if (col.gameObject.tag == "Burbuja")
         {
-            Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time + " tag: " + col.gameObject.tag);
+            if (ManejadorDisparo.getBoostersActivados()[1] == true)
+            {
+                pesoDanoBola = 2;
+            }
+            else
+            {
+                pesoDanoBola = 1;
+            }
+            //Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time + " tag: " + col.gameObject.tag);
 
             //Calculate reflection velocity
             Vector2 normal = col.gameObject.transform.position - gameObject.transform.position;
@@ -46,7 +64,7 @@ public class ManejadorBolas : MonoBehaviour
             {
                 if (b.gameObject.gameObject.name == "Peso")
                 {
-                    int peso = int.Parse(b.gameObject.gameObject.GetComponent<TextMesh>().text) - 1;
+                    int peso = int.Parse(b.gameObject.gameObject.GetComponent<TextMesh>().text) - pesoDanoBola;
                     if (peso > 0)
                     {
                         b.gameObject.gameObject.GetComponent<TextMesh>().text = peso.ToString();
@@ -61,21 +79,31 @@ public class ManejadorBolas : MonoBehaviour
         }
         else if (col.gameObject.tag == "Edificio")
         {
-            Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time + " tag: " + col.gameObject.tag);
+            //Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time + " tag: " + col.gameObject.tag);
             Vector2 normal = new Vector2(-1, 0); //..
             Vector2 reflejado = Vector2.Reflect(gameObject.GetComponent<Rigidbody2D>().velocity, normal);
             gameObject.GetComponent<Rigidbody2D>().velocity = reflejado.normalized * velocidadBolas; //TODO: recoger velocidad por parametro
         }
         else if (col.gameObject.tag == "Suelo")
         {
-            Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time + " tag: " + col.gameObject.tag);
-            if (xPrimeraBola == -9999f)
+            if (numRebotesPermitidos > 0)
             {
-                xPrimeraBola = this.transform.position.x;
+                numRebotesPermitidos--;
+                Vector2 normal = new Vector2(0, 1); //..
+                Vector2 reflejado = Vector2.Reflect(gameObject.GetComponent<Rigidbody2D>().velocity, normal);
+                gameObject.GetComponent<Rigidbody2D>().velocity = reflejado.normalized * velocidadBolas;
             }
-            
-            //TODO: si se usa powerup de suelo se le resta 1
-            Destroy(this.gameObject);
+            else
+            {
+                //Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time + " tag: " + col.gameObject.tag);
+                if (xPrimeraBola == -9999f)
+                {
+                    xPrimeraBola = this.transform.position.x;
+                }
+
+                //TODO: si se usa powerup de suelo se le resta 1
+                Destroy(this.gameObject);
+            }
         }
     }
 

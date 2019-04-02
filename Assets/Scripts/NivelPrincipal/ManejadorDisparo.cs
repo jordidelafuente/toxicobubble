@@ -18,20 +18,24 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public Text textNumeroDeBolas;
     public Text textScore;
     public int velocidadBolas;
-    enum EstadoPlayer { READY, SHOOTING, MOVING };
+    public enum EstadoPlayer { READY, SHOOTING, MOVING };
 
     static int velocidadBolasGlobal;
 
-    
+    public Text numBoostersBolaGrande;
+    public Text numBoostersBolaFuezaX2;
+    public Text numBoostersRebote;
 
-    int tipoBola; //TODO: different types of balls by booster
+    static bool[] boostersActivados;
 
     LineRenderer lineRenderer;
     GameObject[] burbujas, bolas, bolasExtra, illumiCoinsExtra;
         
     float timeInicioDisparo;
     int numBolasADisparar, numBolasDisparadas;
-    EstadoPlayer estadoPlayer;
+    public static EstadoPlayer estadoPlayer;
+    bool canShoot;
+    float xInicialPlayer;
 
     // Use this for initialization
     void Start()
@@ -43,9 +47,11 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         ManejadorBolas.SetXPrimeraBola(-9999);
         
         estadoPlayer = EstadoPlayer.READY;
+        boostersActivados = new bool[] {false,false,false,false };
 
         lineRenderer = lineaDisparo.GetComponent<LineRenderer>();
         lineRenderer.SetPosition(0, new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - 1));
+        xInicialPlayer = player.transform.position.x;
     }
 
     // Update is called once per frame
@@ -79,10 +85,14 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                     numBolasADisparar = GetNumBolasFromPlayer();
                     textNumeroDeBolas.gameObject.SetActive(false);
                     numBolasDisparadas = 0;
+                    boostersActivados = new bool[] { false, false, false, false };
+                    desactivarIconBoosts();
                     if (ManejadorBolas.GetXPrimeraBola() != -9999f) {
                         player.transform.position = new Vector3(ManejadorBolas.GetXPrimeraBola(), player.transform.position.y, player.transform.position.z);
+                        textNumeroDeBolas.gameObject.transform.position = new Vector2(player.transform.position.x - 100f/*TODO:ajustar a pantallas*/, textNumeroDeBolas.gameObject.transform.position.y);
                         lineRenderer.SetPosition(0, new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - 1));                      
                         ManejadorBolas.SetXPrimeraBola(-9999f);
+                        xInicialPlayer = player.transform.position.x;
                     }
                 }
             }
@@ -96,25 +106,37 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     public void OnDrag(PointerEventData eventData)
     {
+        //float xInicialPlayer = Camera.main.ScreenToWorldPoint(player.transform.position).x;
         if (estadoPlayer == EstadoPlayer.READY)
         {
             //...
             textNumeroDeBolas.gameObject.SetActive(true);
-            textNumeroDeBolas.gameObject.transform.position = new Vector2(player.transform.position.x-100f/*TODO:ajustar a pantallas*/, textNumeroDeBolas.gameObject.transform.position.y);
-
-            //float angle = Vector3.Angle(lineRenderer.GetPosition(1), lineRenderer.GetPosition(0));
-            //Debug.Log("Angulo: " + angle);
 
             //Plotting the line before shooting
-            if (Camera.main.ScreenToWorldPoint(eventData.position).y > -50) 
-            { //TODO: adaptar a diferentes plataformas y resoluciones
+            if (Camera.main.ScreenToWorldPoint(eventData.position).y > -50) //TODO: que sea angulo y no posicion
+            { 
                 lineRenderer.SetPosition(1, Camera.main.ScreenToWorldPoint(eventData.position));
                 lineaDisparo.SetActive(true);
+                canShoot = true;
             }
             else
             {
                 lineaDisparo.SetActive(false);
+                canShoot = false;
             }
+        } else if (estadoPlayer == EstadoPlayer.MOVING)
+        {
+            Debug.Log("moving!!!!");
+            canShoot = false;
+            if (Camera.main.ScreenToWorldPoint(eventData.position).x  >= xInicialPlayer-100f
+               && Camera.main.ScreenToWorldPoint(eventData.position).x <= xInicialPlayer + 100f)
+            {
+                player.transform.position = new Vector3(Camera.main.ScreenToWorldPoint(eventData.position).x,
+                                            player.transform.position.y,
+                                            player.transform.position.z);
+                lineRenderer.SetPosition(0, new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - 1));
+            }
+           // Debug.Log("x);
         }
     }
 
@@ -122,12 +144,72 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     {
         timeInicioDisparo = Time.time;
 
-        if (!hayMasBolas())
+        if (canShoot && !hayMasBolas())
         {
             lineaDisparo.SetActive(false);
             estadoPlayer = EstadoPlayer.SHOOTING;
             dispararBola();
         }
+    }
+
+    public void boostBolaMasGrande(GameObject iconBoost)
+    {
+        int numBoostersSizeBall = int.Parse(numBoostersBolaGrande.text);
+
+        if (boostersActivados[0] == true)
+        {
+            boostersActivados[0] = false;
+            numBoostersSizeBall++;
+            iconBoost.SetActive(false);
+            numBoostersBolaGrande.text = numBoostersSizeBall.ToString();
+        }
+        else if (numBoostersSizeBall>0)
+        {
+            boostersActivados[0] = true;
+            numBoostersSizeBall--;
+            iconBoost.SetActive(true);
+            numBoostersBolaGrande.text = numBoostersSizeBall.ToString();
+        }
+    }
+
+    public void boostBolaFuerzaX2(GameObject iconBoost)
+    {
+        int numBoostersFuerzaX2 = int.Parse(numBoostersBolaFuezaX2.text);
+        if (boostersActivados[1] == true)
+        {
+            boostersActivados[1] = false;
+            numBoostersFuerzaX2++;
+            iconBoost.SetActive(false);
+            numBoostersBolaFuezaX2.text = numBoostersFuerzaX2.ToString();
+        }
+        else if (numBoostersFuerzaX2 > 0)
+        {
+            boostersActivados[1] = true;
+            numBoostersFuerzaX2--;
+            iconBoost.SetActive(true);
+            numBoostersBolaFuezaX2.text = numBoostersFuerzaX2.ToString();
+        }
+
+    }
+
+    public void boostBolaRebote(GameObject iconBoost)
+    {
+        int numRebotesSuelo = int.Parse(numBoostersRebote.text);
+        if (boostersActivados[2] == true)
+        {
+            boostersActivados[2] = false;
+            numRebotesSuelo++;
+            iconBoost.SetActive(false);
+            numBoostersRebote.text = numRebotesSuelo.ToString();
+        }
+        else if (numRebotesSuelo > 0)
+        {
+            boostersActivados[2] = true;
+            numRebotesSuelo--;
+            iconBoost.SetActive(true);
+            numBoostersRebote.text = numRebotesSuelo.ToString();
+        }
+
     }
 
     bool hayMasBolas()
@@ -143,9 +225,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public void generarIllumiCoin()
     {
         //Instantiate a bubble at a random "x,y" position
-        //int xRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
         int xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
-        //int yRandom = (int)Random.Range(-700f, 725f); //TODO: ajustar a pantallas
         Vector3 posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
         posicion = Camera.main.ScreenToWorldPoint(posicion);
 
@@ -269,12 +349,39 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         Vector3 vAux = lineRenderer.GetPosition(1) - player.transform.position;
         bolaAux.GetComponent<Rigidbody2D>().velocity = vAux.normalized * velocidadBolas; 
         bolaAux.gameObject.tag = "Bola";
+        if (boostersActivados[0] == true)
+        {
+            bolaAux.gameObject.transform.localScale = bolaAux.gameObject.transform.localScale * 4;               
+        }
         numBolasDisparadas++;
+    }
+
+    void desactivarIconBoosts()
+    {
+        GameObject[] iconBoosts = GameObject.FindGameObjectsWithTag("IconBoost");
+        foreach (GameObject icon in iconBoosts)
+        {
+            icon.SetActive(false);
+        }
     }
 
     public static int getVelocidadBolas()
     {
         return velocidadBolasGlobal;
+    }
+
+    public static bool[] getBoostersActivados()
+    {
+        if (boostersActivados == null)
+        {
+            return new bool[] { false, false, false, false };
+        }
+        return boostersActivados;
+    }
+
+    public static void setEstadoPlayer(EstadoPlayer estado)
+    {
+        estadoPlayer = estado;
     }
 
     public void OnPointerClick(PointerEventData eventData)
