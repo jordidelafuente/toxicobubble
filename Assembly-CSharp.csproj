@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\NivelPrincipal\ManejadorDisparo.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\ManejadorPanel.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\Player.cs" />
+    <Compile Include="Assets\Scripts\NivelPrincipal\Shop.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\Suelo.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
