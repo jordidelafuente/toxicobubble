@@ -51,7 +51,7 @@ public class ManejadorPanels : MonoBehaviour {
 
     public void Play()
     {
-        SceneManager.LoadScene("NivelPrincipal");
+        SceneManager.LoadScene("NivelPrincipal-portrait");
         Time.timeScale = 1;
     }
 

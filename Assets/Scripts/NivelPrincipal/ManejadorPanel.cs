@@ -57,7 +57,7 @@ public class ManejadorPanel : MonoBehaviour
 
     public void Reiniciar()
     {
-        SceneManager.LoadScene("NivelPrincipal");
+        SceneManager.LoadScene("NivelPrincipal-portrait");
         Time.timeScale = 1;
     }
 
