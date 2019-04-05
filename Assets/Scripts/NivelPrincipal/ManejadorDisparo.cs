@@ -242,6 +242,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight-1, 90);
 
         Vector3 posicion = Camera.main.ScreenToWorldPoint(randomPos);
+        posicion.z = 90;
 
         Transform bolaExtraNew = Instantiate(bolaExtra, posicion, Quaternion.identity);
         bolaExtraNew.gameObject.tag = "BolaExtra";
@@ -268,7 +269,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         int xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
         Vector3 posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 1);
                 posicion = Camera.main.ScreenToWorldPoint(posicion);
-                posicion.z = 1;
+                posicion.z = 90;
 
         Transform burbujaNueva = Instantiate(burbuja, posicion, Quaternion.identity);
         burbujaNueva.gameObject.tag = "Burbuja";
