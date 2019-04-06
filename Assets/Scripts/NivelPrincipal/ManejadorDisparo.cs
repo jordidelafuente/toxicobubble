@@ -89,7 +89,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                     desactivarIconBoosts();
                     if (ManejadorBolas.GetXPrimeraBola() != -9999f) {
                         player.transform.position = new Vector3(ManejadorBolas.GetXPrimeraBola(), player.transform.position.y, player.transform.position.z);
-                        textNumeroDeBolas.gameObject.transform.position = new Vector2(player.transform.position.x - 50f/*TODO:ajustar a pantallas*/, textNumeroDeBolas.gameObject.transform.position.y);
+                        textNumeroDeBolas.gameObject.transform.position = new Vector2(player.transform.position.x - 100f/*TODO:ajustar a pantallas*/, textNumeroDeBolas.gameObject.transform.position.y);
                         lineRenderer.SetPosition(0, new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z - 1));                      
                         ManejadorBolas.SetXPrimeraBola(-9999f);
                         xInicialPlayer = player.transform.position.x;
@@ -106,8 +106,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     public void OnDrag(PointerEventData eventData)
     {
-        //float xInicialPlayer = Camera.main.ScreenToWorldPoint(player.transform.position).x;
-        if (estadoPlayer == EstadoPlayer.READY)
+        if (estadoPlayer == EstadoPlayer.READY && Time.timeScale > 0)
         {
             //...
             textNumeroDeBolas.gameObject.SetActive(true);
@@ -229,6 +228,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         int xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
         Vector3 posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
         posicion = Camera.main.ScreenToWorldPoint(posicion);
+        posicion.z = 90;
 
         Transform coinExtraNew = Instantiate(illumiCoinExtra, posicion, Quaternion.identity);
         coinExtraNew.gameObject.tag = "IllumiCoinExtra";
@@ -252,7 +252,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     {
         int numBurbujas = 2;
 
-        if (score % 5 == 0 || score % 11 == 0)
+        if (score % 5 == 0 || score % 11 == 0 || score % 17 == 0)
         {
             numBurbujas++;
         }
@@ -281,7 +281,6 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             if (b.gameObject.gameObject.name == "Peso")
             {
                 b.gameObject.gameObject.GetComponent<TextMesh>().text = pesoDeseado.ToString();
-                //b.gameObject.gameObject.transform.position = b.gameObject.transform.position;//?
             }
         }
     }
