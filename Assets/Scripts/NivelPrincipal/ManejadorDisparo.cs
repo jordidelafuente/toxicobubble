@@ -126,7 +126,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             }
         } else if (estadoPlayer == EstadoPlayer.MOVING)
         {
-            Debug.Log("moving!!!!");
+            //Debug.Log("moving!!!!");
             canShoot = false;
             if (Camera.main.ScreenToWorldPoint(eventData.position).x  >= xInicialPlayer-100f
                && Camera.main.ScreenToWorldPoint(eventData.position).x <= xInicialPlayer + 100f)
@@ -154,62 +154,69 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     public void boostBolaMasGrande(GameObject iconBoost)
     {
-        int numBoostersSizeBall = int.Parse(numBoostersBolaGrande.text);
+        if (estadoPlayer == EstadoPlayer.READY)
+        {
+            int numBoostersSizeBall = int.Parse(numBoostersBolaGrande.text);
 
-        if (boostersActivados[0] == true)
-        {
-            boostersActivados[0] = false;
-            numBoostersSizeBall++;
-            iconBoost.SetActive(false);
-            numBoostersBolaGrande.text = numBoostersSizeBall.ToString();
-        }
-        else if (numBoostersSizeBall>0)
-        {
-            boostersActivados[0] = true;
-            numBoostersSizeBall--;
-            iconBoost.SetActive(true);
-            numBoostersBolaGrande.text = numBoostersSizeBall.ToString();
+            if (boostersActivados[0] == true)
+            {
+                boostersActivados[0] = false;
+                numBoostersSizeBall++;
+                iconBoost.SetActive(false);
+                numBoostersBolaGrande.text = numBoostersSizeBall.ToString();
+            }
+            else if (numBoostersSizeBall > 0)
+            {
+                boostersActivados[0] = true;
+                numBoostersSizeBall--;
+                iconBoost.SetActive(true);
+                numBoostersBolaGrande.text = numBoostersSizeBall.ToString();
+            }
         }
     }
 
     public void boostBolaFuerzaX2(GameObject iconBoost)
     {
-        int numBoostersFuerzaX2 = int.Parse(numBoostersBolaFuezaX2.text);
-        if (boostersActivados[1] == true)
+        if (estadoPlayer == EstadoPlayer.READY)
         {
-            boostersActivados[1] = false;
-            numBoostersFuerzaX2++;
-            iconBoost.SetActive(false);
-            numBoostersBolaFuezaX2.text = numBoostersFuerzaX2.ToString();
+            int numBoostersFuerzaX2 = int.Parse(numBoostersBolaFuezaX2.text);
+            if (boostersActivados[1] == true)
+            {
+                boostersActivados[1] = false;
+                numBoostersFuerzaX2++;
+                iconBoost.SetActive(false);
+                numBoostersBolaFuezaX2.text = numBoostersFuerzaX2.ToString();
+            }
+            else if (numBoostersFuerzaX2 > 0)
+            {
+                boostersActivados[1] = true;
+                numBoostersFuerzaX2--;
+                iconBoost.SetActive(true);
+                numBoostersBolaFuezaX2.text = numBoostersFuerzaX2.ToString();
+            }
         }
-        else if (numBoostersFuerzaX2 > 0)
-        {
-            boostersActivados[1] = true;
-            numBoostersFuerzaX2--;
-            iconBoost.SetActive(true);
-            numBoostersBolaFuezaX2.text = numBoostersFuerzaX2.ToString();
-        }
-
     }
 
     public void boostBolaRebote(GameObject iconBoost)
     {
-        int numRebotesSuelo = int.Parse(numBoostersRebote.text);
-        if (boostersActivados[2] == true)
+        if (estadoPlayer == EstadoPlayer.READY)
         {
-            boostersActivados[2] = false;
-            numRebotesSuelo++;
-            iconBoost.SetActive(false);
-            numBoostersRebote.text = numRebotesSuelo.ToString();
+            int numRebotesSuelo = int.Parse(numBoostersRebote.text);
+            if (boostersActivados[2] == true)
+            {
+                boostersActivados[2] = false;
+                numRebotesSuelo++;
+                iconBoost.SetActive(false);
+                numBoostersRebote.text = numRebotesSuelo.ToString();
+            }
+            else if (numRebotesSuelo > 0)
+            {
+                boostersActivados[2] = true;
+                numRebotesSuelo--;
+                iconBoost.SetActive(true);
+                numBoostersRebote.text = numRebotesSuelo.ToString();
+            }
         }
-        else if (numRebotesSuelo > 0)
-        {
-            boostersActivados[2] = true;
-            numRebotesSuelo--;
-            iconBoost.SetActive(true);
-            numBoostersRebote.text = numRebotesSuelo.ToString();
-        }
-
     }
 
     bool hayMasBolas()
@@ -252,7 +259,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     {
         int numBurbujas = 2;
 
-        if (score % 5 == 0 || score % 11 == 0 || score % 17 == 0)
+        if (score % 5 == 0 || score % 11 == 0 /*|| score % 17 == 0*/)
         {
             numBurbujas++;
         }
@@ -274,7 +281,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         Transform burbujaNueva = Instantiate(burbuja, posicion, Quaternion.identity);
         burbujaNueva.gameObject.tag = "Burbuja";
 
-        int pesoDeseado = numBolasADisparar + 1; //TODO: función que también tenga en cuenta la puntuación 
+        int pesoDeseado = numBolasADisparar * 2; //TODO: función que también tenga en cuenta la puntuación 
         
         foreach (Transform b in burbujaNueva.gameObject.gameObject.transform)
         {
@@ -384,6 +391,11 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public static void setEstadoPlayer(EstadoPlayer estado)
     {
         estadoPlayer = estado;
+    }
+
+    public static EstadoPlayer getEstadoPlayer(EstadoPlayer estado)
+    {
+        return estadoPlayer;
     }
 
     public void OnPointerClick(PointerEventData eventData)
