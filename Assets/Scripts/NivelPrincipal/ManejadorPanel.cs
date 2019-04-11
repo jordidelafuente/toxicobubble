@@ -12,6 +12,7 @@ public class ManejadorPanel : MonoBehaviour
     public GameObject panelPausa;
     public GameObject panelGameOver;
     public GameObject panelShop;
+    public GameObject panelMoving;
 
     public Text illumiCoins;
     public Text insufficientCoins;
@@ -29,24 +30,28 @@ public class ManejadorPanel : MonoBehaviour
     public void activarPanelShop()
     {
         panelShop.SetActive(true);
+        panelMoving.SetActive(false); //it can be open when changing panel
         Time.timeScale = 0;
     }
 
     public void desactivarPanelShop()
     {
         panelShop.SetActive(false);
+        ManejadorDisparo.estadoPlayer = ManejadorDisparo.EstadoPlayer.READY;
         Time.timeScale = 1;
     }
 
     public void activarPanelPausa()
     {
         panelPausa.SetActive(true);
+        panelMoving.SetActive(false); //it can be open when changing panel
         Time.timeScale = 0;
     }
 
     public void desactivarPanelPausa()
     {
         panelPausa.SetActive(false);
+        ManejadorDisparo.estadoPlayer = ManejadorDisparo.EstadoPlayer.READY;
         Time.timeScale = 1;
     }
 
