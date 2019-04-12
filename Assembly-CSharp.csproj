@@ -61,6 +61,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\DemoDialogue.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\DemoWindow.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\ExperienceButton.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\ExperienceLabel.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\IconDemo.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\LoadScene.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\ActionButton.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\AutoTooltip.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\EndOfDayPanel.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\GameClock.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\GameManager.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\Global.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\InformationWindow.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\LocationProfile.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\MoneyLabel.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\PlayerData.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\StatBarTooltip.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\TimeControlButton.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\TravelButton.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\UIManager.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\VisualClock.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\WeatherProfile.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\MakeAGame\WeatherSystem.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\PingPong.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\SwatchButton.cs" />
+    <Compile Include="Assets\Pixel UI\Demo\Scripts\SwatchHandler.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\Range.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\Rotator.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UIClock.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UIDialogueWindow.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UIExperienceBar.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UIFader.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UIRescaler.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UIStatBar.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UITabbedWindow.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UITooltip.cs" />
+    <Compile Include="Assets\Pixel UI\Scripts\UITypewriter.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\BotonPlayAnim.cs" />
     <Compile Include="Assets\Scripts\MainMenu\BurbujaFondo.cs" />
     <Compile Include="Assets\Scripts\MainMenu\FondoTitulo.cs" />
     <Compile Include="Assets\Scripts\MainMenu\ManejadorPanels.cs" />
@@ -72,10 +110,12 @@
     <Compile Include="Assets\Scripts\NivelPrincipal\Player.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\Shop.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\Suelo.cs" />
+    <None Include="Assets\Pixel UI\Changelog.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Pixel UI\Make a Game Roadmap.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
