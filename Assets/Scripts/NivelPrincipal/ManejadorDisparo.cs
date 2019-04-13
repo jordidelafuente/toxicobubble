@@ -64,7 +64,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 dispararBola();
             } else
             {
-                if (!hayMasBolas())
+                if (!hayMasBolas() && numBolasDisparadas == numBolasADisparar)
                 {
                     generarBurbujas(GetScore());
                     if ((GetScore()) % 7 == 0)
@@ -114,7 +114,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             Vector3 vectorLinea = lineRenderer.GetPosition(1) - lineRenderer.GetPosition(0);
 
             //Plotting the line before shooting
-            if (vectorLinea.y > 100) //TODO: que sea angulo y altura absoluta
+            if (vectorLinea.y > 100) //TODO: que sea angulo y no altura absoluta
             {  
                 lineaDisparo.SetActive(true);
                 canShoot = true;
@@ -148,6 +148,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         {
             lineaDisparo.SetActive(false);
             estadoPlayer = EstadoPlayer.SHOOTING;
+            numBolasDisparadas = 0;
             dispararBola();
         }
     }
@@ -360,7 +361,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         bolaAux.gameObject.tag = "Bola";
         if (boostersActivados[0] == true)
         {
-            bolaAux.gameObject.transform.localScale = bolaAux.gameObject.transform.localScale * 4;               
+            bolaAux.gameObject.transform.localScale = bolaAux.gameObject.transform.localScale * 3;               
         }
         numBolasDisparadas++;
     }
