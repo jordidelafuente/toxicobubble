@@ -230,27 +230,45 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         return false;
     }
 
-    public void generarIllumiCoin()
+    public void generarIllumiCoin() //Instantiate a bubble at a random "x,y" position
     {
-        //Instantiate a bubble at a random "x,y" position
-        int xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
-        Vector3 posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
-        posicion = Camera.main.ScreenToWorldPoint(posicion);
-        posicion.z = 90;
+        
+        //bool positionValid = false;
+        int xRandom = -9999;
+        Vector3 posicion = new Vector3(-9999, -9999, 9999);
+
+        for (int i = 0; i < 100; i++)
+        {
+            xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
+            posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
+            posicion = Camera.main.ScreenToWorldPoint(posicion);
+            posicion.z = 90;
+            if (!isColisionConObjetosDelJuego(posicion))
+            {
+               break;
+            }
+        }        
 
         Transform coinExtraNew = Instantiate(illumiCoinExtra, posicion, Quaternion.identity);
         coinExtraNew.gameObject.tag = "IllumiCoinExtra";
     }
 
-    public void generarBolaExtra()
+    public void generarBolaExtra() //Instantiate a bubble at a random "x" position
     {
-        //Instantiate a bubble at a random "x" position
-        int xRandom = (int)Random.Range(0+ Camera.main.pixelWidth / 10, Camera.main.pixelWidth-(Camera.main.pixelWidth/10)); 
-
-        Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight-1, 90);
-
-        Vector3 posicion = Camera.main.ScreenToWorldPoint(randomPos);
-        posicion.z = 90;
+        //bool positionValid = false;
+        int xRandom = -9999;
+        Vector3 posicion = new Vector3(-9999, -9999, 9999);
+        for (int i=0; i<100; i++)
+        {
+            xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
+            Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
+            posicion = Camera.main.ScreenToWorldPoint(randomPos);
+            posicion.z = 90;
+            if (!isColisionConObjetosDelJuego(posicion))
+            {
+                break;
+            }
+        }        
 
         Transform bolaExtraNew = Instantiate(bolaExtra, posicion, Quaternion.identity);
         bolaExtraNew.gameObject.tag = "BolaExtra";
@@ -271,13 +289,22 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         }
     }
 
-    public void generarBurbuja() //TODO: balancear dificultad (recurrente)
+    public void generarBurbuja() //Instantiate a bubble at a random "x" position
     {
-        //Instantiate a bubble at a random "x" position
-        int xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
-        Vector3 posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 1);
-                posicion = Camera.main.ScreenToWorldPoint(posicion);
-                posicion.z = 90;
+        //bool positionValid = false;
+        int xRandom = -9999;
+        Vector3 posicion = new Vector3 (-9999,-9999,9999);
+        for (int i = 0; i < 100; i++)
+        {
+            xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
+            posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 1);
+            posicion = Camera.main.ScreenToWorldPoint(posicion);
+            posicion.z = 90;
+            if (!isColisionConObjetosDelJuego(posicion))
+            {
+                break;
+            }
+        }
 
         Transform burbujaNueva = Instantiate(burbuja, posicion, Quaternion.identity);
         burbujaNueva.gameObject.tag = "Burbuja";
@@ -291,6 +318,41 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 b.gameObject.gameObject.GetComponent<TextMesh>().text = pesoDeseado.ToString();
             }
         }
+    }
+
+    public bool isColisionConObjetosDelJuego(Vector3 posicionNuevoObjeto)
+    {
+        burbujas = GameObject.FindGameObjectsWithTag("Burbuja");
+        foreach (GameObject burbuja in burbujas)
+        {
+            float dist = Vector3.Distance(burbuja.transform.position, posicionNuevoObjeto);
+            if (dist < 150)
+            {
+                return true;
+            }
+        }
+
+        bolasExtra = GameObject.FindGameObjectsWithTag("BolaExtra");
+        foreach (GameObject bola in bolasExtra)
+        {
+            float dist = Vector3.Distance(bola.transform.position, posicionNuevoObjeto);
+            if (dist < 75)
+            {
+                return true;
+            }
+        }
+
+        illumiCoinsExtra = GameObject.FindGameObjectsWithTag("IllumiCoinExtra");
+        foreach (GameObject coin in illumiCoinsExtra)
+        {
+            float dist = Vector3.Distance(coin.transform.position, posicionNuevoObjeto);
+            if (dist < 75)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     public void moverBurbujas()
