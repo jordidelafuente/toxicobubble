@@ -11,16 +11,25 @@ public class Shop : MonoBehaviour
     public Text txtNumBoostRebote;
     public Text txtNumIllumiCoin;
 
+    public Text txtNumBoostSizeShop;
+    public Text txtNumBoostFuerzaShop;
+    public Text txtNumBoostReboteShop;
+    //public Text txtNumIllumiCoinShop;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        /*txtNumBoostSizeShop.text = txtNumBoostSize.text.ToString();
+        txtNumBoostFuerzaShop.text = txtNumBoostFuerza.text.ToString();
+        txtNumBoostRebote.text = txtNumBoostRebote.text.ToString();*/
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        /*txtNumBoostSizeShop.text = txtNumBoostSize.text.ToString();
+        txtNumBoostFuerzaShop.text = txtNumBoostFuerza.text.ToString();
+        txtNumBoostRebote.text = txtNumBoostRebote.text.ToString();*/
     }
 
     public void comprarBoostSize(int price)
@@ -33,6 +42,7 @@ public class Shop : MonoBehaviour
             numBoostSize ++;
             txtNumIllumiCoin.text = numIllumiCoins.ToString();
             txtNumBoostSize.text = numBoostSize.ToString();
+            txtNumBoostSizeShop.text = numBoostSize.ToString();
         }
     }
 
@@ -46,6 +56,7 @@ public class Shop : MonoBehaviour
             numBoostSize--;
             txtNumIllumiCoin.text = numIllumiCoins.ToString();
             txtNumBoostSize.text = numBoostSize.ToString();
+            txtNumBoostSizeShop.text = numBoostSize.ToString();
         }
     }
 
@@ -59,6 +70,7 @@ public class Shop : MonoBehaviour
             numBoostFuerza++;
             txtNumIllumiCoin.text = numIllumiCoins.ToString();
             txtNumBoostFuerza.text = numBoostFuerza.ToString();
+            txtNumBoostFuerzaShop.text = numBoostFuerza.ToString();
         }
     }
 
@@ -72,6 +84,7 @@ public class Shop : MonoBehaviour
             numBoostFuerza--;
             txtNumIllumiCoin.text = numIllumiCoins.ToString();
             txtNumBoostFuerza.text = numBoostFuerza.ToString();
+            txtNumBoostFuerzaShop.text = numBoostFuerza.ToString();
         }
     }
 
@@ -85,6 +98,7 @@ public class Shop : MonoBehaviour
             numBoostRebote++;
             txtNumIllumiCoin.text = numIllumiCoins.ToString();
             txtNumBoostRebote.text = numBoostRebote.ToString();
+            txtNumBoostReboteShop.text = numBoostRebote.ToString();
         }
     }
 
@@ -98,6 +112,15 @@ public class Shop : MonoBehaviour
             numBoostRebote--;
             txtNumIllumiCoin.text = numIllumiCoins.ToString();
             txtNumBoostRebote.text = numBoostRebote.ToString();
+            txtNumBoostReboteShop.text = numBoostRebote.ToString();
         }
     }
+
+    /*public void updateBudgetsToPanelShop()
+    { 
+        txtNumBoostSizeShop.text = txtNumBoostSize.text;
+        txtNumBoostFuerzaShop.text = txtNumBoostFuerza.text;
+        txtNumBoostRebote.text = txtNumBoostRebote.text;
+        //txtNumIllumiCoinShop = txtNumIllumiCoin; 
+    }*/
 }

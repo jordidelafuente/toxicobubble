@@ -9,6 +9,10 @@ public class ManejadorBolas : MonoBehaviour
     int pesoDanoBola;
     int numRebotesPermitidos;
 
+    public Transform explosionBurbuja;
+    
+    //public Animation explosion_burbuja;
+
     static float xPrimeraBola = -9999f;
 
     // Use this for initialization
@@ -91,6 +95,11 @@ public class ManejadorBolas : MonoBehaviour
                     {
                         col.gameObject.SetActive(false);
                         Destroy(col.gameObject);
+                        Transform explosion = Instantiate(explosionBurbuja, col.gameObject.transform.position, Quaternion.identity);
+                        explosion.gameObject.tag = "Explosion";
+                        //explosion.GetComponent<Animation>().Play();
+                        //Animation anim = Animation.
+
                     }
                 }
             }

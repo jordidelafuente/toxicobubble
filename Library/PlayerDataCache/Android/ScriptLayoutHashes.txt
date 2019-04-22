@@ -23,7 +23,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.P
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 af84833629903d5ac08512fb09ae83fd Assembly-CSharp.dll:PixelsoftGames.PixelUI.ExperienceButton
 faa464c3f197149e7f8baa615863048f Assembly-CSharp.dll:PixelsoftGames.PixelUI.UIRescaler
-aae8678f4b216162271063ff3c649645 Assembly-CSharp.dll:.Shop
+f487be2948eadb31f48c5bfe0f6de0f5 Assembly-CSharp.dll:.Shop
 8f4751cc1d8143b30124127f429d4457 Assembly-CSharp.dll:PixelsoftGames.PixelUI.TimeControlButton
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -149,7 +149,7 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 c557ec6d57a140fa539246f1d62d385f Assembly-CSharp.dll:PixelsoftGames.PixelUI.UIFader
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 c6f10d3b621e4459d4865c5183be0505 Assembly-CSharp.dll:PixelsoftGames.PixelUI.UIDialogueWindow
-2f9ffe055e1ec48bf902c91d9babded3 Assembly-CSharp.dll:.ManejadorPanel
+6048dd6d9fd2aa57ad92c8fef36ff244 Assembly-CSharp.dll:.ManejadorPanel
 deb4dcee1a1e705bf05185a2956d21b2 Assembly-CSharp.dll:PixelsoftGames.PixelUI.AutoTooltip
 c9fed19b74ff23935c30b521cce82b9f Assembly-CSharp.dll:PixelsoftGames.PixelUI.DemoDialogue
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -190,7 +190,7 @@ a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 217c822373f03102018f3b2da820fba5 Assembly-CSharp.dll:.Suelo
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ManejadorBolas
+be3f448a42d2d7d02c313399fc020627 Assembly-CSharp.dll:.ManejadorBolas
 c0105974700dfc612818d04c6e207cdf Assembly-CSharp.dll:.WeatherProfile
 2dccf9c1d275a070ca28d6db180e230f Assembly-CSharp.dll:PixelsoftGames.PixelUI.VisualClock
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:PixelsoftGames.PixelUI.MoneyLabel
@@ -203,3 +203,5 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 8dd1ed049626ffd09df19c54c155797e Assembly-CSharp.dll:PixelsoftGames.PixelUI.SwatchButton
 e0c04d513dbbcc5bf826d6440243af8b Assembly-CSharp.dll:.FondoTitulo
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.RotateAndExpand
+20c9a74d659b6895cfdb5f4624ba8daa Assembly-CSharp.dll:.AnimationAutoDestroy

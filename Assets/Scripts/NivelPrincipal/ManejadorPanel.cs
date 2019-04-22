@@ -13,6 +13,7 @@ public class ManejadorPanel : MonoBehaviour
     public GameObject panelGameOver;
     public GameObject panelShop;
     public GameObject panelMoving;
+    public GameObject panelBoosters;
 
     public Text illumiCoins;
     public Text insufficientCoins;
@@ -32,6 +33,7 @@ public class ManejadorPanel : MonoBehaviour
         panelShop.SetActive(true);
         panelMoving.SetActive(false); //it can be open when changing panel
         Time.timeScale = 0;
+        updateBudgetsToPanelShop();
     }
 
     public void desactivarPanelShop()
@@ -51,6 +53,23 @@ public class ManejadorPanel : MonoBehaviour
     public void desactivarPanelPausa()
     {
         panelPausa.SetActive(false);
+        ManejadorDisparo.estadoPlayer = ManejadorDisparo.EstadoPlayer.READY;
+        Time.timeScale = 1;
+    }
+
+    public void activarPanelBoosters()
+    {
+        if (ManejadorDisparo.estadoPlayer == ManejadorDisparo.EstadoPlayer.READY)
+        {
+            panelBoosters.SetActive(true);
+            panelMoving.SetActive(false); //it can be open when changing panel
+            Time.timeScale = 0;
+        }
+    }
+
+    public void desactivarPanelBoosters()
+    {
+        panelBoosters.SetActive(false);
         ManejadorDisparo.estadoPlayer = ManejadorDisparo.EstadoPlayer.READY;
         Time.timeScale = 1;
     }
@@ -75,6 +94,7 @@ public class ManejadorPanel : MonoBehaviour
             illumiCoins.text = numCoins.ToString();
             eliminarBurbujaMasBaja();
             panelGameOver.SetActive(false);
+            ManejadorDisparo.estadoPlayer = ManejadorDisparo.EstadoPlayer.READY;
             Time.timeScale = 1;
         } else
         {
@@ -115,6 +135,49 @@ public class ManejadorPanel : MonoBehaviour
             {
                 bolaAux.gameObject.SetActive(false);
                 Destroy(bolaAux.gameObject);
+            }
+        }
+    }
+
+    public void updateBudgetsToPanelShop()
+    {
+        int numBoostSize = 0;
+        int numBoostFuerza = 0;
+        int numBoostRebote = 0;
+
+        //Getting booster quantity by panelBooster
+        Text[] txtAllBoosters = panelBoosters.GetComponentsInChildren<Text>();
+        foreach (Text txtAux in txtAllBoosters)
+        {
+            if (txtAux.name == "Bola-boost-size-budget")
+            {
+                numBoostSize = int.Parse(txtAux.text.ToString());
+            }
+            else if (txtAux.name == "Bola-boost-fuerza-budget")
+            {
+                numBoostFuerza = int.Parse(txtAux.text.ToString());
+            }
+            else if (txtAux.name == "Bola-boost-rebote-budget")
+            {
+                numBoostRebote = int.Parse(txtAux.text.ToString());
+            }
+        }
+
+        //updating txt in panel Shop
+        Text[] txtAllShop = panelShop.GetComponentsInChildren<Text>();
+        foreach (Text txtAux in txtAllShop)
+        {
+            if (txtAux.name == "Text-Num-Boost-Size")
+            {
+                txtAux.text = numBoostSize.ToString();
+            }
+            else if (txtAux.name == "Text-Num-Boost-Fuerza")
+            {
+                txtAux.text = numBoostFuerza.ToString(); 
+            }
+            else if (txtAux.name == "Text-Num-Boost-Rebote")
+            {
+                txtAux.text = numBoostRebote.ToString(); 
             }
         }
     }

@@ -1,0 +1,4144 @@
+fileFormatVersion: 2
+guid: c19f748d93a4bcf47a87ce09bb5e0bdf
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: soldier-sprites_0
+    21300002: soldier-sprites_1
+    21300004: soldier-sprites_2
+    21300006: soldier-sprites_3
+    21300008: soldier-sprites_4
+    21300010: soldier-sprites_5
+    21300012: soldier-sprites_6
+    21300014: soldier-sprites_7
+    21300016: soldier-sprites_8
+    21300018: soldier-sprites_9
+    21300020: soldier-sprites_10
+    21300022: soldier-sprites_11
+    21300024: soldier-sprites_12
+    21300026: soldier-sprites_13
+    21300028: soldier-sprites_14
+    21300030: soldier-sprites_15
+    21300032: soldier-sprites_16
+    21300034: soldier-sprites_17
+    21300036: soldier-sprites_18
+    21300038: soldier-sprites_19
+    21300040: soldier-sprites_20
+    21300042: soldier-sprites_21
+    21300044: soldier-sprites_22
+    21300046: soldier-sprites_23
+    21300048: soldier-sprites_24
+    21300050: soldier-sprites_25
+    21300052: soldier-sprites_26
+    21300054: soldier-sprites_27
+    21300056: soldier-sprites_28
+    21300058: soldier-sprites_29
+    21300060: soldier-sprites_30
+    21300062: soldier-sprites_31
+    21300064: soldier-sprites_32
+    21300066: soldier-sprites_33
+    21300068: soldier-sprites_34
+    21300070: soldier-sprites_35
+    21300072: soldier-sprites_36
+    21300074: soldier-sprites_37
+    21300076: soldier-sprites_38
+    21300078: soldier-sprites_39
+    21300080: soldier-sprites_40
+    21300082: soldier-sprites_41
+    21300084: soldier-sprites_42
+    21300086: soldier-sprites_43
+    21300088: soldier-sprites_44
+    21300090: soldier-sprites_45
+    21300092: soldier-sprites_46
+    21300094: soldier-sprites_47
+    21300096: soldier-sprites_48
+    21300098: soldier-sprites_49
+    21300100: soldier-sprites_50
+    21300102: soldier-sprites_51
+    21300104: soldier-sprites_52
+    21300106: soldier-sprites_53
+    21300108: soldier-sprites_54
+    21300110: soldier-sprites_55
+    21300112: soldier-sprites_56
+    21300114: soldier-sprites_57
+    21300116: soldier-sprites_58
+    21300118: soldier-sprites_59
+    21300120: soldier-sprites_60
+    21300122: soldier-sprites_61
+    21300124: soldier-sprites_62
+    21300126: soldier-sprites_63
+    21300128: soldier-sprites_64
+    21300130: soldier-sprites_65
+    21300132: soldier-sprites_66
+    21300134: soldier-sprites_67
+    21300136: soldier-sprites_68
+    21300138: soldier-sprites_69
+    21300140: soldier-sprites_70
+    21300142: soldier-sprites_71
+    21300144: soldier-sprites_72
+    21300146: soldier-sprites_73
+    21300148: soldier-sprites_74
+    21300150: soldier-sprites_75
+    21300152: soldier-sprites_76
+    21300154: soldier-sprites_77
+    21300156: soldier-sprites_78
+    21300158: soldier-sprites_79
+    21300160: soldier-sprites_80
+    21300162: soldier-sprites_81
+    21300164: soldier-sprites_82
+    21300166: soldier-sprites_83
+    21300168: soldier-sprites_84
+    21300170: soldier-sprites_85
+    21300172: soldier-sprites_86
+    21300174: soldier-sprites_87
+    21300176: soldier-sprites_88
+    21300178: soldier-sprites_89
+    21300180: soldier-sprites_90
+    21300182: soldier-sprites_91
+    21300184: soldier-sprites_92
+    21300186: soldier-sprites_93
+    21300188: soldier-sprites_94
+    21300190: soldier-sprites_95
+    21300192: soldier-sprites_96
+    21300194: soldier-sprites_97
+    21300196: soldier-sprites_98
+    21300198: soldier-sprites_99
+    21300200: soldier-sprites_100
+    21300202: soldier-sprites_101
+    21300204: soldier-sprites_102
+    21300206: soldier-sprites_103
+    21300208: soldier-sprites_104
+    21300210: soldier-sprites_105
+    21300212: soldier-sprites_106
+    21300214: soldier-sprites_107
+    21300216: soldier-sprites_108
+    21300218: soldier-sprites_109
+    21300220: soldier-sprites_110
+    21300222: soldier-sprites_111
+    21300224: soldier-sprites_112
+    21300226: soldier-sprites_113
+    21300228: soldier-sprites_114
+    21300230: soldier-sprites_115
+    21300232: soldier-sprites_116
+    21300234: soldier-sprites_117
+    21300236: soldier-sprites_118
+    21300238: soldier-sprites_119
+    21300240: soldier-sprites_120
+    21300242: soldier-sprites_121
+    21300244: soldier-sprites_122
+    21300246: soldier-sprites_123
+    21300248: soldier-sprites_124
+    21300250: soldier-sprites_125
+    21300252: soldier-sprites_126
+    21300254: soldier-sprites_127
+    21300256: soldier-sprites_128
+    21300258: soldier-sprites_129
+    21300260: soldier-sprites_130
+    21300262: soldier-sprites_131
+    21300264: soldier-sprites_132
+    21300266: soldier-sprites_133
+    21300268: soldier-sprites_134
+    21300270: soldier-sprites_135
+    21300272: soldier-sprites_136
+    21300274: soldier-sprites_137
+    21300276: soldier-sprites_138
+    21300278: soldier-sprites_139
+    21300280: soldier-sprites_140
+    21300282: soldier-sprites_141
+    21300284: soldier-sprites_142
+    21300286: soldier-sprites_143
+    21300288: soldier-sprites_144
+    21300290: soldier-sprites_145
+    21300292: soldier-sprites_146
+    21300294: soldier-sprites_147
+    21300296: soldier-sprites_148
+    21300298: soldier-sprites_149
+    21300300: soldier-sprites_150
+    21300302: soldier-sprites_151
+    21300304: soldier-sprites_152
+    21300306: soldier-sprites_153
+    21300308: soldier-sprites_154
+    21300310: soldier-sprites_155
+    21300312: soldier-sprites_156
+    21300314: soldier-sprites_157
+    21300316: soldier-sprites_158
+    21300318: soldier-sprites_159
+    21300320: soldier-sprites_160
+    21300322: soldier-sprites_161
+    21300324: soldier-sprites_162
+    21300326: soldier-sprites_163
+    21300328: soldier-sprites_164
+    21300330: soldier-sprites_165
+    21300332: soldier-sprites_166
+    21300334: soldier-sprites_167
+    21300336: soldier-sprites_168
+    21300338: soldier-sprites_169
+    21300340: soldier-sprites_170
+    21300342: soldier-sprites_171
+    21300344: soldier-sprites_172
+    21300346: soldier-sprites_173
+    21300348: soldier-sprites_174
+    21300350: soldier-sprites_175
+    21300352: soldier-sprites_176
+    21300354: soldier-sprites_177
+    21300356: soldier-sprites_178
+    21300358: soldier-sprites_179
+    21300360: soldier-sprites-left_0
+    21300362: soldier-sprites-left_1
+    21300364: soldier-sprites-left_2
+    21300366: soldier-sprites-left_3
+    21300368: soldier-sprites-left_4
+    21300370: soldier-sprites-left_5
+    21300372: soldier-sprites-left_6
+    21300374: soldier-sprites-left_7
+    21300376: soldier-sprites-left_8
+    21300378: soldier-sprites-left_9
+    21300380: soldier-sprites-left_10
+    21300382: soldier-sprites-left_11
+    21300384: soldier-sprites-left_12
+    21300386: soldier-sprites-left_13
+    21300388: soldier-sprites-left_14
+    21300390: soldier-sprites-left_15
+    21300392: soldier-sprites-left_16
+    21300394: soldier-sprites-left_17
+    21300396: soldier-sprites-left_18
+    21300398: soldier-sprites-left_19
+    21300400: soldier-sprites-left_20
+    21300402: soldier-sprites-left_21
+    21300404: soldier-sprites-left_22
+    21300406: soldier-sprites-left_23
+    21300408: soldier-sprites-left_24
+    21300410: soldier-sprites-left_25
+    21300412: soldier-sprites-left_26
+    21300414: soldier-sprites-left_27
+    21300416: soldier-sprites-left_28
+    21300418: soldier-sprites-left_29
+    21300420: soldier-sprites-left_30
+    21300422: soldier-sprites-left_31
+    21300424: soldier-sprites-left_32
+    21300426: soldier-sprites-left_33
+    21300428: soldier-sprites-left_34
+    21300430: soldier-sprites-left_35
+    21300432: soldier-sprites-left_36
+    21300434: soldier-sprites-left_37
+    21300436: soldier-sprites-left_38
+    21300438: soldier-sprites-left_39
+    21300440: soldier-sprites-left_40
+    21300442: soldier-sprites-left_41
+    21300444: soldier-sprites-left_42
+    21300446: soldier-sprites-left_43
+    21300448: soldier-sprites-left_44
+    21300450: soldier-sprites-left_45
+    21300452: soldier-sprites-left_46
+    21300454: soldier-sprites-left_47
+    21300456: soldier-sprites-left_48
+    21300458: soldier-sprites-left_49
+    21300460: soldier-sprites-left_50
+    21300462: soldier-sprites-left_51
+    21300464: soldier-sprites-left_52
+    21300466: soldier-sprites-left_53
+    21300468: soldier-sprites-left_54
+    21300470: soldier-sprites-left_55
+    21300472: soldier-sprites-left_56
+    21300474: soldier-sprites-left_57
+    21300476: soldier-sprites-left_58
+    21300478: soldier-sprites-left_59
+    21300480: soldier-sprites-left_60
+    21300482: soldier-sprites-left_61
+    21300484: soldier-sprites-left_62
+    21300486: soldier-sprites-left_63
+    21300488: soldier-sprites-left_64
+    21300490: soldier-sprites-left_65
+    21300492: soldier-sprites-left_66
+    21300494: soldier-sprites-left_67
+    21300496: soldier-sprites-left_68
+    21300498: soldier-sprites-left_69
+    21300500: soldier-sprites-left_70
+    21300502: soldier-sprites-left_71
+    21300504: soldier-sprites-left_72
+    21300506: soldier-sprites-left_73
+    21300508: soldier-sprites-left_74
+    21300510: soldier-sprites-left_75
+    21300512: soldier-sprites-left_76
+    21300514: soldier-sprites-left_77
+    21300516: soldier-sprites-left_78
+    21300518: soldier-sprites-left_79
+    21300520: soldier-sprites-left_80
+    21300522: soldier-sprites-left_81
+    21300524: soldier-sprites-left_82
+    21300526: soldier-sprites-left_83
+    21300528: soldier-sprites-left_84
+    21300530: soldier-sprites-left_85
+    21300532: soldier-sprites-left_86
+    21300534: soldier-sprites-left_87
+    21300536: soldier-sprites-left_88
+    21300538: soldier-sprites-left_89
+    21300540: soldier-sprites-left_90
+    21300542: soldier-sprites-left_91
+    21300544: soldier-sprites-left_92
+    21300546: soldier-sprites-left_93
+    21300548: soldier-sprites-left_94
+    21300550: soldier-sprites-left_95
+    21300552: soldier-sprites-left_96
+    21300554: soldier-sprites-left_97
+    21300556: soldier-sprites-left_98
+    21300558: soldier-sprites-left_99
+    21300560: soldier-sprites-left_100
+    21300562: soldier-sprites-left_101
+    21300564: soldier-sprites-left_102
+    21300566: soldier-sprites-left_103
+    21300568: soldier-sprites-left_104
+    21300570: soldier-sprites-left_105
+    21300572: soldier-sprites-left_106
+    21300574: soldier-sprites-left_107
+    21300576: soldier-sprites-left_108
+    21300578: soldier-sprites-left_109
+    21300580: soldier-sprites-left_110
+    21300582: soldier-sprites-left_111
+    21300584: soldier-sprites-left_112
+    21300586: soldier-sprites-left_113
+    21300588: soldier-sprites-left_114
+    21300590: soldier-sprites-left_115
+    21300592: soldier-sprites-left_116
+    21300594: soldier-sprites-left_117
+    21300596: soldier-sprites-left_118
+    21300598: soldier-sprites-left_119
+    21300600: soldier-sprites-left_120
+    21300602: soldier-sprites-left_121
+    21300604: soldier-sprites-left_122
+    21300606: soldier-sprites-left_123
+    21300608: soldier-sprites-left_124
+    21300610: soldier-sprites-left_125
+    21300612: soldier-sprites-left_126
+    21300614: soldier-sprites-left_127
+    21300616: soldier-sprites-left_128
+    21300618: soldier-sprites-left_129
+    21300620: soldier-sprites-left_130
+    21300622: soldier-sprites-left_131
+    21300624: soldier-sprites-left_132
+    21300626: soldier-sprites-left_133
+    21300628: soldier-sprites-left_134
+    21300630: soldier-sprites-left_135
+    21300632: soldier-sprites-left_136
+    21300634: soldier-sprites-left_137
+    21300636: soldier-sprites-left_138
+    21300638: soldier-sprites-left_139
+    21300640: soldier-sprites-left_140
+    21300642: soldier-sprites-left_141
+    21300644: soldier-sprites-left_142
+    21300646: soldier-sprites-left_143
+    21300648: soldier-sprites-left_144
+    21300650: soldier-sprites-left_145
+    21300652: soldier-sprites-left_146
+    21300654: soldier-sprites-left_147
+    21300656: soldier-sprites-left_148
+    21300658: soldier-sprites-left_149
+    21300660: soldier-sprites-left_150
+    21300662: soldier-sprites-left_151
+    21300664: soldier-sprites-left_152
+    21300666: soldier-sprites-left_153
+    21300668: soldier-sprites-left_154
+    21300670: soldier-sprites-left_155
+    21300672: soldier-sprites-left_156
+    21300674: soldier-sprites-left_157
+    21300676: soldier-sprites-left_158
+    21300678: soldier-sprites-left_159
+    21300680: soldier-sprites-left_160
+    21300682: soldier-sprites-left_161
+    21300684: soldier-sprites-left_162
+    21300686: soldier-sprites-left_163
+    21300688: soldier-sprites-left_164
+    21300690: soldier-sprites-left_165
+    21300692: soldier-sprites-left_166
+    21300694: soldier-sprites-left_167
+    21300696: soldier-sprites-left_168
+    21300698: soldier-sprites-left_169
+    21300700: soldier-sprites-left_170
+    21300702: soldier-sprites-left_171
+    21300704: soldier-sprites-left_172
+    21300706: soldier-sprites-left_173
+    21300708: soldier-sprites-left_174
+    21300710: soldier-sprites-left_175
+    21300712: soldier-sprites-left_176
+    21300714: soldier-sprites-left_177
+    21300716: soldier-sprites-left_178
+    21300718: soldier-sprites-left_179
+    21300720: soldier-sprites-left_180
+    21300722: soldier-sprites-left_181
+    21300724: soldier-sprites-left_182
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: soldier-sprites-left_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1325
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87595851745e5754a9e25cc47ab8eba7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1325
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96684260a54c92445a269f19ef40ad3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1325
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af9ba5df54c9bb45ad588ea7c1b0182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_3
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1325
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b642f5e50b6d44140815dad7e3a2fd27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_4
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1325
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bef45619a2efdc469617d51adc227c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_5
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1325
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61aa5a57168029342835e5f180bf108e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1279
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c03cc8c29466d43bd219e1f7579723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1279
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c536a4099fc304a861a366475314ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_8
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1280
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a9523b2053dbf4582fedccf8c5a76d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_9
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1280
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b6328385446ad4cb117d611373df95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_10
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1279
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec94bdd605f59c4aa9f71a95baf2b20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_11
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1279
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3642a2f7c880803439d5ccb4225727c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_12
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1279
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59c04851ec311b42b794463c0913b75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_13
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1279
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa2d708a9df187479d47b030d989d54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_14
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1280
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b2788f34e7ffb44b53ecec0c1f2421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_15
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1280
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4192b45af1e1d4c975b7b7c21b8e8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_16
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 1279
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850cc25f07d972f4c979dd21bec3c04f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_17
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1231
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231db8b69e274c84dbf6721a614d9f58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_18
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1231
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2966f23ec84b2f4e9a016267d3eb9fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_19
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1231
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b059f79c7a220d4da204796155f9353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1231
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae5c8a19acbf0b49a106e1108db2d49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_21
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1231
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ac4fb0acbc9d643bc74e7dda5b7282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_22
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1181
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd01c00acb904964690c19a902a01f5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_23
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1181
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04a47d3e6be54443a47d70be9cea738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_24
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1181
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4ff253b6a561940a37bd9a67d23ac8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_25
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1181
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209b5250f2e552446a93b5bbcb144b3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_26
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1181
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c2c7cdc9f6b674a86ba930c9790073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_27
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1181
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ec80d72c263014e8b04e5b1d23ac66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_28
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1135
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0bc9a7e35da6cb4aa1225bdaf6aec69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_29
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1135
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b7d356861c31944a0b827fbd1915a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_30
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1135
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad07381214bca24d9aa02654704dce0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_31
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1137
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e90baebca7dd0b4abd587e7e3b927f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_32
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1140
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd4877b5c701404a8f029fde7339bcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_33
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1141
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0c2700c1221d24e9cbeee9ed32fc06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_34
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1135
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b37bca0acdb3343b502cd85ba47bca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_35
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1135
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2880be1cc26b944683774b7e5ef9335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_36
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1088
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ce0dce442e68b49ae1e502f01b2032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_37
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1088
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c08b7da26652c14b9334555f73b15a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_38
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1088
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5521700bab9348242b0572b70c2e9411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_39
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1027
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a7845d36333ab4ca40e7cf42199979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_40
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1027
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0a24b52f7be2b44ab3a8ad83503bfe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_41
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1027
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3efc0d1a47700754cb3847106040e0b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_42
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1027
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f77b94ebd279a49a4da4d7b60403b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_43
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1027
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335e3cf5bcfcbf54c9aa126593842652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_44
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1027
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccf31431a393764b99bf21c2915a293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_45
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1027
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68468d2a5e2e2834298f4edede364fc3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_46
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1027
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98e812b29279d14ab56706ca8315550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_47
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1027
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04e17f2dbb5ce34dacd698cac3d6142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_48
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1027
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c689f9d7816cd46bd891af11ae083a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_49
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1027
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f29f3e516f740c4180535b9576c2ff5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_50
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 981
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa9874bfe735c14f8e214fbd0c4733d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 981
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4892086de2cf846bf1adcd5bd0c142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_52
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 981
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064dfecfaca68c94dbe724969f3fc5e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_53
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 927
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da10db0a1dbfc9742a2645670e010b8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_54
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 927
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8afc0b3bb23933469be5764f9b22ade
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_55
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 927
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e574473e75d9b054e84c89467bc443f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_56
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 927
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499b0585a8d883c498130414dcbad1c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_57
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 927
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fb58ab2ab66b946abf23c0d0f742bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_58
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 927
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec8e81c5e14e684780b71965f24d412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_59
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 927
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7ece5cb0f3759499a1413d8074271c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_60
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 927
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71228cb7903e6b49b83eba6d41e0729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_61
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 927
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0204fbbc9fe5d4fbf03c9f6dff03a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_62
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 883
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0115d3829f5d66d469a28f1f239240ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_63
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 883
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9e6b0eb84f956429312a6ab4a5dca6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_64
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 883
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb845c33c2f9f894a8366319b860c04e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_65
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 883
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a403a46ff9a3034a92359cc22c73ddf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_66
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 883
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0bd739f82d0794d9fea850f04c7550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_67
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 883
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6132ec9d04dde448c6bc50c4031617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_68
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 883
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c891e3d0cda8f4fb7f046af9406cbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_69
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 883
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9098d9bdaed394b83dba7f9212f742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_70
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 837
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d2881d5eb9b1445aec9c2b018e8f35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_71
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 837
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252fc47aa4053634a97d295e94ca4c73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_72
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 838
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bf23f8aba580e41955b73d01bbb358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_73
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 848
+        width: 54
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce79fe11cd21ff341a7521e7e5257686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_74
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 848
+        width: 55
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c44a71a27cd9c14981604a9c10760d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_75
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 846
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26da517074eee5e478dd74424a00069a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_76
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 843
+        width: 58
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1395e6a403fc9174daaa81e153c0f7c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_77
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 837
+        width: 60
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0654e72c1fd56ae41981d45ca745f9e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_78
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 808
+        width: 59
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3a3b71b47f9ab4baa552da72d01b46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_79
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 808
+        width: 60
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a0b8f668764cf449a471dc984bf44c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_80
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 808
+        width: 59
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31e925abeedaa3458c809f9f49ef017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_81
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 808
+        width: 56
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937b8129063f3ff409e00b5081b73962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_82
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 808
+        width: 53
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e714010b0fc1c404987ce99ee116385e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_83
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 808
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2adcec68576df52418a299e75aa8762e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_84
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 764
+        width: 47
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c857217ee19d1f648822070065909e7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_85
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 764
+        width: 43
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b5561076472f8418cb5d249d21a8b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_86
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 764
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9c7b2131c57964a9c733028f7e5538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_87
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 764
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8f752ce1961844bbc31afcd0b32b87
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_88
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 764
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84c08c49bd39a246bfda856d895c815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_89
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 722
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a6fd144d39c62408e757e17a7c1a76
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_90
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 720
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fb0debca14d3744901d12711e24101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_91
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 720
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bef34ff5cb26be46810a433c9a77959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_92
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 720
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf5fbbbe163f9b4c85680c45c2442d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_93
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 720
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4a64fbaa814e04facc96e0b2770b5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_94
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 720
+        width: 37
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f69b70136e5c5428bfc53827296908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_95
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 720
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf22bf1437dbda84bbd20e36595b7216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_96
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 720
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a39d4a0c77f8b4439f8794b26edd2bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_97
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 720
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53b8abd003129f489e722138ce7f7b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_98
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 720
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4393844b0263f3b4f8185d27c1dd9bfb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_99
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 666
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa91a824ce7739649a94405c97fdab9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_100
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 666
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8950f28d20490b04dbd4ed5eaabef1cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_101
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 666
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef98b044296d0d4da38eae5aa959dac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_102
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 666
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64114fd3d099aff48adb5c3d2384d64f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_103
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 667
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907b85e3fc6c7c34f9733b4c19ffe27d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_104
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 666
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c1f60e16941444c85aee4c7a3821de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_105
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 665
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5026de538193e94892b8e20c1a17c6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_106
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 664
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9198f9a0b7c1a554ebddfc2af1d919c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_107
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 665
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340cb99bf718b054b8461d2e79f6320a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_108
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 663
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2a8656c9017254981f88d31dc50355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_109
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 664
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e39aa674252bb45b4e37cc35a84354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_110
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 614
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6faa9b82bba6d4798d3023fc83b097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_111
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 614
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba8ca28d4ba8d64ea4cf21bb6e509c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_112
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 614
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab29226c58f7e814f8092ee5b63be729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_113
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 614
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa7ea805862f00419250dd3e6e10a4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_114
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 614
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44dc0cf554ec9724396d37f089ee38f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_115
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 614
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a198d8600a7c5245b61c383d595deab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_116
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 550
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 25, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba58e6f02c3eff4ebe7bcf8c83f491b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_117
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 577
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4576dde587190a44d98d6bb14105076e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_118
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 578
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9b570186f96894eada0d4b878d6127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_119
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 578
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4717c5bf0e46df9468b7c23ee0239f4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_120
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 577
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2941ed96b94bd9c48ad61afb22794311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_121
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 576
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b19e4da3376a6418f10cf7532a8914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_122
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 576
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b88713c5bdb7842816661ade934725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_123
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 576
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5dde9855f5769345a1f00c5c73852bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_124
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 576
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4878a27159e040549be0133ade97624e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_125
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 577
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12603b5fad70f3478d8839bde3d5ed1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_126
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 578
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b08bee41abcc1d428bf96569075b5be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_127
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 578
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f347c118c882bb4db2769d8779ddd86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_128
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 578
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac986d2809b20a4a8267d078075e8e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_129
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 582
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af94703c52f9714d90dd42e88605dda
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_130
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 585
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea0b9d15e78e29408da55ff5ca3133c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_131
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 583
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a674327988ee09342aaee1847b8f690c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_132
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 586
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee3a33fd6406c348b32f31b952836c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_133
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 557
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ee9b695f474d24991587c704a09c01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_134
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 557
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c36cb642e10fc94c8a910d8f7c1ae9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_135
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 557
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faafe8b28af614a4b95dd3716b1eb11a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_136
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 557
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80075f409606bab46b7229fdd5671dc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_137
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 526
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19724fa6450bccb49a30142e3be51dd3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_138
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 524
+        width: 41
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5d214511add2b44a01402685022db1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_139
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 521
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d0bd9bc7eff98409b800a8302365c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_140
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 519
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137dce39854e8244abfe2f173232a24d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_141
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 516
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebeda5db60a723f44b8a1b679fdf094f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_142
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 515
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fa6bfef62db5c47b5b7ab4baccb754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_143
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 515
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10e392b69b42f94db60baffd4fc4d17
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_144
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 515
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d22f0c76d987bc4e9e93e7686af55dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_145
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 516
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879ac4148742bd541a5b2cb41459e7f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_146
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 518
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2844acd07c11a641848f93085a7bf6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_147
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 521
+        width: 38
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc964706792c414db50f2bd126fa98d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_148
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 524
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6a562a4a3b34246ad63329c79ad7af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_149
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 469
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c05a34a084e5e745a3582c5f05b2672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_150
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 469
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b26beda43063840a463c3ead32bd9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_151
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 469
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c820db5b90472574a8604ba13f844011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_152
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 469
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4012258f0b7a76740af99cb676a685fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_153
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 469
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6c2589f800eed43af0fd13c060c66a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_154
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 469
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532568c4fd394034c9f320200f35f0f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_155
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 469
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71526eda881f74e46a31df3f7869fdd0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_156
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 469
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b228c42743a16a14cb608d90ac9a3530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_157
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 423
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c269af609b33144286e97093a51ae09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_158
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 377
+        width: 55
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e6c54d9ead07949883ca8b7a685c6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_159
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 374
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160390ae83be8aa4586f00f6ae74f0ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_160
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 371
+        width: 56
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae510454dd6a1b24992705e73caffd1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_161
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 363
+        width: 55
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fefaa5c344ed39469bfbb1f2443f0c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_162
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 361
+        width: 53
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36349f8737f9a842bdd87c56a77fe3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_163
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 358
+        width: 54
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb4927f25cecd845bb8534b34e0c07b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_164
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 353
+        width: 56
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38f5b909203c164ea686204dcf29ac4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_165
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 352
+        width: 62
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5c613cc8d175749af25fc7e2bcc64c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_166
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 329
+        width: 51
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4c63316cc77364f9bb960928599dab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_167
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 330
+        width: 44
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b188b450390a24abe3a7a10283a90b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_168
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 330
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d28627427766940a0c7834b6ac78b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_169
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 333
+        width: 33
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66e9842fac43714eba6dbe54fd3b597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_170
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 335
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afe3c8f9853c2244806f069bae283ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_171
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 336
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21ebd61673b4ba4e90617fe1c654e68
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_172
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 336
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27661629ea9ea942850d0ba62061696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_173
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 340
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cffc3459cb11f8449ab400d2c9e0806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_174
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 340
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f624b6cbb12838e49ad0e455cdff057f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_175
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 271
+        width: 433
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03416ae4d9ca2d74e9e46d8dba7c6ef0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_176
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 314
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8cde4583e2792408dcebb7c8f25e6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_177
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 314
+        width: 27
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb2a7e1834199c4794841d277c9266d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_178
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 298
+        width: 41
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042d46418a3c98f41858bc7dd55650ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_179
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 286
+        width: 41
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962f8482e44cbad40bda0887864ca6e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_180
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 279
+        width: 36
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c136fc1541d897d41b81cbf4ef7700fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_181
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 488
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeec6a003263ea44cab28ac564c7b307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldier-sprites-left_182
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 267
+        width: 41
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65dd557822e29d8428bee941781dfc43
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2616d659c36848144a55737d6a4ea972
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

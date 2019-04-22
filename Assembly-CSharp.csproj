@@ -102,12 +102,14 @@
     <Compile Include="Assets\Scripts\MainMenu\BurbujaFondo.cs" />
     <Compile Include="Assets\Scripts\MainMenu\FondoTitulo.cs" />
     <Compile Include="Assets\Scripts\MainMenu\ManejadorPanels.cs" />
+    <Compile Include="Assets\Scripts\NivelPrincipal\Animaciones\AnimationAutoDestroy.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\BolaExtra.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\IllumiCoinExtra.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\ManejadorBolas.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\ManejadorDisparo.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\ManejadorPanel.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\Player.cs" />
+    <Compile Include="Assets\Scripts\NivelPrincipal\RotateAndExpand.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\Shop.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\Suelo.cs" />
     <None Include="Assets\Pixel UI\Changelog.txt" />

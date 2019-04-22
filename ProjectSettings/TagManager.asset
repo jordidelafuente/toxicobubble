@@ -14,6 +14,7 @@ TagManager:
   - IllumiCoinExtra
   - IconBoost
   - BurbujaFondo
+  - Explosion
   layers:
   - Default
   - TransparentFX

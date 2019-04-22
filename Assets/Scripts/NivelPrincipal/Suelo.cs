@@ -27,7 +27,8 @@ public class Suelo : MonoBehaviour {
         if (col.gameObject.tag == "Burbuja")
         {
             panelGameOver.SetActive(true);
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
+            ManejadorDisparo.estadoPlayer = ManejadorDisparo.EstadoPlayer.GAMEOVER;
         }
     }
 }
