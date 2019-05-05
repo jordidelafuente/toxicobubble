@@ -16,6 +16,11 @@ public class Shop : MonoBehaviour
     public Text txtNumBoostReboteShop;
     //public Text txtNumIllumiCoinShop;
 
+    public AudioSource audioSource;
+    public AudioClip sound_comprar;
+    public AudioClip sound_vender;
+    public AudioClip sound_ui_button_ko;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +48,13 @@ public class Shop : MonoBehaviour
             txtNumIllumiCoin.text = numIllumiCoins.ToString();
             txtNumBoostSize.text = numBoostSize.ToString();
             txtNumBoostSizeShop.text = numBoostSize.ToString();
+            if (ManejadorDisparo.getDataController().getOptionsConfig().soundsOn == 0) //TODO: constantes
+            {
+                audioSource.PlayOneShot(sound_comprar, 1f);
+            }
+        } else
+        {
+            playUISound_KO();
         }
     }
 
@@ -57,6 +69,13 @@ public class Shop : MonoBehaviour
             txtNumIllumiCoin.text = numIllumiCoins.ToString();
             txtNumBoostSize.text = numBoostSize.ToString();
             txtNumBoostSizeShop.text = numBoostSize.ToString();
+            if (ManejadorDisparo.getDataController().getOptionsConfig().soundsOn == 0) //TODO: constantes
+            {
+                audioSource.PlayOneShot(sound_vender, 1f);
+            }
+        } else
+        {
+            playUISound_KO();
         }
     }
 
@@ -71,6 +90,13 @@ public class Shop : MonoBehaviour
             txtNumIllumiCoin.text = numIllumiCoins.ToString();
             txtNumBoostFuerza.text = numBoostFuerza.ToString();
             txtNumBoostFuerzaShop.text = numBoostFuerza.ToString();
+            if (ManejadorDisparo.getDataController().getOptionsConfig().soundsOn == 0) //TODO: constantes
+            {
+                audioSource.PlayOneShot(sound_comprar, 1f);
+            }
+        } else
+        {
+            playUISound_KO();
         }
     }
 
@@ -85,6 +111,13 @@ public class Shop : MonoBehaviour
             txtNumIllumiCoin.text = numIllumiCoins.ToString();
             txtNumBoostFuerza.text = numBoostFuerza.ToString();
             txtNumBoostFuerzaShop.text = numBoostFuerza.ToString();
+            if (ManejadorDisparo.getDataController().getOptionsConfig().soundsOn == 0) //TODO: constantes
+            {
+                audioSource.PlayOneShot(sound_vender, 1f);
+            }
+        } else
+        {
+            playUISound_KO();
         }
     }
 
@@ -99,6 +132,13 @@ public class Shop : MonoBehaviour
             txtNumIllumiCoin.text = numIllumiCoins.ToString();
             txtNumBoostRebote.text = numBoostRebote.ToString();
             txtNumBoostReboteShop.text = numBoostRebote.ToString();
+            if (ManejadorDisparo.getDataController().getOptionsConfig().soundsOn == 0) //TODO: constantes
+            {
+                audioSource.PlayOneShot(sound_comprar, 1f);
+            }
+        } else
+        {
+            playUISound_KO();
         }
     }
 
@@ -113,6 +153,21 @@ public class Shop : MonoBehaviour
             txtNumIllumiCoin.text = numIllumiCoins.ToString();
             txtNumBoostRebote.text = numBoostRebote.ToString();
             txtNumBoostReboteShop.text = numBoostRebote.ToString();
+            if (ManejadorDisparo.getDataController().getOptionsConfig().soundsOn == 0) //TODO: constantes
+            {
+                audioSource.PlayOneShot(sound_vender, 1f);
+            }
+        } else
+        {
+            playUISound_KO();
+        }
+    }
+
+    public void playUISound_KO()
+    {
+        if (ManejadorDisparo.getDataController().getOptionsConfig().soundsOn == 0) //TODO: constantes
+        {
+            audioSource.PlayOneShot(sound_ui_button_ko, 1f);
         }
     }
 

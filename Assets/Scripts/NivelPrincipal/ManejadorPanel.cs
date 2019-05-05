@@ -18,6 +18,10 @@ public class ManejadorPanel : MonoBehaviour
     public Text illumiCoins;
     public Text insufficientCoins;
 
+    public AudioSource audioSource;
+    public AudioClip sound_ui_button_ok;
+    public AudioClip sound_ui_button_ko;
+
     // Use this for initialization
     void Start () {
         
@@ -34,6 +38,8 @@ public class ManejadorPanel : MonoBehaviour
         panelMoving.SetActive(false); //it can be open when changing panel
         Time.timeScale = 0;
         updateBudgetsToPanelShop();
+
+        playUISound_OK();
     }
 
     public void desactivarPanelShop()
@@ -41,6 +47,8 @@ public class ManejadorPanel : MonoBehaviour
         panelShop.SetActive(false);
         ManejadorDisparo.estadoPlayer = ManejadorDisparo.EstadoPlayer.READY;
         Time.timeScale = 1;
+
+        playUISound_OK();
     }
 
     public void activarPanelPausa()
@@ -48,6 +56,8 @@ public class ManejadorPanel : MonoBehaviour
         panelPausa.SetActive(true);
         panelMoving.SetActive(false); //it can be open when changing panel
         Time.timeScale = 0;
+
+        playUISound_OK();
     }
 
     public void desactivarPanelPausa()
@@ -55,6 +65,8 @@ public class ManejadorPanel : MonoBehaviour
         panelPausa.SetActive(false);
         ManejadorDisparo.estadoPlayer = ManejadorDisparo.EstadoPlayer.READY;
         Time.timeScale = 1;
+
+        playUISound_OK();
     }
 
     public void activarPanelBoosters()
@@ -64,7 +76,12 @@ public class ManejadorPanel : MonoBehaviour
             panelBoosters.SetActive(true);
             panelMoving.SetActive(false); //it can be open when changing panel
             Time.timeScale = 0;
+            playUISound_OK();
+        } else
+        {
+            playUISound_KO();
         }
+        
     }
 
     public void desactivarPanelBoosters()
@@ -72,15 +89,19 @@ public class ManejadorPanel : MonoBehaviour
         panelBoosters.SetActive(false);
         ManejadorDisparo.estadoPlayer = ManejadorDisparo.EstadoPlayer.READY;
         Time.timeScale = 1;
+
+        playUISound_OK();
     }
 
     public void mainMenu()
     {
+        playUISound_OK();
         SceneManager.LoadScene("MainMenu");
     }
 
     public void Reiniciar()
     {
+        playUISound_OK();
         SceneManager.LoadScene("NivelPrincipal-portrait");
         Time.timeScale = 1;
     }
@@ -95,10 +116,15 @@ public class ManejadorPanel : MonoBehaviour
             eliminarBurbujaMasBaja();
             panelGameOver.SetActive(false);
             ManejadorDisparo.estadoPlayer = ManejadorDisparo.EstadoPlayer.READY;
+            ManejadorDisparo.gameOverActivated = false;
+            ManejadorDisparo.changeMusic = true;
+            ManejadorDisparo.getDataController().getPlayerProgress().stateHistory = ManejadorDisparo.lastStateBeforeGameOver;//TODO: last state???
             Time.timeScale = 1;
+            playUISound_OK();
         } else
         {
             insufficientCoins.text = "Not enough IllumiCoins";
+            playUISound_KO();
         }
     }
 
@@ -128,15 +154,25 @@ public class ManejadorPanel : MonoBehaviour
 
     public void NextTurn()
     {
-        GameObject[] bolas = GameObject.FindGameObjectsWithTag("Bola");
-        foreach (GameObject bolaAux in bolas)
+        if (ManejadorDisparo.estadoPlayer == ManejadorDisparo.EstadoPlayer.SHOOTING)
         {
-            if (bolaAux.transform.position.x < 1500) //TODO: bola fuera del canvas no se cae (con función bien hecha)
+            GameObject[] bolas = GameObject.FindGameObjectsWithTag("Bola");
+            foreach (GameObject bolaAux in bolas)
             {
-                bolaAux.gameObject.SetActive(false);
-                Destroy(bolaAux.gameObject);
+                if (bolaAux.transform.position.x < 1500) //TODO: bola fuera del canvas no se cae (con función bien hecha)
+                {
+                    bolaAux.gameObject.SetActive(false);
+                    Destroy(bolaAux.gameObject);
+                }
             }
+            ManejadorDisparo.numBolasADisparar = ManejadorDisparo.numBolasDisparadas;
+            playUISound_OK();
+        } 
+        else
+        {
+            playUISound_KO();
         }
+        
     }
 
     public void updateBudgetsToPanelShop()
@@ -179,6 +215,23 @@ public class ManejadorPanel : MonoBehaviour
             {
                 txtAux.text = numBoostRebote.ToString(); 
             }
+        }
+    }
+
+
+    private void playUISound_OK()
+    {
+        if (ManejadorDisparo.getDataController().getOptionsConfig().soundsOn == 0) //TODO: constantes
+        {
+            audioSource.PlayOneShot(sound_ui_button_ok, 1f);
+        }
+    }
+
+    private void playUISound_KO()
+    {
+        if (ManejadorDisparo.getDataController().getOptionsConfig().soundsOn == 0) //TODO: constantes
+        {
+            audioSource.PlayOneShot(sound_ui_button_ko, 1f);
         }
     }
 }

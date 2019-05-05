@@ -8,7 +8,9 @@ public class AnimationAutoDestroy : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        if (gameObject.transform.parent.tag == "Explosion") //TODO: diferenciar delay por tipos de animaciones
+        if (   gameObject.transform.parent.tag == "Explosion"
+            || gameObject.transform.parent.tag == "AnimCoin+1"
+            || gameObject.transform.parent.tag == "AnimBola+1") //TODO: diferenciar delay por tipos de animaciones
         {
             Destroy(gameObject.transform.parent.gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
         }

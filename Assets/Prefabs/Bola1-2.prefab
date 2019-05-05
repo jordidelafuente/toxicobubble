@@ -132,3 +132,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NumBolasPlayer: {fileID: 0}
+  animBolaAdd1: {fileID: 0}

@@ -98,6 +98,8 @@
     <Compile Include="Assets\Pixel UI\Scripts\UITabbedWindow.cs" />
     <Compile Include="Assets\Pixel UI\Scripts\UITooltip.cs" />
     <Compile Include="Assets\Pixel UI\Scripts\UITypewriter.cs" />
+    <Compile Include="Assets\RPGPuzzleGameMusic\Scripts\MusicController.cs" />
+    <Compile Include="Assets\Scripts\DataController.cs" />
     <Compile Include="Assets\Scripts\MainMenu\BotonPlayAnim.cs" />
     <Compile Include="Assets\Scripts\MainMenu\BurbujaFondo.cs" />
     <Compile Include="Assets\Scripts\MainMenu\FondoTitulo.cs" />
@@ -112,6 +114,8 @@
     <Compile Include="Assets\Scripts\NivelPrincipal\RotateAndExpand.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\Shop.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\Suelo.cs" />
+    <Compile Include="Assets\Scripts\OptionsConfig.cs" />
+    <Compile Include="Assets\Scripts\PlayerProgress.cs" />
     <None Include="Assets\Pixel UI\Changelog.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

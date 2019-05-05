@@ -7,8 +7,13 @@ public class BolaExtra : MonoBehaviour {
 
     public Text NumBolasPlayer;
 
-	// Use this for initialization
-	void Start () {
+    public Transform animBolaAdd1;
+
+    public AudioSource audioSource;
+    public AudioClip sound_bola_extra;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -27,6 +32,14 @@ public class BolaExtra : MonoBehaviour {
         {
             this.gameObject.SetActive(false);
             Destroy(this.gameObject);
+            Transform animCoin = Instantiate(animBolaAdd1, col.gameObject.transform.position, Quaternion.identity);
+            animCoin.gameObject.tag = "AnimBola+1";
+
+            if (ManejadorDisparo.getDataController().getOptionsConfig().soundsOn == 0) //TODO: constantes
+            {
+                audioSource.PlayOneShot(sound_bola_extra, 1f);
+            }
+
             int newNumBolasPlayer = int.Parse(NumBolasPlayer.text.ToString().Replace("x", "")) + 1;
             NumBolasPlayer.text = "x" + newNumBolasPlayer.ToString();
         }

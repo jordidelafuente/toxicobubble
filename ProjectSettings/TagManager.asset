@@ -15,6 +15,10 @@ TagManager:
   - IconBoost
   - BurbujaFondo
   - Explosion
+  - InputField
+  - AnimCoin+1
+  - AnimBola+1
+  - Calavera
   layers:
   - Default
   - TransparentFX

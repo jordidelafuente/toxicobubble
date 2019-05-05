@@ -5,13 +5,24 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public GameObject panelMoving;
+    public GameObject player;
+    public GameObject handleScrollBar;
+   
+    public GameObject lineaDisparo;
     Animator animPlayer;
+    LineRenderer lineRenderer;
+
+    float positionXPlayerAnt;
+    public static bool isManualMove;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animPlayer = ManejadorDisparo.getAnimPlayer();
+        lineRenderer = lineaDisparo.GetComponent<LineRenderer>();
+        positionXPlayerAnt = player.transform.position.x;
+
+        isManualMove = true;
     }
 
     // Update is called once per frame
@@ -20,21 +31,43 @@ public class Player : MonoBehaviour
         
     }
 
-    public void buttonMovePlayer()
+    public void movePlayer()
     {
-        animPlayer = ManejadorDisparo.getAnimPlayer();
-        if (ManejadorDisparo.estadoPlayer == ManejadorDisparo.EstadoPlayer.READY)
+        
+        if (!isManualMove)
         {
-            //ManejadorDisparo.estadoPlayer = ManejadorDisparo.EstadoPlayer.MOVING;
-            ManejadorDisparo.setEstadoPlayer(ManejadorDisparo.EstadoPlayer.MOVING);
-            panelMoving.SetActive(true);
-        } else
-        {
-            //ManejadorDisparo.estadoPlayer = ManejadorDisparo.EstadoPlayer.READY;
-            ManejadorDisparo.setEstadoPlayer(ManejadorDisparo.EstadoPlayer.READY);
-            panelMoving.SetActive(false);
-            //animPlayer.SetTrigger("");
+            return;
         }
+
+        animPlayer = ManejadorDisparo.getAnimPlayer();
+        player.transform.position = new Vector3(handleScrollBar.transform.position.x, 
+                                                        player.transform.position.y, 
+                                                        player.transform.position.z);
+
+        lineRenderer.SetPosition(0, new Vector3(player.gameObject.transform.position.x,
+                                    player.gameObject.transform.position.y,
+                                    player.transform.position.z - 1));
+
+        //Deciding the animation to run due to dragging direction when moving  
+        float direction = handleScrollBar.transform.position.x - positionXPlayerAnt;
+        if (direction > 0)
+        {
+            animPlayer.SetTrigger("ReadyToMoveRight");
+            //animPlayer.SetTrigger("PlayerReady");
+        }
+        else if (direction < 0)
+        {
+            animPlayer.SetTrigger("ReadyToMoveLeft");
+            //animPlayer.SetTrigger("PlayerReady");
+        }
+        /*else
+        {
+            animPlayer.SetTrigger("PlayerReady");
+        }*/
+
+        positionXPlayerAnt = player.transform.position.x;
+        //Debug.Log("MOVING BAR!!!");
+        
         animPlayer.SetTrigger("PlayerReady");
     }
 }

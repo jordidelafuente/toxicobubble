@@ -95,6 +95,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NumCoinsPlayer: {fileID: 0}
+  animCoinAdd1: {fileID: 0}
+  audioSource: {fileID: 0}
+  sound_coin_extra: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
 --- !u!50 &50634190308240598
 Rigidbody2D:
   serializedVersion: 4

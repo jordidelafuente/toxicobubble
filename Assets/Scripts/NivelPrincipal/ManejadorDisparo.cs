@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -11,14 +12,18 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     public GameObject lineaDisparo;
     public GameObject player;
+    public Scrollbar scrollBar;
+    public GameObject handleScrollBar;
     public Transform bola;
     public Transform bolaExtra;
     public Transform illumiCoinExtra;
     public Transform burbuja;
+    public Transform calavera;
+
     public Text textNumeroDeBolas;
-    public Text textScore;
+    public Text textScore, textBestScore, illumiCoins;
     public int velocidadBolas;
-    public enum EstadoPlayer { READY, SHOOTING, MOVING, GAMEOVER };
+    public enum EstadoPlayer { READY, SHOOTING, MOVING, POINTING, GAMEOVER, TALKING };
     static Animator animPlayer;
 
     static int velocidadBolasGlobal;
@@ -29,21 +34,47 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     static bool[] boostersActivados;
 
+    public AudioSource source;
+    public AudioSource musicSource;
+
+    public AudioClip sound_start;
+    public AudioClip sound_using_booster;
+    public AudioClip sound_not_using_booster;
+
+    public AudioClip playingMusic;
+    public AudioClip gameOverMusic;
+    public AudioClip enemyTalkingMusic;
+    public AudioClip levelPassed;
+
+
     LineRenderer lineRenderer;
-    GameObject[] burbujas, bolas, bolasExtra, illumiCoinsExtra;
-        
-    float timeInicioDisparo;
-    int numBolasADisparar, numBolasDisparadas;
+    GameObject[] burbujas, bolas, bolasExtra, illumiCoinsExtra, calaveras;
+
+    public static DataController dataController;
+
+    float timeInicioDisparo, timeCambioPosDisparo;
+    public static int numBolasADisparar, numBolasDisparadas;
     public static EstadoPlayer estadoPlayer;
     bool canShoot;
+    public static bool gameOverActivated, changeMusic;
+    public static bool isDragging;
     float xInicialPlayer;
-    Vector2 _lastPosition;
+    public static int lastStateBeforeGameOver;
+
+    public GameObject panel_history_1;
+    public GameObject panel_history_2;
+    public GameObject panel_history_3;
 
     // Use this for initialization
     void Start()
     {
+        dataController = getDataController();
+
+        updateScore();
+        textScore.text = "Score: " + 0;
+
         velocidadBolasGlobal = velocidadBolas;
-        numBolasADisparar = GetNumBolasFromPlayer();
+        numBolasADisparar = GetNumBolasFromPlayer(2);
         lineaDisparo.SetActive(false);
         textNumeroDeBolas.gameObject.SetActive(false);
         ManejadorBolas.SetXPrimeraBola(-9999);
@@ -53,12 +84,92 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         boostersActivados = new bool[] {false,false,false,false };
 
         lineRenderer = lineaDisparo.GetComponent<LineRenderer>();
-        lineRenderer.SetPosition(0, new Vector3(player.gameObject.transform.position.x /*+ (80*/,
-                                    player.gameObject.transform.position.y/* - (50)*/,
-                                    player.transform.position.z - 1)); //TODO: ajustar mejor
+        lineRenderer.SetPosition(0, new Vector3(player.gameObject.transform.position.x,
+                                    player.gameObject.transform.position.y,
+                                    player.transform.position.z - 1));
+
+        scrollBar.transform.position = new Vector3(player.gameObject.transform.position.x,
+                                                   scrollBar.transform.position.y,
+                                                   scrollBar.transform.position.z);
+        scrollBar.gameObject.SetActive(true);
+        scrollBar.value = 0.5f;
         xInicialPlayer = player.transform.position.x;
-        //xInstanteAnterior = player.transform.position.x;
+
+        //Controlling the history mode
+        historyMode();
+        playMusic();
     }
+
+    public void historyMode()
+    {
+        panel_history_1.SetActive(false); //TODO: extern array of panels?
+        panel_history_2.SetActive(false); //
+        panel_history_3.SetActive(false); //
+
+        switch (dataController.getPlayerProgress().stateHistory)
+        {
+            case 0:
+                panel_history_1.SetActive(true); //
+                estadoPlayer = EstadoPlayer.TALKING;
+                Time.timeScale = 0;
+                break;
+
+            case 1: //TODO: hacer una estructura de datos que contenga relaciones de estados en modo historia (paneles vs estado, modo juego vs estados, estados vs rewards, etc...
+            case 3:
+            case 5: 
+                estadoPlayer = EstadoPlayer.READY; //ready to continue playing
+                Time.timeScale = 1;
+                break;
+
+            case 2:
+                //panel_history_1.SetActive(false);
+                panel_history_2.SetActive(true); //
+                estadoPlayer = EstadoPlayer.TALKING;
+                Time.timeScale = 0;
+                break;
+
+            case 4:
+                panel_history_3.SetActive(true); //
+                estadoPlayer = EstadoPlayer.TALKING;
+                Time.timeScale = 0;
+                break;
+        }
+
+        /*if (dataController.getPlayerProgress().stateHistory == 0) //TODO: constantes
+        {
+            panel_history_1.SetActive(true); //
+            estadoPlayer = EstadoPlayer.TALKING;
+            Time.timeScale = 0;
+        } else if (dataController.getPlayerProgress().stateHistory == 1) 
+        {
+            panel_history_1.SetActive(false); //
+            estadoPlayer = EstadoPlayer.READY;
+            Time.timeScale = 1;
+        } else if (dataController.getPlayerProgress().stateHistory == 2) //TODO: constantes
+        {
+            panel_history_1.SetActive(false);
+            panel_history_2.SetActive(true); //
+            estadoPlayer = EstadoPlayer.TALKING;
+            Time.timeScale = 0;
+        }*/
+    }
+
+    public void startPlaying(int state) //from button "continue"
+    {
+        dataController.getPlayerProgress().stateHistory = state;
+        lastStateBeforeGameOver = state;
+        panel_history_1.SetActive(false); // TODO: extern array?
+        panel_history_2.SetActive(false); //
+        panel_history_3.SetActive(false); //
+        estadoPlayer = EstadoPlayer.READY;
+        Time.timeScale = 1;
+        playMusic();
+        if (dataController.getOptionsConfig().soundsOn == 0) //TODO: constantes
+        {
+            source.PlayOneShot(sound_start, 1f);
+        }
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -66,16 +177,33 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         bool isDispararBola = estadoPlayer == EstadoPlayer.SHOOTING
                             && numBolasDisparadas < numBolasADisparar
                             && (Time.time - timeInicioDisparo > 0.1 * numBolasDisparadas);
+        scrollBar.gameObject.SetActive(estadoPlayer == EstadoPlayer.READY || estadoPlayer == EstadoPlayer.POINTING);
 
         if (isDispararBola)
         {
             dispararBola();
+        } if(estadoPlayer == EstadoPlayer.GAMEOVER && !gameOverActivated)
+        {
+            lastStateBeforeGameOver = getDataController().getPlayerProgress().stateHistory;
+            getDataController().getPlayerProgress().stateHistory = -1;
+            historyMode();
+            playMusic();
+            gameOverActivated = true;
+            //Debug.Log("game overrrrrr");
         }
         else
         {
-            transicionarAnimPlayer();
+            if (changeMusic) //change music due to avoiding game over ($$$)
+            {
+                playMusic();
+                changeMusic = false;
+            }
+            
             if (!hayMasBolas() && numBolasDisparadas == numBolasADisparar)
             {
+                estadoPlayer = EstadoPlayer.READY;
+                isDragging = false;
+                //animPlayer.SetTrigger("PlayerReady");
                 generarBurbujas(GetScore());
                 if ((GetScore()) % 7 == 0)
                 {
@@ -87,26 +215,81 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                     generarBolaExtra();
                 }
 
+                //If state hostory is 3, then you are suffering the skull weapon
+                if (dataController.getPlayerProgress().stateHistory >= 3 && (GetScore()) % 6 == 0)
+                {
+                    generarCalavera();
+                }
+
                 moverBurbujas();
                 moverBolasExtra();
                 moverIllumiCoins();
+                moverCalaveras();
                 updateScore();
-                estadoPlayer = EstadoPlayer.READY;
-                transicionarAnimPlayer();
-                numBolasADisparar = GetNumBolasFromPlayer();
+                //textNumeroDeBolas.gameObject.SetActive(true); //TODO: ???
+                numBolasADisparar = GetNumBolasFromPlayer(numBolasADisparar);
                 textNumeroDeBolas.gameObject.SetActive(false);
                 numBolasDisparadas = 0;
                 boostersActivados = new bool[] { false, false, false, false };
                 desactivarIconBoosts();
                 if (ManejadorBolas.GetXPrimeraBola() != -9999f) {
                     player.transform.position = new Vector3(ManejadorBolas.GetXPrimeraBola(), player.transform.position.y, player.transform.position.z);
+                    scrollBar.transform.position = new Vector3(player.gameObject.transform.position.x,
+                                                   scrollBar.transform.position.y,
+                                                   scrollBar.transform.position.z);
+                    Player.isManualMove = false;
+                    scrollBar.value = 0.5f;
                     textNumeroDeBolas.gameObject.transform.position = new Vector2(player.transform.position.x - 100f/*TODO:ajustar a pantallas*/, textNumeroDeBolas.gameObject.transform.position.y);
                     lineRenderer.SetPosition(0, new Vector3(player.gameObject.transform.position.x /*+ (80)*/,
-                                    player.gameObject.transform.position.y /*- (50)*/,
-                                    player.transform.position.z - 1)); //TODO: ajustar mejor
+                                    player.gameObject.transform.position.y,
+                                    player.transform.position.z - 1)); 
                     ManejadorBolas.SetXPrimeraBola(-9999f);
                     xInicialPlayer = player.transform.position.x;
-                    //xInstanteAnterior = player.transform.position.x;
+                    Player.isManualMove = false;
+                    timeCambioPosDisparo = Time.time;
+
+                }
+
+                //Achieving first goal
+                if (dataController.getPlayerProgress().stateHistory == 1 
+                    && GetScore() >= 10)/*TODO: 50*/
+                {
+                    lastStateBeforeGameOver = getDataController().getPlayerProgress().stateHistory;
+                    dataController.getPlayerProgress().stateHistory = 2;
+                    int newNumCoinsPlayer = int.Parse(illumiCoins.text.ToString()) + 50;
+                    illumiCoins.text = newNumCoinsPlayer.ToString();
+                    historyMode();
+                    playMusic();
+                }
+
+                //Achieving second goal
+                if (dataController.getPlayerProgress().stateHistory == 3
+                    && GetScore() >= 25)/*TODO: 110*/
+                {
+                    lastStateBeforeGameOver = getDataController().getPlayerProgress().stateHistory;
+                    dataController.getPlayerProgress().stateHistory = 4;
+                    int newNumCoinsPlayer = int.Parse(illumiCoins.text.ToString()) + 51;
+                    illumiCoins.text = newNumCoinsPlayer.ToString();
+                    historyMode();
+                    playMusic();
+                }
+            }
+            else
+            {
+                if (estadoPlayer != EstadoPlayer.POINTING)
+                {
+                    animPlayer.SetTrigger("PlayerReady");
+                }
+
+                if ((estadoPlayer != EstadoPlayer.SHOOTING) && !isDragging)
+                {
+                    //animPlayer.SetTrigger("PlayerReady");
+                    
+                    if (Time.time - timeCambioPosDisparo > 0.1)
+                    {
+                        Player.isManualMove = true;
+                        //animPlayer.SetTrigger("PlayerReady");
+                    }
                 }
             }
         }      
@@ -119,12 +302,13 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             lineRenderer.SetPosition(1, Camera.main.ScreenToWorldPoint(eventData.position));
         }
 
-        _lastPosition = eventData.position;
+        isDragging = true;
+        
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (estadoPlayer == EstadoPlayer.READY && Time.timeScale > 0)
+        if (isDragging && Time.timeScale > 0 && (estadoPlayer != EstadoPlayer.SHOOTING))
         {
             //...
             textNumeroDeBolas.gameObject.SetActive(true);
@@ -136,70 +320,39 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             {  
                 lineaDisparo.SetActive(true);
                 canShoot = true;
+                animPlayer.SetTrigger("pointUp"); //TODO: diferente animacion segun angulo
+                estadoPlayer = EstadoPlayer.POINTING;
             }
             else
             {
                 lineaDisparo.SetActive(false);
                 canShoot = false;
+                //animPlayer.SetTrigger("PlayerReady");
+                estadoPlayer = EstadoPlayer.READY;
             }
-
-            //Sprite sprite = Resources.Load("soldier-sprites-left_48", typeof(Sprite)) as Sprite;
-            //player.GetComponent<SpriteRenderer>().sprite = null; // sprite;
-            //player.GetComponent<SpriteRenderer>().size = new Vector2(100,100);
-            //player.GetComponent<Animator>().set;
-            //player.GetComponent<SpriteRenderer>().sprite.
-
-        } else if (estadoPlayer == EstadoPlayer.MOVING)
-        {
-            //Debug.Log("moving!!!!");
-            canShoot = false;
-            if (Camera.main.ScreenToWorldPoint(eventData.position).x  >= xInicialPlayer-100f
-               && Camera.main.ScreenToWorldPoint(eventData.position).x <= xInicialPlayer + 100f)
-            {
-                Vector3 direction = eventData.position - _lastPosition;
-                _lastPosition = eventData.position;
-                player.transform.position = new Vector3(Camera.main.ScreenToWorldPoint(eventData.position).x,
-                                            player.transform.position.y,
-                                            player.transform.position.z);
-                
-                lineRenderer.SetPosition(0, new Vector3(player.gameObject.transform.position.x ,
-                                    player.gameObject.transform.position.y,
-                                    player.transform.position.z - 1)); 
-
-                //Deciding the animation to run due to dragging direction when moving               
-                if (direction.x > 0)
-                {
-                    animPlayer.SetTrigger("ReadyToMoveRight");
-                    animPlayer.SetTrigger("PlayerReady");
-                } else if(direction.x < 0)
-                {
-                    animPlayer.SetTrigger("ReadyToMoveLeft");
-                    animPlayer.SetTrigger("PlayerReady");
-                } else
-                {
-                    animPlayer.SetTrigger("PlayerReady");
-                }
-            }
-            // Debug.Log("x);
-        } else
+        }
+        /*else
         {
             animPlayer.SetTrigger("PlayerReady");
-        }
+        }*/
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         timeInicioDisparo = Time.time;
-
-        if (canShoot && !hayMasBolas() && estadoPlayer != EstadoPlayer.GAMEOVER)
+        isDragging = false;
+        if (canShoot && !hayMasBolas() && (estadoPlayer == EstadoPlayer.READY || estadoPlayer == EstadoPlayer.POINTING))//estadoPlayer != EstadoPlayer.GAMEOVER)
         {
             lineaDisparo.SetActive(false);
             estadoPlayer = EstadoPlayer.SHOOTING;
             numBolasDisparadas = 0;
             dispararBola();
         }
-        //xInstanteAnterior = player.transform.position.x;
-        transicionarAnimPlayer();
+        
+        eventData.pointerDrag = null;
+        eventData.dragging = false;
+        animPlayer = player.GetComponent<Animator>();
+        //animPlayer.SetTrigger("PlayerReady");
     }
 
     public void boostBolaMasGrande(GameObject iconBoost)
@@ -213,6 +366,12 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 boostersActivados[0] = false;
                 numBoostersSizeBall++;
                 iconBoost.SetActive(false);
+
+                if (dataController.getOptionsConfig().soundsOn == 0) //TODO: constantes
+                {
+                    source.PlayOneShot(sound_not_using_booster, 1f);
+                }
+
                 numBoostersBolaGrande.text = numBoostersSizeBall.ToString();
             }
             else if (numBoostersSizeBall > 0)
@@ -220,6 +379,12 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 boostersActivados[0] = true;
                 numBoostersSizeBall--;
                 iconBoost.SetActive(true);
+
+                if (dataController.getOptionsConfig().soundsOn == 0) //TODO: constantes
+                {
+                    source.PlayOneShot(sound_using_booster, 1f);
+                }
+
                 numBoostersBolaGrande.text = numBoostersSizeBall.ToString();
             }
         }
@@ -235,6 +400,12 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 boostersActivados[1] = false;
                 numBoostersFuerzaX2++;
                 iconBoost.SetActive(false);
+
+                if (dataController.getOptionsConfig().soundsOn == 0) //TODO: constantes
+                {
+                    source.PlayOneShot(sound_not_using_booster, 1f);
+                }
+
                 numBoostersBolaFuezaX2.text = numBoostersFuerzaX2.ToString();
             }
             else if (numBoostersFuerzaX2 > 0)
@@ -242,6 +413,12 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 boostersActivados[1] = true;
                 numBoostersFuerzaX2--;
                 iconBoost.SetActive(true);
+
+                if (dataController.getOptionsConfig().soundsOn == 0) //TODO: constantes
+                {
+                    source.PlayOneShot(sound_using_booster, 1f);
+                }
+
                 numBoostersBolaFuezaX2.text = numBoostersFuerzaX2.ToString();
             }
         }
@@ -257,13 +434,26 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 boostersActivados[2] = false;
                 numRebotesSuelo++;
                 iconBoost.SetActive(false);
+
+                if (dataController.getOptionsConfig().soundsOn == 0) //TODO: constantes
+                {
+                    source.PlayOneShot(sound_not_using_booster, 1f);
+                }
+
                 numBoostersRebote.text = numRebotesSuelo.ToString();
+
             }
             else if (numRebotesSuelo > 0)
             {
                 boostersActivados[2] = true;
                 numRebotesSuelo--;
                 iconBoost.SetActive(true);
+
+                if (dataController.getOptionsConfig().soundsOn == 0) //TODO: constantes
+                {
+                    source.PlayOneShot(sound_using_booster, 1f);
+                }               
+
                 numBoostersRebote.text = numRebotesSuelo.ToString();
             }
         }
@@ -323,6 +513,36 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         bolaExtraNew.gameObject.tag = "BolaExtra";
     }
 
+    public void generarCalavera() //Instantiate a bubble at a random "x" position
+    {
+        //bool positionValid = false;
+        int xRandom = -9999;
+        Vector3 posicion = new Vector3(-9999, -9999, 9999);
+        for (int i = 0; i < 100; i++)
+        {
+            xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
+            Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
+            posicion = Camera.main.ScreenToWorldPoint(randomPos);
+            posicion.z = 91;
+            if (!isColisionConObjetosDelJuego(posicion))
+            {
+                break;
+            }
+        }
+
+        Transform calaveraNew = Instantiate(calavera, posicion, Quaternion.identity);
+        calaveraNew.gameObject.tag = "Calavera";
+
+        foreach (Transform b in calaveraNew.gameObject.gameObject.transform)
+        {
+            if (b.gameObject.gameObject.name == "Peso")
+            {
+                int peso = int.Parse(b.gameObject.gameObject.GetComponent<TextMesh>().text) + (dataController.getPlayerProgress().stateHistory - 3);
+                b.gameObject.gameObject.GetComponent<TextMesh>().text = peso.ToString();
+            }
+        }
+    }
+
     void generarBurbujas(int score)
     {
         int numBurbujas = 2;
@@ -375,7 +595,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         foreach (GameObject burbuja in burbujas)
         {
             float dist = Vector3.Distance(burbuja.transform.position, posicionNuevoObjeto);
-            if (dist < 150)
+            if (dist < 155) //I don't like this number, but essay & error gave me
             {
                 return true;
             }
@@ -385,7 +605,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         foreach (GameObject bola in bolasExtra)
         {
             float dist = Vector3.Distance(bola.transform.position, posicionNuevoObjeto);
-            if (dist < 75)
+            if (dist < 80)
             {
                 return true;
             }
@@ -395,7 +615,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         foreach (GameObject coin in illumiCoinsExtra)
         {
             float dist = Vector3.Distance(coin.transform.position, posicionNuevoObjeto);
-            if (dist < 75)
+            if (dist < 80)
             {
                 return true;
             }
@@ -442,13 +662,38 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         }
     }
 
+    public void moverCalaveras()
+    {
+        calaveras = GameObject.FindGameObjectsWithTag("Calavera");
+        foreach (GameObject skull in calaveras)
+        {
+            //Moving bubbles one "step" to the floor
+            skull.GetComponent<Rigidbody2D>().MovePosition(new Vector3(skull.transform.position.x,
+                                                        skull.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
+                                                        skull.transform.position.z));
+        }
+    }
+
     //Getting the number of balls we will shoot 
-    private int GetNumBolasFromPlayer()
+    private int GetNumBolasFromPlayer(int numAnt)
     {
         int numBolas = 0;
         Text[] textos = player.GetComponentsInChildren<Text>();
-        string strNumBolas = textos[0].text.ToString().Replace("x", ""); //TODO: que pasa si hay más de un componente texto?
-        numBolas = int.Parse(strNumBolas);
+
+        /*if (estadoPlayer != EstadoPlayer.SHOOTING)
+        {*/
+        try
+        {
+            string strNumBolas = textos[0].text.ToString().Replace("x", ""); //TODO: que pasa si hay más de un componente texto?
+            numBolas = int.Parse(strNumBolas);
+        }
+        catch (System.Exception e)
+        {
+            Debug.Log(e.ToString()); //?
+            numBolas = numAnt; 
+        }
+            
+        /*} */       
 
         return numBolas;
     }
@@ -462,6 +707,9 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     {
         
         textScore.text = "Score: " + (GetScore()+1).ToString();
+        dataController.submitNewPlayerScore(GetScore());
+
+        textBestScore.text = "Best: " + dataController.getBestScore().ToString();
     }
 
     public void dispararBola()
@@ -516,16 +764,48 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         return animPlayer;
     }
 
-    void transicionarAnimPlayer()
+    public static DataController getDataController()
     {
-        if (estadoPlayer == EstadoPlayer.READY)
+        if (dataController == null)
         {
-            animPlayer.SetTrigger("PlayerReady");
+            dataController = new DataController();
+            dataController.loadOptionsConfig();
+            dataController.loadPlayerProgress();
         }
-        else if (estadoPlayer == EstadoPlayer.MOVING)
-        {
-            animPlayer.SetTrigger("PlayerReady");
-        }
+
+        return dataController;
+    }
+
+    public void playMusic()
+    {
+        musicSource.Stop();
+
+        if (dataController.getOptionsConfig().musicOn == 0)
+        {            
+            switch (dataController.getPlayerProgress().stateHistory)
+            {
+                case 0: //starting history
+                case 2:
+                case 4:
+                    //musicSource.PlayOneShot(enemyTalkingMusic, 0.5f);
+                    musicSource.clip = enemyTalkingMusic;
+                    break;
+                case 1: //playing
+                case 3:
+                case 5:
+                    musicSource.clip = playingMusic;
+                    break;
+                case -1: //Game over
+                    musicSource.clip = gameOverMusic;
+                    break;
+                //case 3: //Congratulations!
+                //    break;
+            }
+            musicSource.loop = true;
+            musicSource.Play();
+        } else {
+            musicSource.Stop();
+        }        
     }
 
     public void OnPointerClick(PointerEventData eventData)

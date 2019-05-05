@@ -18,7 +18,9 @@ public class Suelo : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "IllumiCoinExtra" || col.gameObject.tag == "BolaExtra")
+        if (col.gameObject.tag == "IllumiCoinExtra" 
+               || col.gameObject.tag == "BolaExtra" 
+               || col.gameObject.tag == "Calavera")
         {
             col.gameObject.SetActive(false);
             Destroy(col.gameObject);
@@ -27,6 +29,7 @@ public class Suelo : MonoBehaviour {
         if (col.gameObject.tag == "Burbuja")
         {
             panelGameOver.SetActive(true);
+
             //Time.timeScale = 0;
             ManejadorDisparo.estadoPlayer = ManejadorDisparo.EstadoPlayer.GAMEOVER;
         }

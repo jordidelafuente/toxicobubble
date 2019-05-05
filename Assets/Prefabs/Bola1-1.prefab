@@ -131,3 +131,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142c629c6d99f964db8271e8837f4812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionBurbuja: {fileID: 0}
+  audioSource: {fileID: 0}
+  sound_rebote_con_burbuja: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49,
+    type: 3}
+  sound_rebote_con_pared: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a,
+    type: 3}
+  sound_bola_toca_suelo: {fileID: 8300000, guid: 3becec1909f194046945d85ac1077772,
+    type: 3}
+  sound_explosion: {fileID: 8300000, guid: b9eff218e132a4e76be78840eca96fb2, type: 3}
