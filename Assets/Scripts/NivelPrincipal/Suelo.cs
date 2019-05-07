@@ -20,7 +20,8 @@ public class Suelo : MonoBehaviour {
     {
         if (col.gameObject.tag == "IllumiCoinExtra" 
                || col.gameObject.tag == "BolaExtra" 
-               || col.gameObject.tag == "Calavera")
+               || col.gameObject.tag == "Calavera"
+               || col.gameObject.tag == "BolaSpinner")
         {
             col.gameObject.SetActive(false);
             Destroy(col.gameObject);

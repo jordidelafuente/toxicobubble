@@ -71,10 +71,10 @@ public class DataController //: MonoBehaviour
             playerProgress.bestScore = PlayerPrefs.GetInt("bestScore");
         }
 
-        if (PlayerPrefs.HasKey("stateHistory"))
+       /* if (PlayerPrefs.HasKey("stateHistory"))
         {
             playerProgress.stateHistory = PlayerPrefs.GetInt("stateHistory");
-        }
+        }*/
     }
 
     private void savePlayerProgress()

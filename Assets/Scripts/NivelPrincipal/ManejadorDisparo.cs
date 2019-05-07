@@ -19,6 +19,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public Transform illumiCoinExtra;
     public Transform burbuja;
     public Transform calavera;
+    public Transform bolaSpinner;
 
     public Text textNumeroDeBolas;
     public Text textScore, textBestScore, illumiCoins;
@@ -48,7 +49,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
 
     LineRenderer lineRenderer;
-    GameObject[] burbujas, bolas, bolasExtra, illumiCoinsExtra, calaveras;
+    GameObject[] burbujas, bolas, bolasExtra, illumiCoinsExtra, calaveras, bolasSpinner;
 
     public static DataController dataController;
 
@@ -134,24 +135,6 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 Time.timeScale = 0;
                 break;
         }
-
-        /*if (dataController.getPlayerProgress().stateHistory == 0) //TODO: constantes
-        {
-            panel_history_1.SetActive(true); //
-            estadoPlayer = EstadoPlayer.TALKING;
-            Time.timeScale = 0;
-        } else if (dataController.getPlayerProgress().stateHistory == 1) 
-        {
-            panel_history_1.SetActive(false); //
-            estadoPlayer = EstadoPlayer.READY;
-            Time.timeScale = 1;
-        } else if (dataController.getPlayerProgress().stateHistory == 2) //TODO: constantes
-        {
-            panel_history_1.SetActive(false);
-            panel_history_2.SetActive(true); //
-            estadoPlayer = EstadoPlayer.TALKING;
-            Time.timeScale = 0;
-        }*/
     }
 
     public void startPlaying(int state) //from button "continue"
@@ -221,10 +204,16 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                     generarCalavera();
                 }
 
+                if (dataController.getPlayerProgress().stateHistory >= 5 && (GetScore()) % 7 == 0)
+                {
+                    generarBolaSpinner();
+                }
+
                 moverBurbujas();
                 moverBolasExtra();
                 moverIllumiCoins();
                 moverCalaveras();
+                moverBolasSpinner();
                 updateScore();
                 //textNumeroDeBolas.gameObject.SetActive(true); //TODO: ???
                 numBolasADisparar = GetNumBolasFromPlayer(numBolasADisparar);
@@ -543,6 +532,27 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         }
     }
 
+    void generarBolaSpinner()
+    {
+        //bool positionValid = false;
+        int xRandom = -9999;
+        Vector3 posicion = new Vector3(-9999, -9999, 9999);
+        for (int i = 0; i < 100; i++)
+        {
+            xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
+            Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
+            posicion = Camera.main.ScreenToWorldPoint(randomPos);
+            posicion.z = 91;
+            if (!isColisionConObjetosDelJuego(posicion))
+            {
+                break;
+            }
+        }
+
+        Transform bolaSpinnerNew = Instantiate(bolaSpinner, posicion, Quaternion.identity);
+        bolaSpinnerNew.gameObject.tag = "BolaSpinner";
+    }
+
     void generarBurbujas(int score)
     {
         int numBurbujas = 2;
@@ -667,10 +677,22 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         calaveras = GameObject.FindGameObjectsWithTag("Calavera");
         foreach (GameObject skull in calaveras)
         {
-            //Moving bubbles one "step" to the floor
+            //Moving objects one "step" to the floor
             skull.GetComponent<Rigidbody2D>().MovePosition(new Vector3(skull.transform.position.x,
                                                         skull.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
                                                         skull.transform.position.z));
+        }
+    }
+
+    public void moverBolasSpinner()
+    {
+        bolasSpinner = GameObject.FindGameObjectsWithTag("BolaSpinner");
+        foreach (GameObject spinner in bolasSpinner)
+        {
+            //Moving objects one "step" to the floor
+            spinner.GetComponent<Rigidbody2D>().MovePosition(new Vector3(spinner.transform.position.x,
+                                                        spinner.transform.position.y - 100, //TODO: adaptar a diferentes plataformas y resoluciones
+                                                        spinner.transform.position.z));
         }
     }
 

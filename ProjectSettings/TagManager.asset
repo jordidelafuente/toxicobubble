@@ -19,6 +19,7 @@ TagManager:
   - AnimCoin+1
   - AnimBola+1
   - Calavera
+  - BolaSpinner
   layers:
   - Default
   - TransparentFX

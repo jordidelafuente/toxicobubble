@@ -102,8 +102,9 @@ public class ManejadorPanel : MonoBehaviour
     public void Reiniciar()
     {
         playUISound_OK();
-        SceneManager.LoadScene("NivelPrincipal-portrait");
+        ManejadorDisparo.getDataController().getPlayerProgress().stateHistory = 0;
         Time.timeScale = 1;
+        SceneManager.LoadScene("NivelPrincipal-portrait");
     }
 
     public void EvitarGameOver()

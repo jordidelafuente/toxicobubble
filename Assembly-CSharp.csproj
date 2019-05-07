@@ -106,6 +106,7 @@
     <Compile Include="Assets\Scripts\MainMenu\ManejadorPanels.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\Animaciones\AnimationAutoDestroy.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\BolaExtra.cs" />
+    <Compile Include="Assets\Scripts\NivelPrincipal\BolaSpinner.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\IllumiCoinExtra.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\ManejadorBolas.cs" />
     <Compile Include="Assets\Scripts\NivelPrincipal\ManejadorDisparo.cs" />
