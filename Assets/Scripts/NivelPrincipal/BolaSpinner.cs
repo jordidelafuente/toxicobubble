@@ -19,7 +19,7 @@ public class BolaSpinner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0, 0, 500 * Time.deltaTime);
+        transform.Rotate(0, 0, 200 * Time.deltaTime);
     }
 
     // when a ball is colliding with it

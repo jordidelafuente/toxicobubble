@@ -12,7 +12,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     public GameObject lineaDisparo;
     public GameObject player;
-    public Scrollbar scrollBar;
+    //public Scrollbar scrollBar;
     public GameObject handleScrollBar;
     public Transform bola;
     public Transform bolaExtra;
@@ -58,13 +58,16 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public static EstadoPlayer estadoPlayer;
     bool canShoot;
     public static bool gameOverActivated, changeMusic;
-    public static bool isDragging;
+    private static bool isDragging;
     float xInicialPlayer;
     public static int lastStateBeforeGameOver;
 
     public GameObject panel_history_1;
+    public GameObject panel_history_12;
     public GameObject panel_history_2;
+    public GameObject panel_history_22;
     public GameObject panel_history_3;
+    public GameObject panel_history_32;
 
     // Use this for initialization
     void Start()
@@ -89,11 +92,11 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                                     player.gameObject.transform.position.y,
                                     player.transform.position.z - 1));
 
-        scrollBar.transform.position = new Vector3(player.gameObject.transform.position.x,
+        /*scrollBar.transform.position = new Vector3(player.gameObject.transform.position.x,
                                                    scrollBar.transform.position.y,
                                                    scrollBar.transform.position.z);
         scrollBar.gameObject.SetActive(true);
-        scrollBar.value = 0.5f;
+        scrollBar.value = 0.5f;*/
         xInicialPlayer = player.transform.position.x;
 
         //Controlling the history mode
@@ -137,13 +140,35 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         }
     }
 
+    public void switchPanel_1_to_12()
+    {
+        panel_history_1.SetActive(false); //
+        panel_history_12.SetActive(true); //
+    }
+
+    public void switchPanel_2_to_22()
+    {
+        panel_history_2.SetActive(false); //
+        panel_history_22.SetActive(true); //
+    }
+
+    public void switchPanel_3_to_32()
+    {
+        panel_history_3.SetActive(false); //
+        panel_history_32.SetActive(true); //
+    }
+
     public void startPlaying(int state) //from button "continue"
     {
         dataController.getPlayerProgress().stateHistory = state;
         lastStateBeforeGameOver = state;
         panel_history_1.SetActive(false); // TODO: extern array?
+        panel_history_12.SetActive(false); // TODO: extern array?
         panel_history_2.SetActive(false); //
+        panel_history_22.SetActive(false);
         panel_history_3.SetActive(false); //
+        panel_history_32.SetActive(false);
+
         estadoPlayer = EstadoPlayer.READY;
         Time.timeScale = 1;
         playMusic();
@@ -157,15 +182,17 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     // Update is called once per frame
     void Update()
     {
+        //animPlayer.SetTrigger("lalala");
         bool isDispararBola = estadoPlayer == EstadoPlayer.SHOOTING
                             && numBolasDisparadas < numBolasADisparar
                             && (Time.time - timeInicioDisparo > 0.1 * numBolasDisparadas);
-        scrollBar.gameObject.SetActive(estadoPlayer == EstadoPlayer.READY || estadoPlayer == EstadoPlayer.POINTING);
+        //scrollBar.gameObject.SetActive(estadoPlayer == EstadoPlayer.READY || estadoPlayer == EstadoPlayer.POINTING);
 
         if (isDispararBola)
         {
             dispararBola();
-        } if(estadoPlayer == EstadoPlayer.GAMEOVER && !gameOverActivated)
+            
+        } else if (estadoPlayer == EstadoPlayer.GAMEOVER && !gameOverActivated)
         {
             lastStateBeforeGameOver = getDataController().getPlayerProgress().stateHistory;
             getDataController().getPlayerProgress().stateHistory = -1;
@@ -186,7 +213,8 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             {
                 estadoPlayer = EstadoPlayer.READY;
                 isDragging = false;
-                //animPlayer.SetTrigger("PlayerReady");
+                animPlayer.ResetTrigger("pointUp");
+                animPlayer.SetTrigger("PlayerReady");
                 generarBurbujas(GetScore());
                 if ((GetScore()) % 7 == 0)
                 {
@@ -222,12 +250,27 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 boostersActivados = new bool[] { false, false, false, false };
                 desactivarIconBoosts();
                 if (ManejadorBolas.GetXPrimeraBola() != -9999f) {
-                    player.transform.position = new Vector3(ManejadorBolas.GetXPrimeraBola(), player.transform.position.y, player.transform.position.z);
-                    scrollBar.transform.position = new Vector3(player.gameObject.transform.position.x,
+                    float percentagePos = 1.1f; //10%
+                    int maxX = Camera.main.pixelWidth + (Camera.main.pixelWidth - Mathf.RoundToInt(Camera.main.pixelWidth / percentagePos));
+                    int minX = -10 + Camera.main.pixelWidth - Mathf.RoundToInt(Camera.main.pixelWidth / percentagePos);
+
+                    if (ManejadorBolas.GetXPrimeraBola() > maxX)
+                    {
+                        player.transform.position = new Vector3(maxX, player.transform.position.y, player.transform.position.z);
+                    }
+                    else if (ManejadorBolas.GetXPrimeraBola() < minX)
+                    {
+                        player.transform.position = new Vector3(minX, player.transform.position.y, player.transform.position.z);
+                    }
+                    else {
+                        player.transform.position = new Vector3(ManejadorBolas.GetXPrimeraBola(), player.transform.position.y, player.transform.position.z);
+                    }
+
+                    /*scrollBar.transform.position = new Vector3(player.gameObject.transform.position.x,
                                                    scrollBar.transform.position.y,
                                                    scrollBar.transform.position.z);
                     Player.isManualMove = false;
-                    scrollBar.value = 0.5f;
+                    scrollBar.value = 0.5f;*/
                     textNumeroDeBolas.gameObject.transform.position = new Vector2(player.transform.position.x - 100f/*TODO:ajustar a pantallas*/, textNumeroDeBolas.gameObject.transform.position.y);
                     lineRenderer.SetPosition(0, new Vector3(player.gameObject.transform.position.x /*+ (80)*/,
                                     player.gameObject.transform.position.y,
@@ -241,11 +284,11 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
                 //Achieving first goal
                 if (dataController.getPlayerProgress().stateHistory == 1 
-                    && GetScore() >= 10)/*TODO: 50*/
+                    && GetScore() >= 25)/*TODO: 50*/
                 {
                     lastStateBeforeGameOver = getDataController().getPlayerProgress().stateHistory;
                     dataController.getPlayerProgress().stateHistory = 2;
-                    int newNumCoinsPlayer = int.Parse(illumiCoins.text.ToString()) + 50;
+                    int newNumCoinsPlayer = int.Parse(illumiCoins.text.ToString()) + 10;
                     illumiCoins.text = newNumCoinsPlayer.ToString();
                     historyMode();
                     playMusic();
@@ -253,11 +296,11 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
                 //Achieving second goal
                 if (dataController.getPlayerProgress().stateHistory == 3
-                    && GetScore() >= 25)/*TODO: 110*/
+                    && GetScore() >= 60)/*TODO: 110*/
                 {
                     lastStateBeforeGameOver = getDataController().getPlayerProgress().stateHistory;
                     dataController.getPlayerProgress().stateHistory = 4;
-                    int newNumCoinsPlayer = int.Parse(illumiCoins.text.ToString()) + 51;
+                    int newNumCoinsPlayer = int.Parse(illumiCoins.text.ToString()) + 11;
                     illumiCoins.text = newNumCoinsPlayer.ToString();
                     historyMode();
                     playMusic();
@@ -265,11 +308,6 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             }
             else
             {
-                if (estadoPlayer != EstadoPlayer.POINTING)
-                {
-                    animPlayer.SetTrigger("PlayerReady");
-                }
-
                 if ((estadoPlayer != EstadoPlayer.SHOOTING) && !isDragging)
                 {
                     //animPlayer.SetTrigger("PlayerReady");
@@ -289,15 +327,14 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         if (estadoPlayer == EstadoPlayer.READY)
         {
             lineRenderer.SetPosition(1, Camera.main.ScreenToWorldPoint(eventData.position));
-        }
-
-        isDragging = true;
+            isDragging = true;
+        }        
         
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (isDragging && Time.timeScale > 0 && (estadoPlayer != EstadoPlayer.SHOOTING))
+        if (isDragging && Time.timeScale > 0 && (estadoPlayer != EstadoPlayer.SHOOTING) && (estadoPlayer != EstadoPlayer.GAMEOVER))
         {
             //...
             textNumeroDeBolas.gameObject.SetActive(true);
@@ -309,7 +346,13 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             {  
                 lineaDisparo.SetActive(true);
                 canShoot = true;
-                animPlayer.SetTrigger("pointUp"); //TODO: diferente animacion segun angulo
+
+                if (animPlayer.GetCurrentAnimatorStateInfo(0).IsName("AnimationPlayerReady")) {
+                    animPlayer.ResetTrigger("PlayerReady");
+                    animPlayer.SetTrigger("pointUp"); //TODO: diferente animacion segun angulo
+                }                    
+                //animPlayer.GetComponent<Animation>().Stop();
+                //Time.timeScale = 0;
                 estadoPlayer = EstadoPlayer.POINTING;
             }
             else
@@ -317,13 +360,14 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 lineaDisparo.SetActive(false);
                 canShoot = false;
                 //animPlayer.SetTrigger("PlayerReady");
-                estadoPlayer = EstadoPlayer.READY;
+                //estadoPlayer = EstadoPlayer.READY;
             }
         }
-        /*else
+        else
         {
-            animPlayer.SetTrigger("PlayerReady");
-        }*/
+            //animPlayer.SetTrigger("PlayerReady");
+            Debug.Log("kepasaaa");
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)
