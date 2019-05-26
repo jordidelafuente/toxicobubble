@@ -80,7 +80,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         velocidadBolasGlobal = velocidadBolas;
         numBolasADisparar = GetNumBolasFromPlayer(2);
         lineaDisparo.SetActive(false);
-        textNumeroDeBolas.gameObject.SetActive(false);
+        //textNumeroDeBolas.gameObject.SetActive(false);
         ManejadorBolas.SetXPrimeraBola(-9999);
         animPlayer = player.GetComponent<Animator>();
         
@@ -245,7 +245,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 updateScore();
                 //textNumeroDeBolas.gameObject.SetActive(true); //TODO: ???
                 numBolasADisparar = GetNumBolasFromPlayer(numBolasADisparar);
-                textNumeroDeBolas.gameObject.SetActive(false);
+                //textNumeroDeBolas.gameObject.SetActive(false);
                 numBolasDisparadas = 0;
                 boostersActivados = new bool[] { false, false, false, false };
                 desactivarIconBoosts();
@@ -271,7 +271,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                                                    scrollBar.transform.position.z);
                     Player.isManualMove = false;
                     scrollBar.value = 0.5f;*/
-                    textNumeroDeBolas.gameObject.transform.position = new Vector2(player.transform.position.x - 100f/*TODO:ajustar a pantallas*/, textNumeroDeBolas.gameObject.transform.position.y);
+                    //textNumeroDeBolas.gameObject.transform.position = new Vector2(player.transform.position.x - 100f/*TODO:ajustar a pantallas*/, textNumeroDeBolas.gameObject.transform.position.y);
                     lineRenderer.SetPosition(0, new Vector3(player.gameObject.transform.position.x /*+ (80)*/,
                                     player.gameObject.transform.position.y,
                                     player.transform.position.z - 1)); 
@@ -337,7 +337,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         if (isDragging && Time.timeScale > 0 && (estadoPlayer != EstadoPlayer.SHOOTING) && (estadoPlayer != EstadoPlayer.GAMEOVER))
         {
             //...
-            textNumeroDeBolas.gameObject.SetActive(true);
+            //textNumeroDeBolas.gameObject.SetActive(true);
             lineRenderer.SetPosition(1, Camera.main.ScreenToWorldPoint(eventData.position));
             Vector3 vectorLinea = lineRenderer.GetPosition(1) - lineRenderer.GetPosition(0);
 
@@ -360,7 +360,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 lineaDisparo.SetActive(false);
                 canShoot = false;
                 //animPlayer.SetTrigger("PlayerReady");
-                //estadoPlayer = EstadoPlayer.READY;
+                estadoPlayer = EstadoPlayer.READY;
             }
         }
         else
@@ -744,13 +744,13 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     private int GetNumBolasFromPlayer(int numAnt)
     {
         int numBolas = 0;
-        Text[] textos = player.GetComponentsInChildren<Text>();
+        //Text[] textos = //player.GetComponentsInChildren<Text>();
 
         /*if (estadoPlayer != EstadoPlayer.SHOOTING)
         {*/
         try
         {
-            string strNumBolas = textos[0].text.ToString().Replace("x", ""); //TODO: que pasa si hay más de un componente texto?
+            string strNumBolas = textNumeroDeBolas.text.ToString().Replace("x", ""); //TODO: que pasa si hay más de un componente texto?
             numBolas = int.Parse(strNumBolas);
         }
         catch (System.Exception e)
