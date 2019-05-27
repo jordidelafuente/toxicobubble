@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/peskaete/Desktop/Unity 2017.0.1/ToxicoBubble/prueba-android-1.apk
+C:/Users/peskaete/Desktop/Unity 2017.0.1/ToxicoBubble/ToxicoBubble_vAlpha.apk
 SceneListBegin?
 Assets/Escenas/MainMenu.unity
 Assets/Escenas/NivelPrincipal-portrait.unity
