@@ -509,7 +509,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
 
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 150; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -530,7 +530,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i=0; i<100; i++)
+        for (int i=0; i<150; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -551,7 +551,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 150; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -581,7 +581,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 150; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -600,6 +600,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     void generarBurbujas(int score)
     {
         int numBurbujas = 2;
+        float xBurbujaAnt = -9999f;
 
         if (score % 5 == 0 || score % 11 == 0 /*|| score % 17 == 0*/)
         {
@@ -608,23 +609,24 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
         for(int i=0; i< numBurbujas; i++)
         {
-            generarBurbuja();
+            xBurbujaAnt = generarBurbuja(xBurbujaAnt);
         }
     }
 
-    public void generarBurbuja() //Instantiate a bubble at a random "x" position
+    public float generarBurbuja(float xBurbujaAnt) //Instantiate a bubble at a random "x" position
     {
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3 (-9999,-9999,9999);
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 150; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 1);
             posicion = Camera.main.ScreenToWorldPoint(posicion);
             posicion.z = 91;
-            if (!isColisionConObjetosDelJuego(posicion))
+            if (!isColisionConObjetosDelJuego(posicion) && Mathf.Abs(xRandom - xBurbujaAnt) > 155)
             {
+                xBurbujaAnt = xRandom;
                 break;
             }
         }
@@ -641,6 +643,8 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 b.gameObject.gameObject.GetComponent<TextMesh>().text = pesoDeseado.ToString();
             }
         }
+
+        return xRandom;
     }
 
     public bool isColisionConObjetosDelJuego(Vector3 posicionNuevoObjeto)
@@ -655,11 +659,31 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             }
         }
 
+        calaveras = GameObject.FindGameObjectsWithTag("Calavera");
+        foreach (GameObject skull in calaveras)
+        {
+            float dist = Vector3.Distance(skull.transform.position, posicionNuevoObjeto);
+            if (dist < 155) //I don't like this number, but essay & error gave me
+            {
+                return true;
+            }
+        }
+
+        bolasSpinner = GameObject.FindGameObjectsWithTag("BolaSpinner");
+        foreach (GameObject bola in bolasSpinner)
+        {
+            float dist = Vector3.Distance(bola.transform.position, posicionNuevoObjeto);
+            if (dist < 155) //I don't like this number, but essay & error gave me
+            {
+                return true;
+            }
+        }
+
         bolasExtra = GameObject.FindGameObjectsWithTag("BolaExtra");
         foreach (GameObject bola in bolasExtra)
         {
             float dist = Vector3.Distance(bola.transform.position, posicionNuevoObjeto);
-            if (dist < 80)
+            if (dist < 100)
             {
                 return true;
             }
@@ -669,7 +693,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         foreach (GameObject coin in illumiCoinsExtra)
         {
             float dist = Vector3.Distance(coin.transform.position, posicionNuevoObjeto);
-            if (dist < 80)
+            if (dist < 100)
             {
                 return true;
             }

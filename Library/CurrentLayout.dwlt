@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 58
+  controlID: 5209
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 498}
   m_MaxSize: {x: 14006, y: 14048}
   vertical: 1
-  controlID: 15
+  controlID: 5091
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 16
+  controlID: 5092
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 274}
   m_MaxSize: {x: 14006, y: 10024}
   vertical: 0
-  controlID: 72
+  controlID: 5121
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -263,8 +263,8 @@ MonoBehaviour:
     y: 0
     width: 397
     height: 419
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 19}
@@ -725,7 +725,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5ae1ffff6ce1ffffe0e2ffffd0e4ffffbcfbffff
+      m_ExpandedIDs: 363bffff483bffffb83cffffa43effffbcfbffff08350000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -803,7 +803,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 120722
+  m_LastSelectedObjectID: 14116
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -842,20 +842,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites
+    - Assets/Scripts/NivelPrincipal
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/Scripts/NivelPrincipal
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\peskaete\Desktop\Unity 2017.0.1\ToxicoBubble
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2e340000
-    m_LastClickedID: 13358
-    m_ExpandedIDs: 000000003827000056270000342800003a280000d6280000fc280000182900002c290000102b0000ae2c0000b82c0000c02c0000ce2c0000c22e0000f83200002a330000f23300001834000000ca9a3b
+    m_SelectedIDs: c22c0000
+    m_LastClickedID: 11458
+    m_ExpandedIDs: 000000003a2700005827000094270000362800003c280000d8280000fe2800001a2900002e290000122b0000b02c0000ba2c0000c22c0000d02c0000c42e0000fc3200002e330000f63300001c34000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -883,7 +883,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003827000056270000342800003a280000d6280000fc280000182900002c290000102b0000ae2c0000b82c0000c02c0000ce2c0000c22e0000f83200002a330000f233000018340000
+    m_ExpandedIDs: 000000003a2700005827000094270000362800003c280000d8280000fe2800001a2900002e290000122b0000b02c0000ba2c0000c22c0000d02c0000c42e0000fc3200002e330000f63300001c34000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

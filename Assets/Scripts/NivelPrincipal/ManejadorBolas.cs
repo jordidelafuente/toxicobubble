@@ -72,7 +72,8 @@ public class ManejadorBolas : MonoBehaviour
 
             //START: Calculate reflection velocity
             Vector2 normal = col.gameObject.transform.position - gameObject.transform.position; //pos burbuja - pos bola
-            if (col.gameObject.transform.position.x > gameObject.transform.position.x) // burbuja.x > bola.x
+            normal = normal.normalized;
+            /*if (col.gameObject.transform.position.x > gameObject.transform.position.x) // burbuja.x > bola.x
             {
                 normal.x = Mathf.Abs(normal.x);
             }
@@ -88,8 +89,8 @@ public class ManejadorBolas : MonoBehaviour
             else
             {
                 normal.y = Mathf.Abs(normal.y) * (-1);
-            }
-            Vector2 reflejado = Vector2.Reflect(gameObject.GetComponent<Rigidbody2D>().velocity, normal);
+            }*/
+            Vector2 reflejado = Vector2.Reflect(gameObject.GetComponent<Rigidbody2D>().velocity.normalized, normal);
             //END: Calculate reflection velocity
 
             gameObject.GetComponent<Rigidbody2D>().velocity = reflejado.normalized * velocidadBolas;
