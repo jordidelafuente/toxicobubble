@@ -61,6 +61,8 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     private static bool isDragging;
     float xInicialPlayer;
     public static int lastStateBeforeGameOver;
+      
+    private ArrayList listaXsObjetosNuevos = new ArrayList();
 
     public GameObject panel_history_1;
     public GameObject panel_history_12;
@@ -215,6 +217,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 isDragging = false;
                 animPlayer.ResetTrigger("pointUp");
                 animPlayer.SetTrigger("PlayerReady");
+                listaXsObjetosNuevos.Clear();
                 generarBurbujas(GetScore());
                 if ((GetScore()) % 7 == 0)
                 {
@@ -243,9 +246,9 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 moverCalaveras();
                 moverBolasSpinner();
                 updateScore();
-                //textNumeroDeBolas.gameObject.SetActive(true); //TODO: ???
+
                 numBolasADisparar = GetNumBolasFromPlayer(numBolasADisparar);
-                //textNumeroDeBolas.gameObject.SetActive(false);
+
                 numBolasDisparadas = 0;
                 boostersActivados = new bool[] { false, false, false, false };
                 desactivarIconBoosts();
@@ -509,7 +512,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
 
-        for (int i = 0; i < 150; i++)
+        for (int i = 0; i < 200; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -517,7 +520,8 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             posicion.z = 91;
             if (!isColisionConObjetosDelJuego(posicion))
             {
-               break;
+                listaXsObjetosNuevos.Add(xRandom);
+                break;
             }
         }        
 
@@ -530,7 +534,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i=0; i<150; i++)
+        for (int i=0; i<200; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -538,6 +542,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             posicion.z = 91;
             if (!isColisionConObjetosDelJuego(posicion))
             {
+                listaXsObjetosNuevos.Add(xRandom);
                 break;
             }
         }        
@@ -551,7 +556,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i = 0; i < 150; i++)
+        for (int i = 0; i < 200; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -559,6 +564,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             posicion.z = 91;
             if (!isColisionConObjetosDelJuego(posicion))
             {
+                listaXsObjetosNuevos.Add(xRandom);
                 break;
             }
         }
@@ -581,7 +587,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i = 0; i < 150; i++)
+        for (int i = 0; i < 200; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -589,6 +595,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             posicion.z = 91;
             if (!isColisionConObjetosDelJuego(posicion))
             {
+                listaXsObjetosNuevos.Add(xRandom);
                 break;
             }
         }
@@ -600,7 +607,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
     void generarBurbujas(int score)
     {
         int numBurbujas = 2;
-        float xBurbujaAnt = -9999f;
+        
 
         if (score % 5 == 0 || score % 11 == 0 /*|| score % 17 == 0*/)
         {
@@ -609,24 +616,25 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
         for(int i=0; i< numBurbujas; i++)
         {
-            xBurbujaAnt = generarBurbuja(xBurbujaAnt);
+            generarBurbuja();
         }
     }
 
-    public float generarBurbuja(float xBurbujaAnt) //Instantiate a bubble at a random "x" position
+    public void generarBurbuja() //Instantiate a bubble at a random "x" position
     {
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3 (-9999,-9999,9999);
-        for (int i = 0; i < 150; i++)
+        for (int i = 0; i < 200; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 1);
             posicion = Camera.main.ScreenToWorldPoint(posicion);
             posicion.z = 91;
-            if (!isColisionConObjetosDelJuego(posicion) && Mathf.Abs(xRandom - xBurbujaAnt) > 155)
+          
+            if (!isColisionConObjetosDelJuego(posicion) /*&& Mathf.Abs(xRandom - xBurbujaAnt) > 155*/)
             {
-                xBurbujaAnt = xRandom;
+                listaXsObjetosNuevos.Add(xRandom);
                 break;
             }
         }
@@ -643,13 +651,11 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 b.gameObject.gameObject.GetComponent<TextMesh>().text = pesoDeseado.ToString();
             }
         }
-
-        return xRandom;
     }
 
     public bool isColisionConObjetosDelJuego(Vector3 posicionNuevoObjeto)
     {
-        burbujas = GameObject.FindGameObjectsWithTag("Burbuja");
+        /*burbujas = GameObject.FindGameObjectsWithTag("Burbuja");
         foreach (GameObject burbuja in burbujas)
         {
             float dist = Vector3.Distance(burbuja.transform.position, posicionNuevoObjeto);
@@ -697,7 +703,18 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             {
                 return true;
             }
+        }*/
+
+        foreach(int xObjAnt in listaXsObjetosNuevos)
+        {
+            Vector3 posicionObjAnt = new Vector3(xObjAnt, posicionNuevoObjeto.y, posicionNuevoObjeto.z);
+            float dist = Vector3.Distance(posicionObjAnt, posicionNuevoObjeto);
+            if (dist < 150)
+            {
+                return true;
+            }
         }
+
 
         return false;
     }
