@@ -512,7 +512,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
 
-        for (int i = 0; i < 200; i++)
+        for (int i = 0; i < 2000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -534,7 +534,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i=0; i<200; i++)
+        for (int i=0; i < 2000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -556,7 +556,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i = 0; i < 200; i++)
+        for (int i = 0; i < 2000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -587,7 +587,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i = 0; i < 200; i++)
+        for (int i = 0; i < 2000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -625,7 +625,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3 (-9999,-9999,9999);
-        for (int i = 0; i < 200; i++)
+        for (int i = 0; i < 2000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 1);
