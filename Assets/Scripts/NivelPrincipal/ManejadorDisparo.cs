@@ -253,7 +253,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 boostersActivados = new bool[] { false, false, false, false };
                 desactivarIconBoosts();
                 if (ManejadorBolas.GetXPrimeraBola() != -9999f) {
-                    float percentagePos = 1.1f; //10%
+                    float percentagePos = 1.12f; //12%
                     int maxX = Camera.main.pixelWidth + (Camera.main.pixelWidth - Mathf.RoundToInt(Camera.main.pixelWidth / percentagePos));
                     int minX = -10 + Camera.main.pixelWidth - Mathf.RoundToInt(Camera.main.pixelWidth / percentagePos);
 
@@ -512,7 +512,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
 
-        for (int i = 0; i < 2000; i++)
+        for (int i = 0; i < 5000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -534,7 +534,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i=0; i < 2000; i++)
+        for (int i=0; i < 5000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -556,7 +556,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i = 0; i < 2000; i++)
+        for (int i = 0; i < 5000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -587,7 +587,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i = 0; i < 2000; i++)
+        for (int i = 0; i < 5000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -625,7 +625,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3 (-9999,-9999,9999);
-        for (int i = 0; i < 2000; i++)
+        for (int i = 0; i < 5000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 1);
@@ -643,7 +643,13 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         burbujaNueva.gameObject.tag = "Burbuja";
 
         int pesoDeseado = numBolasADisparar * 2; //TODO: función que también tenga en cuenta la puntuación 
-        
+
+        //Si la dificultad es "hard", doblamos el peso de las burbujas
+        if (dataController.getOptionsConfig().difficulty == 1) //TODO: constantes
+        {
+            pesoDeseado = pesoDeseado * 2;
+        }
+
         foreach (Transform b in burbujaNueva.gameObject.gameObject.transform)
         {
             if (b.gameObject.gameObject.name == "Peso")
@@ -709,7 +715,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         {
             Vector3 posicionObjAnt = new Vector3(xObjAnt, posicionNuevoObjeto.y, posicionNuevoObjeto.z);
             float dist = Vector3.Distance(posicionObjAnt, posicionNuevoObjeto);
-            if (dist < 150)
+            if (dist < /*150*/(Camera.main.pixelWidth / 8))
             {
                 return true;
             }

@@ -136,6 +136,7 @@ public class ManejadorPanels : MonoBehaviour {
     public void Play()
     {
         playUISound_OK();
+        ManejadorDisparo.getDataController().getPlayerProgress().stateHistory = 0;
         SceneManager.LoadScene("NivelPrincipal-portrait");
         Time.timeScale = 1;
     }
