@@ -137,7 +137,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 20c9a74d659b6895cfdb5f4624ba8daa Assembly-CSharp.dll:.AnimationAutoDestroy
 0fa68bd623ee8079c45c93272885c4cb Assembly-CSharp.dll:PixelsoftGames.PixelUI.UIExperienceBar
 c6f1d025dc53720858a802bf83af209c Assembly-CSharp.dll:PixelsoftGames.PixelUI.WeatherSystem
-0fd8e9a9651c619b33e875bc7c64c1b7 Assembly-CSharp.dll:.ManejadorDisparo
+41181c1b4aaea93ce72aecd630e87551 Assembly-CSharp.dll:.ManejadorDisparo
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 706627b7f2517f75e79205322ab573b4 Assembly-CSharp.dll:PixelsoftGames.PixelUI.TravelButton
 f6f31c9c273588396ea154daa256cd54 Assembly-CSharp.dll:.BolaExtra

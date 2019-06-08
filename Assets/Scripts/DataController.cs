@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class DataController //: MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class DataController //: MonoBehaviour
     public static PlayerProgress playerProgress;
 
     public static OptionsConfig optionsConfig;
+
     
     // Start is called before the first frame update
    /* void Start()
@@ -106,4 +108,5 @@ public class DataController //: MonoBehaviour
     {
         return playerProgress;
     }
+
 }

@@ -64,6 +64,10 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
       
     private ArrayList listaXsObjetosNuevos = new ArrayList();
 
+    public Text inputTextUserName;
+    public Text texto_saludo;
+
+    public GameObject panel_history_0;
     public GameObject panel_history_1;
     public GameObject panel_history_12;
     public GameObject panel_history_2;
@@ -102,18 +106,50 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         xInicialPlayer = player.transform.position.x;
 
         //Controlling the history mode
+        dataController.getPlayerProgress().stateHistory = -99;
         historyMode();
         playMusic();
+
+        // ..
+        Debug.Log(dataController.getOptionsConfig().userName);
+    }
+
+    public void saveUserName()
+    {
+        if (inputTextUserName != null && inputTextUserName.text != null && !inputTextUserName.text.ToString().Equals(""))
+        {
+            dataController.getOptionsConfig().userName = inputTextUserName.text;
+            PlayerPrefs.SetString("userName", dataController.getOptionsConfig().userName);
+            dataController.getPlayerProgress().stateHistory = 0;
+            //Debug.Log("guardamos user");
+        } else
+        {
+            //Debug.Log("NO guardamos user");
+        }
     }
 
     public void historyMode()
     {
+        panel_history_0.SetActive(false);
         panel_history_1.SetActive(false); //TODO: extern array of panels?
         panel_history_2.SetActive(false); //
         panel_history_3.SetActive(false); //
 
         switch (dataController.getPlayerProgress().stateHistory)
         {
+            case -99:
+                
+                //panel_history_1.SetActive(true); //
+                estadoPlayer = EstadoPlayer.TALKING;
+                Time.timeScale = 0;
+
+                if (dataController.getOptionsConfig().userName == null ||
+                    dataController.getOptionsConfig().userName == "") {
+                    dataController.getOptionsConfig().userName = "Guest" + Random.Range(1, 9999);
+                }
+                texto_saludo.text = "Hi, " + dataController.getOptionsConfig().userName + "!\n" + "Your city needs you!";
+                panel_history_0.SetActive(true); //
+                break;
             case 0:
                 panel_history_1.SetActive(true); //
                 estadoPlayer = EstadoPlayer.TALKING;
@@ -140,6 +176,13 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 Time.timeScale = 0;
                 break;
         }
+    }
+
+    public void switchPanel_0_to_1()
+    {
+        saveUserName();
+        panel_history_0.SetActive(false); //
+        panel_history_1.SetActive(true); //
     }
 
     public void switchPanel_1_to_12()
@@ -362,7 +405,8 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             {
                 lineaDisparo.SetActive(false);
                 canShoot = false;
-                //animPlayer.SetTrigger("PlayerReady");
+                animPlayer.ResetTrigger("pointUp");
+                animPlayer.SetTrigger("PlayerReady");
                 estadoPlayer = EstadoPlayer.READY;
             }
         }
@@ -512,7 +556,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
 
-        for (int i = 0; i < 5000; i++)
+        for (int i = 0; i < 50000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -520,7 +564,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             posicion.z = 91;
             if (!isColisionConObjetosDelJuego(posicion))
             {
-                listaXsObjetosNuevos.Add(xRandom);
+                listaXsObjetosNuevos.Add((int)posicion.x);
                 break;
             }
         }        
@@ -534,7 +578,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i=0; i < 5000; i++)
+        for (int i=0; i < 50000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -542,7 +586,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             posicion.z = 91;
             if (!isColisionConObjetosDelJuego(posicion))
             {
-                listaXsObjetosNuevos.Add(xRandom);
+                listaXsObjetosNuevos.Add((int)posicion.x);
                 break;
             }
         }        
@@ -556,7 +600,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i = 0; i < 5000; i++)
+        for (int i = 0; i < 50000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -564,7 +608,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             posicion.z = 91;
             if (!isColisionConObjetosDelJuego(posicion))
             {
-                listaXsObjetosNuevos.Add(xRandom);
+                listaXsObjetosNuevos.Add((int)posicion.x);
                 break;
             }
         }
@@ -587,7 +631,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3(-9999, -9999, 9999);
-        for (int i = 0; i < 5000; i++)
+        for (int i = 0; i < 50000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             Vector3 randomPos = new Vector3(xRandom, Camera.main.pixelHeight - 1, 90);
@@ -595,7 +639,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
             posicion.z = 91;
             if (!isColisionConObjetosDelJuego(posicion))
             {
-                listaXsObjetosNuevos.Add(xRandom);
+                listaXsObjetosNuevos.Add((int)posicion.x);
                 break;
             }
         }
@@ -625,7 +669,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
         //bool positionValid = false;
         int xRandom = -9999;
         Vector3 posicion = new Vector3 (-9999,-9999,9999);
-        for (int i = 0; i < 5000; i++)
+        for (int i = 0; i < 50000; i++)
         {
             xRandom = (int)Random.Range(0 + Camera.main.pixelWidth / 10, Camera.main.pixelWidth - (Camera.main.pixelWidth / 10));
             posicion = new Vector3(xRandom, Camera.main.pixelHeight - 1, 1);
@@ -634,7 +678,7 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
           
             if (!isColisionConObjetosDelJuego(posicion) /*&& Mathf.Abs(xRandom - xBurbujaAnt) > 155*/)
             {
-                listaXsObjetosNuevos.Add(xRandom);
+                listaXsObjetosNuevos.Add((int)posicion.x);
                 break;
             }
         }
@@ -720,8 +764,13 @@ public class ManejadorDisparo : MonoBehaviour, IPointerClickHandler, IPointerEnt
                 return true;
             }
         }
-
-
+        Debug.Log("Objeto OK en: " + posicionNuevoObjeto);
+        string listaX = "";
+        foreach (int x in listaXsObjetosNuevos)
+        {
+            listaX = listaX + ";" + x;
+        }
+        Debug.Log("Objetos: " + listaX);
         return false;
     }
 
